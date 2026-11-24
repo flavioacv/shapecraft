@@ -602,7 +602,7 @@ pub(in crate::workspace) fn popups(ws: &mut Workspace, ui: &mut Ui) {
             p.text(
                 pos2(r.left() + 12.0 + g.size().x / 2.0, r.center().y),
                 Align2::CENTER_CENTER,
-                &t.text,
+                crate::i18n::tr_s(&t.text),
                 theme::body(12.0),
                 Tokens::text(),
             );
