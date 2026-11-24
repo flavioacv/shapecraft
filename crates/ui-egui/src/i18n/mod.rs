@@ -1,10 +1,10 @@
-//! Interface languages (Preferences ▸ Language; the reference is localized into the eleven languages its manual
-//! lists). Text is drawn through [`tr`], keyed by the English text, so the English strings stay the identifiers the
+//! Interface languages (Preferences ▸ Language; the translations are in `crates/ui-egui/lang`, one file each). Text is drawn through [`tr`], keyed by the English text, so the English strings stay the identifiers the
 //! code compares; anything without a translation shows in English.
 
+use std::sync::OnceLock;
 use std::sync::atomic::{AtomicUsize, Ordering};
 
-mod tables;
+mod po;
 
 /// The languages, by the names the Language menu shows (each in its own language), English first.
 pub const LANGUAGES: &[&str] = &[
@@ -24,20 +24,27 @@ pub const LANGUAGES: &[&str] = &[
 
 static CURRENT: AtomicUsize = AtomicUsize::new(0);
 
-fn table(i: usize) -> &'static [(&'static str, &'static str)] {
-    match i {
-        1 => tables::ZH_HANS,
-        2 => tables::ZH_HANT,
-        3 => tables::DE,
-        4 => tables::ES,
-        5 => tables::FR,
-        6 => tables::IT,
-        7 => tables::JA,
-        8 => tables::KO,
-        9 => tables::PT_BR,
-        10 => tables::RU,
-        11 => tables::SK,
-        _ => &[],
+/// The translations, one file per language, in [`LANGUAGES`] order (`docs/translating.md`).
+const FILES: [&str; LANGUAGES.len() - 1] = [
+    include_str!("../../lang/zh_Hans.po"),
+    include_str!("../../lang/zh_Hant.po"),
+    include_str!("../../lang/de.po"),
+    include_str!("../../lang/es.po"),
+    include_str!("../../lang/fr.po"),
+    include_str!("../../lang/it.po"),
+    include_str!("../../lang/ja.po"),
+    include_str!("../../lang/ko.po"),
+    include_str!("../../lang/pt_BR.po"),
+    include_str!("../../lang/ru.po"),
+    include_str!("../../lang/sk.po"),
+];
+
+/// A language's entries, read the first time it's used.
+fn table(i: usize) -> &'static [(String, String)] {
+    static TABLES: [OnceLock<Vec<(String, String)>>; FILES.len()] = [const { OnceLock::new() }; FILES.len()];
+    match i.checked_sub(1).and_then(|i| TABLES.get(i).zip(FILES.get(i))) {
+        Some((table, file)) => table.get_or_init(|| po::read(file)),
+        None => &[],
     }
 }
 
@@ -80,8 +87,8 @@ pub fn tr_s(english: impl AsRef<str>) -> String {
     if t.is_empty() {
         return english.to_owned();
     }
-    if let Ok(i) = t.binary_search_by(|(k, _)| (*k).cmp(english)) {
-        return t[i].1.to_owned();
+    if let Ok(i) = t.binary_search_by(|(k, _)| k.as_str().cmp(english)) {
+        return t[i].1.clone();
     }
     thread_local! {
         /// What the messages shown lately came to (looked up again every frame they show).
@@ -98,7 +105,7 @@ pub fn tr_s(english: impl AsRef<str>) -> String {
 
 /// A message made around a name or a number ("Couldn't save: …"), by the table's entry with `{}` in their place (`{#}`:
 /// a number only). The translation takes them in the same order, or by place: `{0}`, `{1}`.
-fn filled(t: &[(&str, &str)], english: &str) -> Option<String> {
+fn filled(t: &[(String, String)], english: &str) -> Option<String> {
     let mut best: Option<(usize, &str, Vec<&str>)> = None;
     for (key, to) in t.iter().filter(|(k, _)| k.contains("{}") || k.contains("{#}")) {
         let weight = key.len();
@@ -124,7 +131,7 @@ fn filled(t: &[(&str, &str)], english: &str) -> Option<String> {
         };
         // What fills it may be a name of ours itself (a tool's, a word's).
         match k.and_then(|k| found.get(k)) {
-            Some(f) => out.push_str(t.binary_search_by(|(k, _)| (*k).cmp(f)).map_or(f, |j| t[j].1)),
+            Some(f) => out.push_str(t.binary_search_by(|(k, _)| k.as_str().cmp(f)).map_or(f, |j| &t[j].1)),
             None => out.push_str(&rest[i..i + end + 1]),
         }
         rest = &rest[i + end + 1..];
@@ -164,8 +171,8 @@ fn captures<'a>(key: &str, text: &'a str) -> Option<Vec<&'a str>> {
 /// `english` in the current language (as it is when there's no translation).
 pub fn tr(english: &str) -> &str {
     let t = table(CURRENT.load(Ordering::Relaxed));
-    match t.binary_search_by(|(k, _)| (*k).cmp(english)) {
-        Ok(i) => t[i].1,
+    match t.binary_search_by(|(k, _)| k.as_str().cmp(english)) {
+        Ok(i) => &t[i].1,
         Err(_) => english,
     }
 }
@@ -174,15 +181,24 @@ pub fn tr(english: &str) -> &str {
 mod tests {
     use super::*;
 
+    /// Every text there is to translate (`lang/shapecraft.pot`).
+    fn texts() -> Vec<String> {
+        let blank = include_str!("../../lang/shapecraft.pot").replace("msgstr \"\"", "msgstr \"-\"");
+        po::read(&blank).into_iter().map(|(k, _)| k).collect()
+    }
+
+    /// What a translation can get wrong that matters: a text the app doesn't have (its English was changed by mistake).
+    /// Missing ones are fine, they show in English.
     #[test]
-    fn every_table_is_sorted_and_has_the_same_keys() {
-        let de = table(3);
-        assert!(!de.is_empty());
-        for i in 1..LANGUAGES.len() {
+    fn every_translation_is_of_a_text_the_app_has() {
+        let texts = texts();
+        assert!(texts.len() > 1500);
+        for (i, lang) in LANGUAGES.iter().enumerate().skip(1) {
             let t = table(i);
-            assert!(t.windows(2).all(|w| w[0].0 < w[1].0), "{} isn't sorted", LANGUAGES[i]);
-            assert_eq!(t.iter().map(|p| p.0).collect::<Vec<_>>(), de.iter().map(|p| p.0).collect::<Vec<_>>(), "{}", LANGUAGES[i]);
-            assert!(t.iter().all(|p| !p.1.trim().is_empty()), "{} has an empty translation", LANGUAGES[i]);
+            assert!(t.len() * 2 > texts.len(), "{lang}: only {} texts read", t.len());
+            for (k, _) in t {
+                assert!(texts.binary_search(k).is_ok(), "{lang}: the app has no text {k:?} (is its msgid changed?)");
+            }
         }
     }
 
@@ -194,12 +210,13 @@ mod tests {
         assert_eq!(captures("Opened {} in {}", "Opened Cup in Cura"), Some(vec!["Cup", "Cura"]));
         assert_eq!(captures("Opened {} in {}", "Opened in Cura"), None);
         assert_eq!(captures("{} is ready", "é is ready"), Some(vec!["é"]));
-        let t: &[(&str, &str)] = &[
+        let t = &[
             ("Fillet", "Verrundung"),
             ("Opened {} in {}", "{1}: {0} offen"),
             ("{#} edges", "{#} Kanten"),
             ("{} canceled", "{} abgebrochen"),
-        ];
+        ]
+        .map(|(a, b)| (a.to_string(), b.to_string()));
         assert_eq!(filled(t, "Opened Cup in Cura").as_deref(), Some("Cura: Cup offen"));
         assert_eq!(filled(t, "3 edges").as_deref(), Some("3 Kanten"));
         assert_eq!(filled(t, "Fillet canceled").as_deref(), Some("Verrundung abgebrochen"));

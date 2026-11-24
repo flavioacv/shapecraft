@@ -17,6 +17,10 @@ in the [CHANGELOG](CHANGELOG.md).
 Start with [`docs/architecture.md`](docs/architecture.md): the crates, the command registry, and where each kind
 of change goes. Project rules are in [`AGENTS.md`](AGENTS.md) (clean room, never crash, layering).
 
+## Translations
+
+No programming needed, and nothing to install: [`docs/translating.md`](docs/translating.md).
+
 ## Build and check
 
 See the README for OpenCASCADE. With Nix, `nix develop` (or `direnv allow`) gives the toolchain, OCCT and the window

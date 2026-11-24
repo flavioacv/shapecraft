@@ -2,7 +2,7 @@
 
 How versions are numbered: [`docs/versioning.md`](docs/versioning.md). Newest first.
 
-## 0.12.9-alpha
+## 0.12.10-alpha
 **Nine new tutorials you can click through, the whole app in twelve languages, and a bar that shows your project saving.**
 ### New
 - **Tutorials, rebuilt.** Three beginner courses (a coaster, a pencil cup, a phone stand), then one for each tool worth
@@ -13,7 +13,9 @@ How versions are numbered: [`docs/versioning.md`](docs/versioning.md). Newest fi
 - **Saving shows how far along it is**, in a bar at the bottom right, whenever it takes a moment.
 - **The whole interface in German, French, Italian, Portuguese, Russian, Japanese, Korean and Chinese**, the new texts in
   Spanish and Slovak too. Messages with a name or a number in them follow your language as well, and so do plugins, reports
-  and the failure notes. Corrections are very welcome.
+  and the failure notes. Corrections are very welcome:
+  each language is now a file of its own that opens in the usual translation tools, with a
+  [guide](https://github.com/jackharvest/shapecraft/blob/main/docs/translating.md) for translators.
 ### Changed
 - **Save, Close and Quit no longer freeze the window on a big project.** Saving runs in the background; closing waits for it
   with the bar showing. A save that fails keeps the project open and says why.

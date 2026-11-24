@@ -1,0 +1,7722 @@
+# ShapeCraft in Chinese (Simplified). How to translate: docs/translating.md
+msgid ""
+msgstr ""
+"Project-Id-Version: ShapeCraft\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: crates/ui-egui/src/landing.rs
+msgid "   Date Modified"
+msgstr "   修改日期"
+
+#: crates/ui-egui/src/landing.rs
+msgid "   Folder Tree"
+msgstr "   文件夹树"
+
+#: crates/ui-egui/src/landing.rs
+msgid "   Name"
+msgstr "   名称"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "  · added from a file"
+msgstr "  · 从文件添加"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid " (On)"
+msgstr " （开）"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid " - Auto"
+msgstr " - 自动"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid " items"
+msgstr " 个条目"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid " items, or drag left to select "
+msgstr " 个条目，或向左拖动以选择 "
+
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid " on "
+msgstr " ： "
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid " to filter the selection."
+msgstr " 来筛选所选内容。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid " · older GPUs, some effects may be off"
+msgstr " · 较旧的显卡，部分效果可能关闭"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid " · slower, works almost anywhere"
+msgstr " · 较慢，几乎到处都能用"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "(no description)"
+msgstr "（无说明）"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "+ Folder or NAS…"
+msgstr "+ 文件夹或 NAS…"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid ", one SVG each in a .zip"
+msgstr "，每个一份 SVG，装进 .zip"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid ".\nPress "
+msgstr "。\n请按 "
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid ".shapr Project"
+msgstr ".shapr 项目"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid ".shapr files open with their bodies, sketches and steps, and projects you save from ShapeCraft keep their editable history."
+msgstr ".shapr 文件连同实体、草图和步骤一起打开，从 ShapeCraft 保存的项目也保留可编辑的历史记录。"
+
+#: crates/ui-egui/src/app.rs
+msgid ".shapr project"
+msgstr ".shapr 项目"
+
+msgid "1 axis"
+msgstr "1 条轴"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "1 body"
+msgstr "1 个实体"
+
+msgid "1 curve"
+msgstr "1 条曲线"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "1 edge"
+msgstr "1 条棱边"
+
+#: crates/engine/src/history.rs
+#: crates/engine/src/lib.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "1 face"
+msgstr "1 个面"
+
+msgid "1 image"
+msgstr "1 张图片"
+
+#: crates/ui-egui/src/landing.rs
+msgid "1 item"
+msgstr "1 个条目"
+
+msgid "1 plane"
+msgstr "1 个平面"
+
+msgid "1 point"
+msgstr "1 个点"
+
+#: crates/ui-egui/src/report.rs
+msgid "1 reply"
+msgstr "1 条回复"
+
+msgid "1 sketch"
+msgstr "1 个草图"
+
+#: crates/ui-egui/src/report.rs
+msgid "1. Draw a rectangle\n2. Extrude it 10 mm\n3. …"
+msgstr "1. 画一个矩形\n2. 拉伸 10 mm\n3. …"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "2-Line Centerline"
+msgstr "双线中心线"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "2-Point Centerline"
+msgstr "两点中心线"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "2-Point Circular Centerline"
+msgstr "两点圆形中心线"
+
+#: crates/ui-egui/src/app.rs
+msgid "2D (DXF, SVG)"
+msgstr "2D（DXF、SVG）"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "2D Section View"
+msgstr "2D剖视图"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "3 Points"
+msgstr "3 点"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "3-Point Angle"
+msgstr "三点角度"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "3-Point Arc (A)"
+msgstr "三点圆弧（A）"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "3-Point Circular Centerline"
+msgstr "三点圆形中心线"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "3-Point Ellipse"
+msgstr "三点椭圆"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "3D Guide Points"
+msgstr "3D 引导点"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "3D Manufacturing Format"
+msgstr "3D Manufacturing Format"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "A .shapr project file; one made in another app keeps its history."
+msgstr ".shapr 项目文件；在其他应用中制作的会保留历史记录。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "A 3MF of the bodies, opened straight in your slicer for printing."
+msgstr "实体的 3MF，直接在切片软件中打开以便打印。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "A Folder for Each Computer"
+msgstr "每台电脑一个文件夹"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "A backup can't be inside the Work Folder (or hold it)."
+msgstr "备份不能放在工作文件夹里（也不能包含它）。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "A bare triangle mesh for slicers and mesh tools."
+msgstr "供切片软件和网格工具使用的纯三角网格。"
+
+#: crates/ui-egui/src/setup.rs
+msgid "A copy of every project, kept up to date somewhere else, with older versions to go back to."
+msgstr "每个项目的副本，在别处保持最新，并保留可回退的旧版本。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "A free chat website: your view goes on the clipboard and the site opens."
+msgstr "免费聊天网站：视图会复制到剪贴板并打开网站。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "A minus goes down, into the pot"
+msgstr "负号表示向下，进入花盆"
+
+#: crates/ui-egui/src/setup.rs
+msgid "A moment after every change"
+msgstr "每次更改后片刻"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "A native iPhone app. On iPhone Duo it's the whole modeler: the front screen holds your projects and opening it up takes you into the model, where fingers move the view and a stylus draws and picks. On other iPhones projects open to view: turn them, change the display, take a screenshot or export. Sideload it onto your own phone (docs/ios.md)."
+msgstr "原生 iPhone 应用。在 iPhone Duo 上是完整的建模器：前屏放你的项目，展开就进入模型，用手指移动视图，用笔绘制和选择。在其他 iPhone 上可以查看项目：旋转、切换显示、截图或导出。需自行安装到手机上（docs/ios.md）。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "A network folder: saving waits on the network, and projects can't open while it's away."
+msgstr "网络文件夹：保存要等网络，断开时无法打开项目。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "A new scene around your model. The model itself stays as it is."
+msgstr "在模型周围生成新场景。模型本身保持不变。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "A quick round stroke with Line draws a circle"
+msgstr "用“线”快速画一圈会得到圆"
+
+#: crates/ui-egui/src/report.rs
+msgid "A short summary"
+msgstr "简短概述"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "A sketch's curves, flat in its plane, as an AutoCAD drawing."
+msgstr "草图的曲线，平放在其平面上，作为 AutoCAD 图纸。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "A sketch's curves, flat in its plane, for laser cutters and 2D CAD."
+msgstr "草图的曲线，平放在其平面上，用于激光切割和 2D CAD。"
+
+#: crates/ui-egui/src/tablet/mod.rs
+msgid "A tablet's copy of ShapeCraft stopped. Reload the page to start it again."
+msgstr "平板上的 ShapeCraft 已停止。重新加载页面即可再次启动。"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "About ShapeCraft"
+msgstr "关于 ShapeCraft"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Absolute"
+msgstr "绝对"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Accurate Edge Computation"
+msgstr "精确棱边计算"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Actual"
+msgstr "实际"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Actual Size"
+msgstr "实际尺寸"
+
+#: crates/ui-egui/src/workspace/camera.rs
+msgid "Actual size: 1 mm on the model is 1 mm on the screen"
+msgstr "实际尺寸：模型上的 1 mm 就是屏幕上的 1 mm"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add"
+msgstr "添加"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Add Backup…"
+msgstr "添加备份…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add It to History…"
+msgstr "添加到历史记录…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add Plugin"
+msgstr "添加插件"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add Plugin…"
+msgstr "添加插件…"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Add Text"
+msgstr "添加文字"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Add Variable"
+msgstr "添加变量"
+
+#: crates/ui-egui/src/app.rs
+msgid "Add a Decal"
+msgstr "添加贴花"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Add a Folder or NAS…"
+msgstr "添加文件夹或 NAS…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add features you want. Plugins run sealed off and can only do what they ask for when you add them."
+msgstr "添加你想要的功能。插件在隔离环境中运行，只能做添加时请求的事。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add from File…"
+msgstr "从文件添加…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Add {}?"
+msgstr "添加 {}？"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Added"
+msgstr "已添加"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Adding {}"
+msgstr "正在添加 {}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Adding…"
+msgstr "正在添加…"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Adjust section with arrows"
+msgstr "用箭头调整剖面"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Advanced"
+msgstr "高级"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "After Every Change"
+msgstr "每次更改后"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Align"
+msgstr "对齐"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Alignment"
+msgstr "对齐"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "All"
+msgstr "全部"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "All Formats"
+msgstr "所有格式"
+
+#: crates/ui-egui/src/workspace/area.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "All Items"
+msgstr "所有条目"
+
+#: crates/ui-egui/src/landing.rs
+msgid "All Projects"
+msgstr "所有项目"
+
+#: crates/ui-egui/src/app.rs
+msgid "All Supported Files"
+msgstr "所有支持的文件"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "All Tutorials"
+msgstr "所有教程"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "All done. Nicely done!"
+msgstr "全部完成，做得好！"
+
+#: crates/ui-egui/src/setup.rs
+msgid "All of this is in Preferences later."
+msgstr "这些以后都能在偏好设置中找到。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "All release notes"
+msgstr "所有版本说明"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Allow"
+msgstr "允许"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Allow {} to charge your account?"
+msgstr "允许 {} 向你的账户收费？"
+
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/keys.rs
+msgid "Aluminum"
+msgstr "铝"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Always"
+msgstr "始终"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+#: crates/ui-egui/src/workspace/tools/commit.rs
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+msgid "Always Radius"
+msgstr "始终为半径"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Always Show Constraints"
+msgstr "始终显示约束"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Always Show Dimensions"
+msgstr "始终显示尺寸"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/updates.rs
+msgid "Always Update"
+msgstr "始终更新"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Always show advanced preferences"
+msgstr "始终显示高级偏好设置"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Always update when closing"
+msgstr "关闭时始终更新"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "An AI service on your own account, or one running on this computer."
+msgstr "你自己账户上的 AI 服务，或在这台电脑上运行的服务。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "An assistant connected to ShapeCraft wants {} to make {}. Your view and description go to {}, which charges your account for it{}."
+msgstr "连接到 ShapeCraft 的助手想让 {} 生成 {}。你的视图和描述会发送到 {}，并向你的账户收费{}。"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Anchored Sketch Entity"
+msgstr "锚定的草图元素"
+
+#: crates/doc/src/constraints.rs
+#: crates/doc/src/expr.rs
+#: crates/engine/src/history.rs
+msgid "Angle"
+msgstr "角度"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Angle - 3 points"
+msgstr "角度 - 三点"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Angle Format"
+msgstr "角度格式"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Angle Precision"
+msgstr "角度精度"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Animate Camera"
+msgstr "相机动画"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Animations:"
+msgstr "动画："
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Any round neck or hole can take a screw thread."
+msgstr "任何圆形的瓶颈或孔都可以加螺纹。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Anyone can make one: see docs/plugins.md in ShapeCraft's repository."
+msgstr "任何人都可以做一个：见 ShapeCraft 仓库中的 docs/plugins.md。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Anywhere on the grid: that's the paper you'll draw on"
+msgstr "网格上任意位置都行：这就是你画图的纸"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Aperture"
+msgstr "光圈"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "App Version: {}"
+msgstr "应用版本：{}"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Appearance"
+msgstr "外观"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Apple Pencil may not be connected"
+msgstr "Apple Pencil 可能未连接"
+
+#: crates/ui-egui/src/cloud.rs
+#: crates/ui-egui/src/workspace/slicers.rs
+msgid "Applications"
+msgstr "应用程序"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Apply"
+msgstr "应用"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Arc"
+msgstr "圆弧"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Arc Angle"
+msgstr "圆弧角度"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Architectural (e.g. 1' - 4 1/2\")"
+msgstr "建筑（如 1' - 4 1/2\"）"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Arcs, circles and splines stay curves, not short lines"
+msgstr "圆弧、圆和样条保持为曲线，而不是短线段"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Area Selection"
+msgstr "区域选择"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Area Selection."
+msgstr "区域选择。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Arris parity"
+msgstr "Arris 完成度"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/updates.rs
+msgid "Ask"
+msgstr "询问"
+
+#: crates/ui-egui/src/report.rs
+msgid "Asking GitHub for a code…"
+msgstr "正在向 GitHub 请求代码…"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Auto"
+msgstr "自动"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Auto-constraining"
+msgstr "自动约束"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Auto-orientation"
+msgstr "自动定向"
+
+#: crates/ui-egui/src/graphics.rs
+msgid "Automatic"
+msgstr "自动"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Axis"
+msgstr "轴"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis - 2 Planes"
+msgstr "轴 - 两平面"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis - Along Edge"
+msgstr "轴 - 沿边"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis - Cylinder/Cone"
+msgstr "轴 - 圆柱/圆锥"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis - Perp. to Face"
+msgstr "轴 - 垂直于面"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis Along Edge"
+msgstr "沿边的轴"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis Perpendicular to Face at Point"
+msgstr "过点垂直于面的轴"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis Through 2 Planes"
+msgstr "过两平面的轴"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis Through 2 Points"
+msgstr "过两点的轴"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Axis of Cylinder/Cone"
+msgstr "圆柱/圆锥的轴"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/plugins.rs
+msgid "Back"
+msgstr "返回"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Back Up Here"
+msgstr "备份到这里"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Back Up Now"
+msgstr "立即备份"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Back Up:"
+msgstr "备份："
+
+#: crates/ui-egui/src/app.rs
+msgid "Back to Projects"
+msgstr "返回项目"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Back up:"
+msgstr "备份："
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Backing Up"
+msgstr "正在备份"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Backing up…"
+msgstr "正在备份…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Backing up… {#} of {#}"
+msgstr "正在备份… {#} / {#}"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Backup"
+msgstr "备份"
+
+#: crates/ui-egui/src/backup.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/setup.rs
+msgid "Backups"
+msgstr "备份"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Backups aren't changed here: Restore it to your Work Folder first"
+msgstr "备份不能在这里更改：请先恢复到工作文件夹"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Bakes every step so far into one. Sketches stop driving bodies, and the steps can't be edited again once the project is closed."
+msgstr "把目前的所有步骤合并为一个。草图不再驱动实体，项目关闭后这些步骤无法再编辑。"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Base View"
+msgstr "基础视图"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Basic"
+msgstr "基本"
+
+#: crates/ui-egui/src/report.rs
+msgid "Becomes a public issue on ShapeCraft's GitHub, under your name."
+msgstr "会以你的名义成为 ShapeCraft GitHub 上的公开议题。"
+
+#: crates/ui-egui/src/graphics.rs
+msgid "Best Available"
+msgstr "最佳可用"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Binary"
+msgstr "二进制"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Binary glTF"
+msgstr "二进制 glTF"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Black and White Stage"
+msgstr "黑白舞台"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Blend one shape into another"
+msgstr "从一个形状过渡到另一个形状"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Blur Intensity"
+msgstr "模糊强度"
+
+#: crates/ui-egui/src/workspace/area.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Bodies"
+msgstr "实体"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Bodies with an appearance keep its color"
+msgstr "带外观的实体保留其颜色"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Bodies…"
+msgstr "实体…"
+
+#: crates/engine/src/formats/mesh_out.rs
+#: crates/shapr/src/legacy.rs
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Body"
+msgstr "实体"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Body Edges"
+msgstr "实体棱边"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Boolean"
+msgstr "布尔"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Both"
+msgstr "两者"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Bottom"
+msgstr "下"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Bottom of View"
+msgstr "视图底部"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Bright Exhibition Space"
+msgstr "明亮展厅"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Bring the result back"
+msgstr "取回结果"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Bring your projects to {}?"
+msgstr "把你的项目带到 {}？"
+
+#: crates/plugin-host/src/index.rs
+#: crates/ui-egui/src/plugins.rs
+msgid "Browse"
+msgstr "浏览"
+
+#: crates/doc/src/lib.rs
+msgid "Brushed"
+msgstr "拉丝"
+
+#: crates/ui-egui/src/cloud.rs
+msgid "Business"
+msgstr "办公"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "CLOUD STORAGE ON THIS COMPUTER"
+msgstr "这台电脑上的云存储"
+
+#: crates/ui-egui/src/graphics.rs
+msgid "CPU Only"
+msgstr "仅 CPU"
+
+#: crates/ui-egui/src/workspace/calibrate.rs
+msgid "Calibrate Actual Size"
+msgstr "校准实际尺寸"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Calibrate Actual Size…"
+msgstr "校准实际尺寸…"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Camera"
+msgstr "相机"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Camera Properties"
+msgstr "相机属性"
+
+#: crates/ui-egui/src/backup.rs
+msgid "Can't reach it now. ShapeCraft tries again every 10 minutes."
+msgstr "目前无法访问。ShapeCraft 每 10 分钟重试一次。"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/report.rs
+msgid "Cancel"
+msgstr "取消"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Cancelled."
+msgstr "已取消。"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Capital Height"
+msgstr "大写字高"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Capture"
+msgstr "拍摄"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Center"
+msgstr "中心"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Center Mark"
+msgstr "中心标记"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Center Point"
+msgstr "中心点"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Center to Center"
+msgstr "中心到中心"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Centerlines"
+msgstr "中心线"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Centimeter"
+msgstr "厘米"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Central Angle"
+msgstr "圆心角"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Central Distance"
+msgstr "中心距"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/mod.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Chain"
+msgstr "链"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Chamfer"
+msgstr "倒角"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Chamfer/Fillet"
+msgstr "倒角/圆角"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Chamfer/Fillet (F)"
+msgstr "倒角/圆角（F）"
+
+#: crates/ui-egui/src/workspace/mod.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Change"
+msgstr "更改"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Change, up there, has wood, metal and plastic"
+msgstr "上方的“更改”里有木材、金属和塑料"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Change…"
+msgstr "更改…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Check Again"
+msgstr "再次检查"
+
+#: crates/ui-egui/src/updates.rs
+#: crates/update/src/updater.rs
+msgid "Check Now"
+msgstr "立即检查"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Check for Updates…"
+msgstr "检查更新…"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Check for updates automatically"
+msgstr "自动检查更新"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Check the folder's permissions, then reopen ShapeCraft."
+msgstr "检查文件夹权限，然后重新打开 ShapeCraft。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Check the spelling or try a new search."
+msgstr "检查拼写或换个搜索词。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Checking GitHub…"
+msgstr "正在检查 GitHub…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Checking and installing…"
+msgstr "正在检查并安装…"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Checking for updates…"
+msgstr "正在检查更新…"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Checking…"
+msgstr "正在检查…"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Choose a Folder…"
+msgstr "选择文件夹…"
+
+#: crates/ui-egui/src/setup.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Choose a folder to back up to"
+msgstr "选择备份文件夹"
+
+#: crates/ui-egui/src/app.rs
+msgid "Choose a folder to export to"
+msgstr "选择导出文件夹"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Choose base view orientation, then add it to the sheet and create projections."
+msgstr "选择基准视图的方向，放到图纸上，再创建投影。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Choose one or more file formats to export…"
+msgstr "选择一种或多种要导出的格式…"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Choose one or more formats."
+msgstr "选择一种或多种格式。"
+
+#: crates/ui-egui/src/setup.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Choose your Work Folder"
+msgstr "选择工作文件夹"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Choose…"
+msgstr "选择…"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Chord Width"
+msgstr "弦宽"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Chordal"
+msgstr "弦向"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Chosen: {}"
+msgstr "已选择：{}"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Circle"
+msgstr "圆"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Circle (C)"
+msgstr "圆（C）"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Circular"
+msgstr "圆形"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Circular Annotations:"
+msgstr "圆的标注："
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Circular Pattern"
+msgstr "圆形阵列"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Clear"
+msgstr "清除"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Clearance"
+msgstr "间隙"
+
+#: crates/doc/src/lib.rs
+msgid "Clearcoat"
+msgstr "清漆"
+
+#: crates/ui-egui/src/onboarding.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Click"
+msgstr "点击"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a circle"
+msgstr "点击一个圆"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a circle or arc"
+msgstr "点击圆或圆弧"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a circle or arc, then a circle, arc or line"
+msgstr "点击圆或圆弧，再点击圆、圆弧或线"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Click a face to start. Return finishes; Escape cancels."
+msgstr "点击一个面开始。回车键完成；Escape 取消。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click a line or an arc near an end to grow it to the next curve. Return keeps it; Escape takes it all back."
+msgstr "在线或圆弧的端点附近点击，把它延长到下一条曲线。回车键保留，Escape 全部撤回。"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a point, the corner, then another point"
+msgstr "依次点击一点、顶点和另一点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a point, then a straight edge"
+msgstr "点击一点，再点击直边"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click a straight edge of a view"
+msgstr "点击视图的一条直边"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click a straight or round edge, or a round face, to turn around"
+msgstr "点击作为旋转中心的直边、圆边或圆面"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Click an address to copy it."
+msgstr "点击地址即可复制。"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click an arc"
+msgstr "点击圆弧"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click an edge or round face (or a sketch circle) to repeat around"
+msgstr "点击作为重复中心的棱边或圆面（或草图圆）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click any piece of a curve between crossings to cut it away."
+msgstr "点击两个交点之间的曲线段，把它剪掉。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Click bodies, faces, planes or sketches in the view to change them"
+msgstr "点击视图中的实体、面、平面或草图来更改"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click body edges or faces to copy them into the sketch"
+msgstr "点击实体的棱边或面，复制到草图"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click both ends of one side, then pull out the width. Type to set it"
+msgstr "点击一边的两端，再拉出宽度。输入可设定"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Click cylindrical faces in the view to add or remove them"
+msgstr "点击视图中的圆柱面来添加或移除"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Click edges in the view to add or remove them"
+msgstr "点击视图中的棱边来添加或移除"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Click edges to add or remove them, then Done"
+msgstr "点击棱边来添加或移除，然后点“完成”"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click elsewhere to change the end point. Done applies"
+msgstr "点击别处更改终点。“完成”后应用"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click more curves to turn, then a sketch point to turn them around"
+msgstr "点击更多要旋转的曲线，再点击作为中心的草图点"
+
+#: crates/engine/src/cmd/sketch.rs
+msgid "Click one corner, then the opposite one"
+msgstr "点击一个角，再点击对角"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click one corner, then the opposite one. Type to set the size"
+msgstr "点击一个角，再点击对角。输入可设定尺寸"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Click the bodies to cut in the view, then Done"
+msgstr "点击要切的实体，然后点“完成”"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the center, then a corner. Type to set the size"
+msgstr "点击中心，再点击一个角。输入可设定尺寸"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click the center, then a point on the circle"
+msgstr "点击中心，再点击圆上一点"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the center, then the end of one axis, then pull out the other. Type to set it"
+msgstr "点击中心和一条轴的端点，再拉出另一条。输入可设定"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the center, then the rim. Type to set the radius"
+msgstr "点击中心，再点击圆周。输入可设定半径"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the middle, then one end's center, then pull out the radius. Type to set the length and the radius"
+msgstr "点击中点，再点一端的中心，然后拉出半径。输入数字可设定长度和半径"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the point the plane goes through"
+msgstr "点击平面要通过的点"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the point to move from"
+msgstr "点击移动的起点"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the point to move it to"
+msgstr "点击移动的终点"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the points of a guiding polyline. Escape or Return ends it"
+msgstr "点击引导折线的各点。Escape 或回车键结束"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the points the curve goes through, adding as many segments as you like. Return finishes it."
+msgstr "点击曲线要通过的点，想加多少段都行。回车键完成。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the two end centers, then pull out the radius. Type to set the length and the radius"
+msgstr "点击两端的中心，再拉出半径。输入数字可设定长度和半径"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click the two ends of the arc, then a third point to shape the curve. Return finishes it."
+msgstr "点击圆弧的两端，再点第三点确定形状。回车键完成。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click three points on faces"
+msgstr "点击面上的三个点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click three points on the circle"
+msgstr "点击圆上的三个点"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Click to pick this kernel (takes effect after a restart)"
+msgstr "点击选择此内核（重启后生效）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click to place the ends of the line. Return finishes it; Escape takes back the last temporary segment."
+msgstr "点击放置线的端点。回车键完成；Escape 撤回最后一段。"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Click to place the ends."
+msgstr "点击放置端点。"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click two corners or ends"
+msgstr "点击两个角或端点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click two edges; the centerline runs between them"
+msgstr "点击两条棱边；中心线在它们之间"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click two parallel edges"
+msgstr "点击两条平行棱边"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click two points"
+msgstr "点击两个点"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Click two points on faces or edges"
+msgstr "点击面或棱边上的两个点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click two straight edges"
+msgstr "点击两条直边"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Click where the note goes, type, then press Return"
+msgstr "点击注释的位置，输入文字，再按回车键"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Cliff"
+msgstr "悬崖"
+
+#: crates/ui-egui/src/app_log.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/plugins.rs
+msgid "Close"
+msgstr "关闭"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Close Project"
+msgstr "关闭项目"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Close small gaps, drop tiny edges and faces, and turn faces that point the wrong way."
+msgstr "封闭小缝隙，去除极小的棱边和面，并翻转朝向错误的面。"
+
+#: crates/ui-egui/src/report.rs
+msgid "Closed"
+msgstr "已关闭"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Coincident"
+msgstr "重合"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Collapse All"
+msgstr "全部折叠"
+
+#: crates/engine/src/formats/fbx.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Color"
+msgstr "颜色"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Colored Mood"
+msgstr "彩色氛围"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Coming from another CAD"
+msgstr "来自其他 CAD"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Computers sharing a Work Folder share one backup too."
+msgstr "共享工作文件夹的电脑也共享一份备份。"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Concentric"
+msgstr "同心"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Connect an AI to start"
+msgstr "先连接一个 AI"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Connect or pair your Apple Pencil, then tap with it. ShapeCraft picks and draws with the Pencil; fingers only move the view."
+msgstr "连接或配对 Apple Pencil，然后用它轻点。ShapeCraft 用 Pencil 选择和绘制；手指只移动视图。"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Connect or pair your stylus, then tap with it. ShapeCraft needs a stylus the device reports as a pen (an S Pen or a USI pen, for example). Rubber-tip styluses count as fingers, and fingers only move the view."
+msgstr "连接或配对触控笔，然后用它轻点。ShapeCraft 需要设备识别为笔的触控笔（例如 S Pen 或 USI 笔）。橡胶头的算作手指，而手指只移动视图。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Connect the AI you'd like to use, then press Generative Render in Visualization. You'll find it any time in Preferences ▸ Plugins."
+msgstr "连接你想用的 AI，然后在可视化中按 Generative Render。随时可在“偏好设置 ▸ 插件”中找到。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Connected curves are written as one shape"
+msgstr "相连的曲线写成一个形状"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Connected: {}"
+msgstr "已连接：{}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Connections and settings"
+msgstr "连接与设置"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Connect…"
+msgstr "连接…"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Constraining several elements moves the others to meet this one (constraints already there win)."
+msgstr "约束多个元素时，其他元素会移向这一个（已有的约束优先）。"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Constraint & Locked Dimension Visibility"
+msgstr "约束与锁定尺寸的显示"
+
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Constraint Settings"
+msgstr "约束设置"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Constraints"
+msgstr "约束"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Construct"
+msgstr "构建"
+
+#: crates/engine/src/cmd/file/shapr.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Construction"
+msgstr "构造"
+
+#: crates/ui-egui/src/setup.rs
+#: crates/ui-egui/src/workspace/tutorial.rs
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Continue"
+msgstr "继续"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Continuity"
+msgstr "连续性"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Control Point Spline (I)"
+msgstr "控制点样条（I）"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Copied 1 item"
+msgstr "已复制 1 个条目"
+
+#: crates/ui-egui/src/report.rs
+msgid "Copied for you to paste into the issue after sending"
+msgstr "已复制，发送后粘贴到议题中"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Copied {#} items"
+msgstr "已复制 {#} 个条目"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Copied."
+msgstr "已复制。"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Copies made with Move or Rotate Around Axis can stay linked to the original, or become their own bodies with the Link badge turned off."
+msgstr "用移动或绕轴旋转做的副本可以保持与原件链接，也可以关闭链接标记成为独立实体。"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Copy"
+msgstr "复制"
+
+#: crates/ui-egui/src/app_log.rs
+msgid "Copy All"
+msgstr "全部复制"
+
+#: crates/ui-egui/src/report.rs
+msgid "Copy Code and Open GitHub"
+msgstr "复制代码并打开 GitHub"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Copy Description"
+msgstr "复制描述"
+
+msgid "Copy Screenshot to Clipboard"
+msgstr "复制截图到剪贴板"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Copy a part around a circle, and cut one part with another"
+msgstr "绕圈复制零件，并用一个零件切另一个"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Copy the View"
+msgstr "复制视图"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Copy the description"
+msgstr "复制描述"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Corner"
+msgstr "角点"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Corner Type"
+msgstr "角点类型"
+
+#: crates/ui-egui/src/backup.rs
+msgid "Couldn't back up: {}"
+msgstr "无法备份：{}"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Couldn't check for updates: {}"
+msgstr "无法检查更新：{}"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/updates.rs
+msgid "Couldn't check: {}"
+msgstr "无法检查：{}"
+
+#: crates/ui-egui/src/workspace/mod.rs
+msgid "Couldn't copy the view: {}"
+msgstr "无法复制视图：{}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't export {}"
+msgstr "无法导出 {}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't export {} for {}"
+msgstr "无法为 {1} 导出 {0}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't install the update: {}"
+msgstr "无法安装更新：{}"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/folder_access.rs
+msgid "Couldn't open {}: is it installed?"
+msgstr "无法打开 {}：是否已安装？"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't open “{}”: its bodies file can't be read ({})"
+msgstr "无法打开“{}”：其实体文件无法读取（{}）"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't open “{}”: {}"
+msgstr "无法打开“{}”：{}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't save preferences: {}"
+msgstr "无法保存偏好设置：{}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't save the image: {}"
+msgstr "无法保存图片：{}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't save: {}"
+msgstr "无法保存：{}"
+
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "Couldn't start the import: {}"
+msgstr "无法开始导入：{}"
+
+#: crates/ui-egui/src/app.rs
+msgid "Couldn't use {}: {}"
+msgstr "无法使用 {}：{}"
+
+#: crates/engine/src/formats/fbx.rs
+#: crates/engine/src/history.rs
+msgid "Count"
+msgstr "数量"
+
+#: crates/ui-egui/src/report.rs
+msgid "Crash record"
+msgstr "崩溃记录"
+
+#: crates/ui-egui/src/workspace/panels/variables.rs
+#: crates/ui-egui/src/workspace/viewport/paint.rs
+msgid "Create"
+msgstr "创建"
+
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Create Drawing"
+msgstr "创建工程图"
+
+#: crates/ui-egui/src/workspace/viewport/paint.rs
+msgid "Create {}…"
+msgstr "创建 {}…"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Curvature"
+msgstr "曲率"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Curvature Map"
+msgstr "曲率图"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Curvature Map Analysis"
+msgstr "曲率图分析"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Curves"
+msgstr "曲线"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/export.rs
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Custom"
+msgstr "自定义"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Custom Base View…"
+msgstr "自定义基准视图…"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Custom Length"
+msgstr "自定义长度"
+
+#: crates/ui-egui/src/app.rs
+msgid "Custom Material"
+msgstr "自定义材质"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Customize…"
+msgstr "自定义…"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Cut a slice: Subtract takes one part out of another."
+msgstr "切一块下来：“减去”从一个零件中去掉另一个。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Cut a slot for the phone to rest in."
+msgstr "切一道放手机的槽。"
+
+#: crates/ui-egui/src/workspace/decals.rs
+msgid "Cylindrical"
+msgstr "圆柱形"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/export.rs
+msgid "DWG from Drawing"
+msgstr "从图纸生成 DWG"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "DWG from Drawing…"
+msgstr "从图纸生成 DWG…"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "DWG from Sketch"
+msgstr "从草图生成 DWG"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "DWG from Sketch…"
+msgstr "从草图生成 DWG…"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/export.rs
+msgid "DXF from Drawing"
+msgstr "从图纸生成 DXF"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "DXF from Drawing…"
+msgstr "从图纸生成 DXF…"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "DXF from Sketch"
+msgstr "从草图生成 DXF"
+
+#: crates/engine/src/cmd/file/export.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "DXF from Sketch…"
+msgstr "从草图生成 DXF…"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/setup.rs
+msgid "Dark"
+msgstr "深色"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Dark Exhibition Space"
+msgstr "暗色展厅"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Date Format"
+msgstr "日期格式"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Date Modified (Latest to Oldest)"
+msgstr "修改日期（从新到旧）"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Date Modified (Oldest to Latest)"
+msgstr "修改日期（从旧到新）"
+
+#: crates/engine/src/cmd/visual.rs
+#: crates/ui-egui/src/workspace/decals.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Decal"
+msgstr "贴花"
+
+#: crates/doc/src/lib.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Decimal"
+msgstr "小数"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Decimal (e.g. 1.375')"
+msgstr "小数（如 1.375'）"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Decimal (e.g. 27.25°)"
+msgstr "小数（如 27.25°）"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Decimal Separator"
+msgstr "小数点符号"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Default"
+msgstr "默认"
+
+#: crates/ui-egui/src/workspace/slicers.rs
+msgid "Default 3MF App"
+msgstr "默认 3MF 应用"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Default Body Color"
+msgstr "默认实体颜色"
+
+#: crates/doc/src/lib.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Default Material"
+msgstr "默认材质"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Default View"
+msgstr "默认视图"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Definition"
+msgstr "定义"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Degree Format"
+msgstr "角度格式"
+
+#: crates/doc/src/lib.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Degrees, Minutes, Seconds"
+msgstr "度、分、秒"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/shapr/src/lib.rs
+#: crates/shapr/src/write.rs
+msgid "Delete"
+msgstr "删除"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Delete Section"
+msgstr "删除截面"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Delete Sketches"
+msgstr "删除草图"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Delete Variables"
+msgstr "删除变量"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Delete key"
+msgstr "Delete 键"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Describe a scene and get a picture of your model in it."
+msgstr "描述一个场景，得到模型身处其中的图片。"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Deselect All"
+msgstr "取消全选"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Detail Marks"
+msgstr "局部标记"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Detail View"
+msgstr "局部视图"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Details"
+msgstr "详情"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Deviation"
+msgstr "偏差"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Diagonal"
+msgstr "对角线"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Diameter"
+msgstr "直径"
+
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+msgid "Diameter ⌄"
+msgstr "直径 ⌄"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Dimension Lines"
+msgstr "尺寸线"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Dimensions"
+msgstr "尺寸"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Direction"
+msgstr "方向"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Disconnect"
+msgstr "断开"
+
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Display Modes"
+msgstr "显示模式"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Display clicks"
+msgstr "显示点击"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Display keyboard presses"
+msgstr "显示按键"
+
+#: crates/doc/src/constraints.rs
+#: crates/engine/src/cmd/sketch.rs
+#: crates/engine/src/history.rs
+msgid "Distance"
+msgstr "距离"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Distance - 2 points"
+msgstr "距离 - 两点"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/mod.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Distance Type"
+msgstr "距离类型"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Distant Edges"
+msgstr "远处棱边"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Do It for Me"
+msgstr "替我完成"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/cloud.rs
+msgid "Documents"
+msgstr "文稿"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Don't Allow"
+msgstr "不允许"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Don't show this again"
+msgstr "不再显示"
+
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/report.rs
+#: crates/ui-egui/src/workspace/calibrate.rs
+msgid "Done"
+msgstr "完成"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Done / Cancel Buttons:"
+msgstr "完成/取消按钮："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Done Adding"
+msgstr "结束添加"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Double"
+msgstr "双倍"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the cake to select all of it"
+msgstr "双击蛋糕以选中整个蛋糕"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the candle to select all of it"
+msgstr "双击蜡烛以选中整根蜡烛"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the coaster to select all of it"
+msgstr "双击杯垫以选中整个杯垫"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the cup to select all of it"
+msgstr "双击笔筒以选中整个笔筒"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the handle to select all of it"
+msgstr "双击把手以选中整个把手"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the plate to select all of it"
+msgstr "双击底板以选中整块底板"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the stand to select all of it"
+msgstr "双击支架以选中整个支架"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Double-click the tray to select all of it"
+msgstr "双击托盘以选中整个托盘"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Down"
+msgstr "向下"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Download"
+msgstr "下载"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Download updates in the background"
+msgstr "在后台下载更新"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Downloading ShapeCraft {} · {}"
+msgstr "正在下载 ShapeCraft {} · {}"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Downloading in the background."
+msgstr "正在后台下载。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Downloading {}…"
+msgstr "正在下载 {}…"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Draft Angle"
+msgstr "拔模角度"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Drag an arrow to slide the cup"
+msgstr "拖动箭头来移动笔筒"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Drag left to select "
+msgstr "向左拖动以选择 "
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Drag right to select "
+msgstr "向右拖动以选择 "
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Drag the arrow to set the radius; click corners to add or take them away."
+msgstr "拖动箭头设定半径；点击角来添加或去掉。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Drag the handle around the axis, or type an angle"
+msgstr "绕轴拖动手柄，或输入角度"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Drag the handle to turn the plane about the edge, or type an angle"
+msgstr "拖动手柄让平面绕棱边转动，或输入角度"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Drag the handles to move or turn the text"
+msgstr "拖动手柄来移动或旋转文字"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Drag the point along the edge"
+msgstr "沿棱边拖动该点"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Drag the view cube in the top-right corner to orbit freely; it stays where you let go. Clicking a face, edge or corner still jumps to that view, and double-clicking goes back to the default."
+msgstr "拖动右上角的视图立方体可自由旋转，松手后停在原处。点击面、棱边或角仍会跳到该视图，双击回到默认视图。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Drag the view cube to turn the view"
+msgstr "拖动视图立方体来转动视图"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Drag with one finger to turn the view"
+msgstr "用一根手指拖动来转动视图"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Draw (a round stroke makes a circle), and drag handles and arrows."
+msgstr "绘制（画一圈得到圆），拖动手柄和箭头。"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Draw a circle from its centre to define the magnified area"
+msgstr "从中心画圆，确定放大区域"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Draw a line to create a section line; reference points help alignment"
+msgstr "画一条剖切线；参考点有助于对齐"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Draw a strip along the back edge"
+msgstr "沿后边画一条窄带"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Draw lines with the pen. A round stroke draws a circle."
+msgstr "用笔画线。画一圈得到圆。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Draw on a part, add to it and cut into it"
+msgstr "在零件上画图、添加和切除"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Draw the base of the stand."
+msgstr "画出支架的底座。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Draw the bottom of the cup."
+msgstr "画出笔筒的底。"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Drawing"
+msgstr "图纸"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Drawing Preferences"
+msgstr "图纸偏好设置"
+
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Drawing Properties"
+msgstr "图纸属性"
+
+#: crates/ui-egui/src/app.rs
+msgid "Drawing on the processor, so things may feel slow. See Preferences ▸ ShapeCraft."
+msgstr "正在用处理器绘制，可能会慢。见“偏好设置 ▸ ShapeCraft”。"
+
+#: crates/kernel/src/lib.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Drawings"
+msgstr "工程图"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Draws the sketch, face on; select faces to draw their outlines"
+msgstr "正视绘制草图；选择面可绘制其轮廓"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Draws {#} sketches, each face on, one SVG each in a .zip"
+msgstr "绘制 {#} 个草图，各自正视，每个一份 SVG，装进 .zip"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Drink Coaster"
+msgstr "杯垫"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Duplicate"
+msgstr "创建副本"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Edge"
+msgstr "边"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Edges"
+msgstr "棱边"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/report.rs
+msgid "Edit"
+msgstr "编辑"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Edit Section View"
+msgstr "编辑剖视图"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Edit Sketch"
+msgstr "编辑草图"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Edit the description"
+msgstr "编辑描述"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Edit this step's settings, or recreate what it was built on"
+msgstr "编辑此步骤的设置，或重建它所依据的内容"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Edit..."
+msgstr "编辑..."
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Edit…"
+msgstr "编辑…"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Eleven languages"
+msgstr "十一种语言"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Ellipse"
+msgstr "椭圆"
+
+#: crates/engine/src/history.rs
+msgid "Emboss"
+msgstr "压印"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Enclosing Folder"
+msgstr "上级文件夹"
+
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Endpoint"
+msgstr "端点"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Enter Full Screen"
+msgstr "进入全屏"
+
+#: crates/ui-egui/src/report.rs
+msgid "Enter this code on GitHub:"
+msgstr "在 GitHub 上输入此代码："
+
+#: crates/engine/src/cmd/visual.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Environment"
+msgstr "环境"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Environment Properties"
+msgstr "环境属性"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Equal"
+msgstr "相等"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Equal Distance"
+msgstr "等距"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Esc "
+msgstr "Esc "
+
+#: crates/ui-egui/src/tablet/session.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Escape"
+msgstr "Escape"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Every shape starts as a drawing. Draw a circle."
+msgstr "每个形状都从一张图开始。画一个圆。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Every shortcut, as on the computer."
+msgstr "所有快捷键，与电脑上相同。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Everything Else"
+msgstr "其他一切"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Exact sizes, hollowing out, and moving things"
+msgstr "精确尺寸、挖空和移动"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Exact solid bodies that every CAD system and most renderers read."
+msgstr "精确实体，所有 CAD 和大多数渲染器都能读取。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Exact solids for Parasolid-based CAD; several bodies give one file each."
+msgstr "用于 Parasolid 系 CAD 的精确实体；多个实体各成一个文件。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Exact surfaces and solids for older CAD and CAM software."
+msgstr "用于较旧 CAD 和 CAM 软件的精确曲面和实体。"
+
+#: crates/ui-egui/src/report.rs
+msgid "Exactly what will be sent"
+msgstr "将要发送的内容"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Exit Isolation"
+msgstr "退出隔离"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Exit Measure"
+msgstr "退出测量"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Exit Screenshot"
+msgstr "退出截图"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Exit Sketching"
+msgstr "退出草图"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Export"
+msgstr "导出"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Export ({#})"
+msgstr "导出（{#}）"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Export Drawing"
+msgstr "导出图纸"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Export drawing…"
+msgstr "导出图纸…"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Export to"
+msgstr "导出到"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Export to Slicer…"
+msgstr "导出到切片软件…"
+
+#: crates/ui-egui/src/app.rs
+msgid "Exported {}"
+msgstr "已导出 {}"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Export…"
+msgstr "导出…"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Extend"
+msgstr "延伸"
+
+#: crates/ui-egui/src/workspace/decals.rs
+msgid "Extend to adjacent faces"
+msgstr "延伸到相邻面"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Extent"
+msgstr "范围"
+
+#: crates/engine/src/history.rs
+#: crates/shapr/src/json_nodes.rs
+#: crates/shapr/src/lib.rs
+msgid "Extrude"
+msgstr "拉伸"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Extrude - From Plane"
+msgstr "拉伸 - 从平面"
+
+#: crates/engine/src/cmd/mod.rs
+#: crates/engine/src/cmd/model/mod.rs
+msgid "Extrude - One-Sided"
+msgstr "拉伸 - 单侧"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Extrude - One-Sided (E)"
+msgstr "拉伸 - 单侧（E）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Extrude - To Object"
+msgstr "拉伸 - 到对象"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Extrusion"
+msgstr "拉伸"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Faces"
+msgstr "面"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Faces to Replace"
+msgstr "要替换的面"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Faces to Thread"
+msgstr "要加螺纹的面"
+
+#: crates/engine/src/history.rs
+msgid "Factor"
+msgstr "系数"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Fancy animations"
+msgstr "精美动画"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Field of View"
+msgstr "视野"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Field of View…"
+msgstr "视野…"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "File"
+msgstr "文件"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "File Name"
+msgstr "文件名"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Files are named after the items"
+msgstr "文件以条目命名"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "File…"
+msgstr "文件…"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Fill (Beta)"
+msgstr "填充 (Beta)"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/cmd/sketch.rs
+#: crates/engine/src/history.rs
+msgid "Fillet"
+msgstr "圆角"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Fillet Continuity"
+msgstr "圆角连续性"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Fillet Corner"
+msgstr "圆角拐角"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Fillet Size Type"
+msgstr "圆角尺寸类型"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Fillet Sketch"
+msgstr "草图圆角"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Fillet and Split Body show a card with every setting of the step, both while the tool runs and when you edit it from History. Drag the card anywhere; its ⋯ menu decides when it opens."
+msgstr "圆角和分割实体会显示一张卡片，列出该步骤的所有设置，使用工具时和从历史记录编辑时都有。卡片可随意拖动，⋯ 菜单决定何时打开。"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Fillet rounds corners inside a sketch: start one first"
+msgstr "圆角用于草图中的角：请先开始一个草图"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Fillets always run on along tangent edges here"
+msgstr "这里的圆角总是沿相切棱边延续"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Finger double tap"
+msgstr "手指轻点两下"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Finish"
+msgstr "完成"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "First Angle"
+msgstr "第一角"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "First Selected"
+msgstr "首先选中的"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "First, look around. This is the coaster you'll make."
+msgstr "先四处看看。这就是你要做的杯垫。"
+
+#: crates/shapr/src/lib.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Fit"
+msgstr "适配"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Fit Point Spline (I)"
+msgstr "拟合点样条（I）"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Fix…"
+msgstr "修复…"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Flip Alignment"
+msgstr "翻转对齐"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Flip Start Side"
+msgstr "翻转起始侧"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Flip it with the badge, then Done"
+msgstr "用标记翻转，再点“完成”"
+
+msgid "Folder Tree"
+msgstr "文件夹树"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Font"
+msgstr "字体"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Foot"
+msgstr "英尺"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Foot & Inch Format"
+msgstr "英尺与英寸格式"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Forward"
+msgstr "前进"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Four pictures to pick from."
+msgstr "四张图片供选择。"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Fractional (e.g. 27°15')"
+msgstr "分数（如 27°15'）"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "From 0 (coarsest curves) to 100 (smoothest)"
+msgstr "从 0（最粗糙）到 100（最平滑）"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "From Plane"
+msgstr "从平面"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "From Profile"
+msgstr "从轮廓"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "From ShapeCraft"
+msgstr "来自 ShapeCraft"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "From the Community (reviewed)"
+msgstr "来自社区（已审核）"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "From the back left corner to a point on the right edge"
+msgstr "从左后角到右边上的一点"
+
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/engine/src/drawing.rs
+msgid "Front"
+msgstr "前"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Front, Left, Top, Isometric"
+msgstr "前、左、上、等轴测"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Full Length"
+msgstr "全长"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "G1 - Tangent"
+msgstr "G1 - 相切"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "G2 - Curvature"
+msgstr "G2 - 曲率"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "GPU:"
+msgstr "显卡："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "General"
+msgstr "通用"
+
+#: crates/plugin-host/src/panel.rs
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Generate"
+msgstr "生成"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/gemini.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Generating scene…"
+msgstr "正在生成场景…"
+
+#: crates/plugin-host/src/manifest.rs
+#: crates/plugin-host/src/panel.rs
+#: crates/ui-egui/src/plugins.rs
+msgid "Generative Render"
+msgstr "Generative Render"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Geometries"
+msgstr "几何体"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Geometry Kernel"
+msgstr "几何内核"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Get ShapeCraft {} on GitHub"
+msgstr "在 GitHub 上获取 ShapeCraft {}"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Get Started"
+msgstr "入门"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Get {}"
+msgstr "获取 {}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Getting the list…"
+msgstr "正在获取列表…"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Give the cup a color."
+msgstr "给笔筒上色。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Give the stand a color."
+msgstr "给支架上色。"
+
+#: crates/doc/src/lib.rs
+msgid "Glossy"
+msgstr "高光"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Go"
+msgstr "前往"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Go to Modeling"
+msgstr "前往建模"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Got it"
+msgstr "知道了"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Grab the cube to turn the view"
+msgstr "抓住立方体转动视图"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Gradient Mood"
+msgstr "渐变氛围"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Graphics:"
+msgstr "图形："
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Grid"
+msgstr "网格"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Grid Position"
+msgstr "网格位置"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Ground Plane"
+msgstr "地平面"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Guide Points"
+msgstr "引导点"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Half a knob's outline, spun all the way round, is a knob."
+msgstr "半个拉手的轮廓转一整圈，就是拉手。"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Healing"
+msgstr "修复"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Help"
+msgstr "帮助"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Help Arris get to 100%"
+msgstr "帮助 Arris 达到 100%"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Hexadecimal"
+msgstr "十六进制"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Hexagon"
+msgstr "六边形"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Hidden Lines"
+msgstr "隐藏线"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Hide ShapeCraft"
+msgstr "隐藏 ShapeCraft"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/export.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "High"
+msgstr "高"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "High (Default)"
+msgstr "高（默认）"
+
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "History"
+msgstr "历史记录"
+
+#: crates/ui-egui/src/workspace/calibrate.rs
+msgid "Hold a bank card against the screen and drag the blue card's right edge (or use − and +) until both are the same size."
+msgstr "把银行卡贴在屏幕上，拖动蓝色卡片的右边（或用 − 和 +），直到两者一样大。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Hollow it out with Shell."
+msgstr "用“抽壳”把它挖空。"
+
+#: crates/doc/src/constraints.rs
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/file/drawing.rs
+msgid "Horizontal"
+msgstr "水平"
+
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Horizontal/Vertical"
+msgstr "水平/垂直"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Hotkeys"
+msgstr "快捷键"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "How close our Rust kernel is to Open CASCADE"
+msgstr "我们的 Rust 内核与 Open CASCADE 的接近程度"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "How do you want to use ShapeCraft on this device?"
+msgstr "你想在这台设备上怎样使用 ShapeCraft？"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "How do you want to use ShapeCraft on this tablet?"
+msgstr "你想在这台平板上怎样使用 ShapeCraft？"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "How far the triangles may be off the real surface"
+msgstr "三角形可以偏离真实表面多少"
+
+#: crates/ui-egui/src/setup.rs
+msgid "How should ShapeCraft look?"
+msgstr "ShapeCraft 用什么外观？"
+
+#: crates/report/src/draft.rs
+#: crates/report/src/github.rs
+#: crates/ui-egui/src/report.rs
+msgid "Idea"
+msgstr "想法"
+
+#: crates/ui-egui/src/app.rs
+msgid "If both computers change it, you'll end up with two versions."
+msgstr "如果两台电脑都作了更改，最后会有两个版本。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "If macOS asks to let ShapeCraft use your Documents folder, choose Allow."
+msgstr "如果 macOS 询问是否让 ShapeCraft 使用“文稿”文件夹，请选“允许”。"
+
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Image"
+msgstr "图像"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Images"
+msgstr "图片"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Image…"
+msgstr "图片…"
+
+#: crates/engine/src/history.rs
+#: crates/shapr/src/lib.rs
+#: crates/ui-egui/src/app.rs
+msgid "Import"
+msgstr "导入"
+
+#: crates/engine/src/cmd/visual.rs
+#: crates/ui-egui/src/app.rs
+msgid "Import Environment"
+msgstr "导入环境"
+
+#: crates/engine/src/cmd/file/import.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Import File…"
+msgstr "导入文件…"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Import Image as Decal..."
+msgstr "将图片作为贴花导入…"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Import Material…"
+msgstr "导入材质…"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Import Panorama…"
+msgstr "导入全景图…"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Import Preferences"
+msgstr "导入偏好设置"
+
+#: crates/engine/src/cmd/file/import.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Import Project…"
+msgstr "导入项目…"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Import as new project..."
+msgstr "作为新项目导入…"
+
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "Import canceled"
+msgstr "已取消导入"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Import:"
+msgstr "导入："
+
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "Importing"
+msgstr "正在导入"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Import…"
+msgstr "导入…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "In testing: an early look, not finished. Rough edges are expected."
+msgstr "测试中：抢先看，尚未完成。可能有些粗糙。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "In testing: {#} of {#} modeling checks pass"
+msgstr "测试中：{#} / {#} 项建模检查通过"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "In use: {} ({})"
+msgstr "正在使用：{}（{}）"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "In {}: every computer that uses this folder has the same projects and Recents. You're warned before opening a project that's open on another computer."
+msgstr "在 {} 中：使用此文件夹的每台电脑都有相同的项目和最近记录。打开在另一台电脑上已打开的项目前会提醒你。"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Inch"
+msgstr "英寸"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Include 4 Views"
+msgstr "包含 4 个视图"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Include Body Colors"
+msgstr "包含实体颜色"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Include Hidden Items"
+msgstr "包含隐藏条目"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Include Tangent Edges"
+msgstr "包含相切边"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Include Visualization Materials"
+msgstr "包含可视化材质"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Include X, Y, Z Deltas"
+msgstr "包含 X、Y、Z 差值"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Input Device:"
+msgstr "输入设备："
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Insert"
+msgstr "插入"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Insert Breakpoint"
+msgstr "插入断点"
+
+#: crates/engine/src/cmd/file/import.rs
+#: crates/ui-egui/src/app.rs
+msgid "Insert Image"
+msgstr "插入图片"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Installed. Open {} and sign in."
+msgstr "已安装。打开 {} 并登录。"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Interference"
+msgstr "干涉"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Interference - {} / {}"
+msgstr "干涉 - {} / {}"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/shapr/src/lib.rs
+msgid "Intersect"
+msgstr "相交"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Intersect (Ctrl+I)"
+msgstr "相交（Ctrl+I）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Intersect (⌘ I)"
+msgstr "相交（⌘ I）"
+
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Intersection"
+msgstr "交点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Intersection Mark"
+msgstr "交点标记"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Invert Body Visibility"
+msgstr "反转实体可见性"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Invert Visibility"
+msgstr "反转可见性"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Invert X"
+msgstr "反转 X"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Invert Y"
+msgstr "反转 Y"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Isolate"
+msgstr "隔离"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Isometric"
+msgstr "等轴测"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "It doesn't have to go all the way round. Stop half-way."
+msgstr "不必转一整圈。转到一半就停。"
+
+#: crates/ui-egui/src/updates.rs
+msgid "It installs when you close ShapeCraft."
+msgstr "关闭 ShapeCraft 时安装。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "It may: {}."
+msgstr "它可以：{}。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "It runs sealed off, with only the permissions you just saw."
+msgstr "它在隔离环境中运行，只有你刚才看到的权限。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "It will be able to"
+msgstr "它将能够"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "It's a plugin, so ShapeCraft stays lean for everyone who doesn't use it."
+msgstr "它是插件，这样不用它的人也能保持 ShapeCraft 轻巧。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "It's in the top right corner. You can't break anything by looking"
+msgstr "它在右上角。随便看，不会弄坏任何东西"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "It's on the clipboard: click the message box and press {}."
+msgstr "已在剪贴板中：点击消息框并按 {}。"
+
+#: crates/ui-egui/src/report.rs
+msgid "It's on your clipboard. Open the issue and press {} in the comment box."
+msgstr "已在剪贴板中。打开议题并在评论框中按 {}。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "It's the axis the outline spins around"
+msgstr "轮廓绕着这条轴旋转"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Item"
+msgstr "条目"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Items"
+msgstr "条目"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Items to Project"
+msgstr "要投影的条目"
+
+#: crates/ui-egui/src/backup.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Its app isn't signed in on this computer."
+msgstr "它的应用在这台电脑上未登录。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Join Segments"
+msgstr "连接线段"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Join faces that touch into closed bodies, so they can be modeled on afterwards."
+msgstr "把相接的面连成封闭实体，以便之后建模。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Join the tray and both handles into one part."
+msgstr "把托盘和两个把手合成一个零件。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Keep Curves"
+msgstr "保留曲线"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Keep Older Versions:"
+msgstr "保留旧版本："
+
+#: crates/ui-egui/src/workspace/step_card.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Keep Originals"
+msgstr "保留原件"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Keep Originals of"
+msgstr "保留原件："
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Keep Sketches"
+msgstr "保留草图"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Keep Variables"
+msgstr "保留变量"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Keep a backup?"
+msgstr "要保留备份吗？"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Keep as a Project"
+msgstr "留作项目"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Keep it to go on working on it, or go on to the next."
+msgstr "留下它继续做，或进入下一个。"
+
+#: crates/ui-egui/src/app_log.rs
+msgid "Kept only while ShapeCraft runs."
+msgstr "仅在 ShapeCraft 运行时保留。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Keyboard"
+msgstr "键盘"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Keyboard\nShortcuts"
+msgstr "键盘\n快捷键"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Keyboard Shortcuts"
+msgstr "键盘快捷键"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Keyboard Shortcuts:"
+msgstr "键盘快捷键："
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Keyboard Shortcuts…"
+msgstr "键盘快捷键…"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Landscape"
+msgstr "横向"
+
+msgid "Language"
+msgstr "语言"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Language:"
+msgstr "语言："
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Last Selected"
+msgstr "最后选中的"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Last, choose a color."
+msgstr "最后，选一种颜色。"
+
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/updates.rs
+msgid "Later"
+msgstr "以后"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Learn a Tool"
+msgstr "学习一个工具"
+
+#: crates/doc/src/lib.rs
+msgid "Leather"
+msgstr "皮革"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Leave Them"
+msgstr "留在原处"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Left"
+msgstr "左"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Left Hand"
+msgstr "左旋"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Left to undo, right to redo."
+msgstr "左边撤销，右边重做。"
+
+#: crates/doc/src/expr.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Length"
+msgstr "长度"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Length - {}"
+msgstr "长度 - {}"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Length Precision"
+msgstr "长度精度"
+
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Letter"
+msgstr "信纸"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/setup.rs
+msgid "Light"
+msgstr "浅色"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Light Intensity"
+msgstr "光照强度"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Light Rotation"
+msgstr "光照旋转"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Limits"
+msgstr "限制"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Line"
+msgstr "直线"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Line (L)"
+msgstr "线（L）"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Line Length"
+msgstr "线长"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Line Widths"
+msgstr "线宽"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Line-to-Line Angle"
+msgstr "线间角度"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Line-to-Line Distance"
+msgstr "线间距离"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Linear"
+msgstr "线性"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Linear Pattern"
+msgstr "线性阵列"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Linked and unlinked copies"
+msgstr "链接与未链接的副本"
+
+#: crates/ui-egui/src/report.rs
+#: crates/ui-egui/src/tablet/http.rs
+msgid "Linux"
+msgstr "Linux"
+
+#: crates/doc/src/project.rs
+#: crates/ui-egui/src/landing.rs
+msgid "Local"
+msgstr "本地"
+
+#: crates/doc/src/constraints.rs
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Lock"
+msgstr "锁定"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Lock Grid Size"
+msgstr "锁定网格大小"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Lock Grid Size ({})"
+msgstr "锁定网格大小（{}）"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Loft"
+msgstr "放样"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Loft: a Flower Pot"
+msgstr "放样：花盆"
+
+#: crates/report/src/draft.rs
+#: crates/ui-egui/src/app_log.rs
+msgid "Log"
+msgstr "日志"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Look"
+msgstr "外观"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Look around, draw a circle and pull it into a solid"
+msgstr "四处看看，画一个圆，把它拉成实体"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Looking for cloud storage apps…"
+msgstr "正在查找云存储应用…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Looking for it…"
+msgstr "正在查找…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Looking it up…"
+msgstr "正在查找…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Looking…"
+msgstr "正在查找…"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Loose"
+msgstr "松"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/workspace/export.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Low"
+msgstr "低"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Lower Limit"
+msgstr "下限"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Made by the service you picked, on your own account or computer."
+msgstr "由你选择的服务在你自己的账户或电脑上生成。"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Make Construction"
+msgstr "设为构造"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Make as many as your provider allows"
+msgstr "服务商允许多少就做多少"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Make it exactly 95 mm tall."
+msgstr "让它正好 95 mm 高。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Make it in {}, free"
+msgstr "在 {} 中免费生成"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Make one side, get the other for free"
+msgstr "做好一边，另一边白送"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Make room for the plant and it's a pot."
+msgstr "给植物腾出空间，就是花盆了。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Make the base 8 mm thick."
+msgstr "把底座做成 8 mm 厚。"
+
+#: crates/ui-egui/src/whats_new.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Make yourself at home"
+msgstr "宾至如归"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Manual"
+msgstr "手动"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Match System"
+msgstr "跟随系统"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Match your system, or keep it light or dark."
+msgstr "跟随系统，或始终浅色或深色。"
+
+#: crates/engine/src/formats/fbx.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Material"
+msgstr "材质"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Material Properties"
+msgstr "材质属性"
+
+#: crates/doc/src/lib.rs
+msgid "Matte"
+msgstr "哑光"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Maximum Distance"
+msgstr "最大距离"
+
+#: crates/engine/src/cmd/file/measure.rs
+#: crates/kernel/src/lib.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Measure"
+msgstr "测量"
+
+#: crates/ui-egui/src/workspace/actions.rs
+#: crates/ui-egui/src/workspace/measure.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Measure mode"
+msgstr "测量模式"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Measurements for the selection are already pinned."
+msgstr "所选内容的测量已经固定。"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Medium"
+msgstr "中"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Merge Modeling Steps"
+msgstr "合并建模步骤"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Merge faces and edges that lie on one surface or curve. Fewer, larger faces; small details can change."
+msgstr "合并位于同一曲面或曲线上的面和棱边。面更少更大；细节可能会变。"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Merge now"
+msgstr "立即合并"
+
+msgid "Meshes (STL, OBJ)"
+msgstr "网格（STL、OBJ）"
+
+#: crates/ui-egui/src/app.rs
+msgid "Meshes (STL, OBJ, 3MF)"
+msgstr "网格（STL、OBJ、3MF）"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes of the bodies in one package, for 3D printing and quick prototypes."
+msgstr "把实体的网格装进一个包，用于 3D 打印和快速原型。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes with a material file of the body colors."
+msgstr "带实体颜色材质文件的网格。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes with their colors for Blender, Unity, Unreal and animation tools."
+msgstr "带颜色的网格，用于 Blender、Unity、Unreal 和动画工具。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes with their colors for older viewers, simulators and VR tools."
+msgstr "带颜色的网格，用于较旧的查看器、模拟器和 VR 工具。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes with their materials for AR Quick Look and USD viewers."
+msgstr "带材质的网格，用于 AR Quick Look 和 USD 查看器。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Meshes with their materials for the web, game engines and AR viewers."
+msgstr "带材质的网格，用于网页、游戏引擎和 AR 查看器。"
+
+#: crates/doc/src/lib.rs
+#: crates/ui-egui/src/graphics.rs
+msgid "Metal"
+msgstr "金属"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Meter"
+msgstr "米"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Middle drag and wheel"
+msgstr "中键拖动和滚轮"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Midplane"
+msgstr "中间平面"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Midpoint"
+msgstr "中点"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Millimeter"
+msgstr "毫米"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Min-Max Distance"
+msgstr "最小-最大距离"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Minimum Distance"
+msgstr "最小距离"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/shapr/src/lib.rs
+msgid "Mirror"
+msgstr "镜像"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Mirror Sketch"
+msgstr "镜像草图"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Mirror: a Serving Tray"
+msgstr "镜像：托盘"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Mitre"
+msgstr "斜接"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Model one handle. Mirror makes the other."
+msgstr "做一个把手。另一个交给“镜像”。"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Modeling"
+msgstr "建模"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "More"
+msgstr "更多"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "More options, like a right-click."
+msgstr "更多选项，相当于右键点击。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "More options."
+msgstr "更多选项。"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "More..."
+msgstr "更多…"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Mouse"
+msgstr "鼠标"
+
+#: crates/ui-egui/src/onboarding.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Mouse and Keyboard"
+msgstr "鼠标和键盘"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Mouse or Trackpad"
+msgstr "鼠标或触控板"
+
+#: crates/ui-egui/src/workspace/mod.rs
+msgid "Move Auto-orientation"
+msgstr "移动时自动定向"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Move Them"
+msgstr "移过去"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Move the pointer to place the magnified view, then click"
+msgstr "移动指针放置放大视图，然后点击"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Move the pointer to place the section view, then click"
+msgstr "移动指针放置剖视图，然后点击"
+
+#: crates/shapr/src/write.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Move/Rotate"
+msgstr "移动/旋转"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Move/Rotate (M)"
+msgstr "移动/旋转（M）"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Moved to {} in your projects folder"
+msgstr "已移到项目文件夹中的 {}"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Movement"
+msgstr "移动"
+
+#: crates/ui-egui/src/app.rs
+msgid "NX part"
+msgstr "NX 零件"
+
+#: crates/engine/src/formats/fbx.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Name"
+msgstr "名称"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Name (A to Z)"
+msgstr "名称（A 到 Z）"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Name (Z to A)"
+msgstr "名称（Z 到 A）"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Name:"
+msgstr "名称："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Navigation\nPresets"
+msgstr "导航\n预设"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Navigation Presets"
+msgstr "导航预设"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Navigation Presets…"
+msgstr "导航预设…"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/shortcuts.rs
+msgid "Nearest Ortho View"
+msgstr "最近的正交视图"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Needs the Open CASCADE kernel (Preferences ▸ Advanced)"
+msgstr "需要 Open CASCADE 内核（偏好设置 ▸ 高级）"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Never"
+msgstr "从不"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "New Body"
+msgstr "新建实体"
+
+msgid "New Body - Auto"
+msgstr "新实体 - 自动"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "New Drawing"
+msgstr "新建图纸"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "New Drawing..."
+msgstr "新建图纸…"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "New Folder"
+msgstr "新建文件夹"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "New Folder with Selection"
+msgstr "用所选内容新建文件夹"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "New Pairing Key"
+msgstr "新的配对密钥"
+
+#: crates/engine/src/cmd/file/shapr.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "New Project"
+msgstr "新建项目"
+
+#: crates/ui-egui/src/report.rs
+msgid "New Report…"
+msgstr "新报告…"
+
+#: crates/ui-egui/src/workspace/panels/variables.rs
+msgid "New Variable"
+msgstr "新建变量"
+
+#: crates/ui-egui/src/landing.rs
+msgid "New in {}"
+msgstr "{} 的新内容"
+
+#: crates/ui-egui/src/landing.rs
+msgid "New to CAD"
+msgstr "初次接触 CAD"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Next"
+msgstr "下一步"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Next Tutorial"
+msgstr "下一个教程"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Nicely done!"
+msgstr "做得好！"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Nine short courses on things from around the house. Start with a coaster, a pencil cup and a phone stand, then learn one tool at a time: Revolve, Loft, Sweep, Pattern, Mirror and Thread. An animated pointer shows every move, everything can be done by clicking, and you can keep what you make as a project."
+msgstr "九个短课程，用的都是家里的东西。先做杯垫、笔筒和手机支架，再逐个学习工具：回转、放样、扫掠、阵列、镜像和螺纹。动画指针演示每一步，全部可以点击完成，做好的东西还能留作项目。"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "No Apple Pencil yet"
+msgstr "还没有 Apple Pencil"
+
+#: crates/ui-egui/src/report.rs
+msgid "No GitHub account? Make one free"
+msgstr "没有 GitHub 账户？免费注册"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "No Pencil? A mouse or trackpad works too."
+msgstr "没有 Pencil？鼠标或触控板也可以。"
+
+#: crates/ui-egui/src/theme/mod.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "No active plane"
+msgstr "没有活动平面"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "No browser connected"
+msgstr "没有连接浏览器"
+
+#: crates/ui-egui/src/setup.rs
+msgid "No cloud storage apps found (a NAS or any folder works too)."
+msgstr "未找到云存储应用（NAS 或任何文件夹也可以）。"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "No fonts found"
+msgstr "未找到字体"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "No limits of ours"
+msgstr "我们不设限制"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "No official app for Linux. Its folder from rclone or Insync can be added as a folder."
+msgstr "没有官方 Linux 应用。可将 rclone 或 Insync 的文件夹添加为文件夹。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "No older versions yet. Backups keep them (Preferences ▸ Sync), once a saved copy is replaced"
+msgstr "还没有旧版本。保存的副本被替换后，备份会保留它们（偏好设置 ▸ 同步）"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "No plugins yet"
+msgstr "还没有插件"
+
+#: crates/ui-egui/src/workspace/import_project.rs
+msgid "No projects"
+msgstr "没有项目"
+
+#: crates/ui-egui/src/landing.rs
+msgid "No projects yet"
+msgstr "还没有项目"
+
+#: crates/ui-egui/src/landing.rs
+msgid "No results for \"{}\""
+msgstr "没有“{}”的结果"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "No stylus yet"
+msgstr "还没有触控笔"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "No stylus? A USB-C or Bluetooth mouse works too."
+msgstr "没有触控笔？USB-C 或蓝牙鼠标也可以。"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Non-uniform"
+msgstr "非均匀"
+
+#: crates/ui-egui/src/workspace/measure.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "None"
+msgstr "无"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "None yet. Add one below."
+msgstr "还没有。在下方添加一个。"
+
+#: crates/dwg/src/write.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Normal"
+msgstr "标准"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Normal to Path"
+msgstr "垂直于路径"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/sketch.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Normal to Sketch"
+msgstr "正对草图"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/report.rs
+msgid "Not Now"
+msgstr "暂不"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Not Supported"
+msgstr "不支持"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Not available on this computer"
+msgstr "这台电脑上不可用"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Not on this computer."
+msgstr "不在这台电脑上。"
+
+#: crates/ui-egui/src/report.rs
+msgid "Not signed in"
+msgstr "未登录"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Not yet: needs Open CASCADE for now"
+msgstr "尚未支持：目前需要 Open CASCADE"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Notch"
+msgstr "缺口"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Note"
+msgstr "注释"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Nothing copied yet"
+msgstr "还没有复制任何内容"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Nothing else: not your files, not other plugins. You can switch it off or remove it any time in Preferences ▸ Plugins."
+msgstr "仅此而已：不碰你的文件，也不碰其他插件。你可以随时在“偏好设置 ▸ 插件”中关闭或移除它。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Nothing is listed for this version yet."
+msgstr "此版本暂时没有可用插件。"
+
+#: crates/ui-egui/src/app_log.rs
+msgid "Nothing logged yet."
+msgstr "还没有任何记录。"
+
+#: crates/ui-egui/src/report.rs
+msgid "Nothing sent yet. Your reports and ideas will show up here."
+msgstr "还没有发送过。你的报告和想法会显示在这里。"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Nothing to merge"
+msgstr "没有可合并的内容"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Nothing's backed up there yet (or it can't be reached now)"
+msgstr "那里还没有备份（或目前无法访问）"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Object Measurements"
+msgstr "对象测量"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Object Shadow"
+msgstr "物体阴影"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Octagon"
+msgstr "八边形"
+
+#: crates/ui-egui/src/workspace/keys.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Off"
+msgstr "关"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Offset"
+msgstr "偏移"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/kernel/src/lib.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Offset Edge"
+msgstr "偏移边"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Offset Edge (O)"
+msgstr "偏移棱边（O）"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Offset Edge Type"
+msgstr "边偏移类型"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Offset Edge needs a flat face next to the edge"
+msgstr "偏移棱边需要旁边有平面"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Offset Face"
+msgstr "偏移面"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Offset Plane"
+msgstr "偏移平面"
+
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Offset ⌄"
+msgstr "偏移 ⌄"
+
+#: crates/ui-egui/src/backup.rs
+msgid "Older Versions"
+msgstr "旧版本"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "On"
+msgstr "开"
+
+#: crates/ui-egui/src/setup.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "On This Computer"
+msgstr "在这台电脑上"
+
+#: crates/ui-egui/src/report.rs
+msgid "Once, so reports go out under your own name."
+msgstr "只需一次，报告会以你的名义发出。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "One candle becomes six with Circular Pattern."
+msgstr "“圆形阵列”让一根蜡烛变成六根。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "One finger drag"
+msgstr "单指拖动"
+
+#: crates/ui-egui/src/report.rs
+msgid "One more step: the screenshot"
+msgstr "还有一步：截图"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "One picture."
+msgstr "一张图片。"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "One-Sided"
+msgstr "单侧"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Only the scene around it is made up"
+msgstr "只有周围的场景是生成的"
+
+#: crates/ui-egui/src/workspace/decals.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Opacity"
+msgstr "不透明度"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Opacity "
+msgstr "不透明度 "
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Opacity 100%"
+msgstr "不透明度 100%"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Opacity 25%"
+msgstr "不透明度 25%"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Opacity 50%"
+msgstr "不透明度 50%"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Opacity 75%"
+msgstr "不透明度 75%"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/report.rs
+msgid "Open"
+msgstr "打开"
+
+#: crates/ui-egui/src/app.rs
+msgid "Open Anyway"
+msgstr "仍然打开"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Open Browse to see what you can add."
+msgstr "打开“浏览”看看可以添加什么。"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Open Download Page"
+msgstr "打开下载页面"
+
+#: crates/ui-egui/src/report.rs
+msgid "Open Issue to Paste"
+msgstr "打开议题并粘贴"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Open Projects to put this in a new folder"
+msgstr "打开“项目”，把它放进新文件夹"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Open Screenshot Tool…"
+msgstr "打开截图工具…"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Open Visualization…"
+msgstr "打开可视化…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Open a project to customize"
+msgstr "打开一个项目来自定义"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Open a sketch to extend its lines and arcs"
+msgstr "打开草图以延长其中的线和圆弧"
+
+msgid "Open in Default 3MF App"
+msgstr "在默认 3MF 应用中打开"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Open in a Slicer"
+msgstr "在切片软件中打开"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Open in {}"
+msgstr "在 {} 中打开"
+
+#: crates/ui-egui/src/app.rs
+msgid "Open up to model"
+msgstr "展开以建模"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "OpenRouter, OpenAI or Google Gemini, or free on your computer"
+msgstr "OpenRouter、OpenAI 或 Google Gemini，或在你的电脑上免费运行"
+
+#: crates/ui-egui/src/app.rs
+msgid "Opened {} in {}"
+msgstr "已在 {1} 中打开 {0}"
+
+#: crates/ui-egui/src/report.rs
+msgid "Opening the issue on GitHub."
+msgstr "正在 GitHub 上创建议题。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Opening your projects folder…"
+msgstr "正在打开你的项目文件夹…"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Optimize Import for"
+msgstr "导入优化目标"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Options"
+msgstr "选项"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Options you'll only find in ShapeCraft."
+msgstr "ShapeCraft 独有的选项。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Or drag the arrow on the dashed circle"
+msgstr "或拖动虚线圆上的箭头"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Orbit"
+msgstr "旋转"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Orbit:"
+msgstr "旋转："
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Orientation"
+msgstr "方向"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Orientation:"
+msgstr "方向："
+
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Origin"
+msgstr "原点"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Orthographic"
+msgstr "正交"
+
+#: crates/ui-egui/src/cloud.rs
+msgid "Other computers"
+msgstr "其他电脑"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Otherwise the constraints of what's selected show."
+msgstr "否则显示所选内容的约束。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Ours to fix: your report becomes a test"
+msgstr "由我们修复：你的报告会变成测试"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Output Format"
+msgstr "输出格式"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Overflow"
+msgstr "溢出"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "PDF from Drawing"
+msgstr "从图纸生成 PDF"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "PICK IT FOR"
+msgstr "适合"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Pan"
+msgstr "平移"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pan, and pinch to zoom."
+msgstr "平移，双指捏合缩放。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Pan:"
+msgstr "平移："
+
+#: crates/doc/src/visual.rs
+#: crates/ui-egui/src/app.rs
+msgid "Panorama"
+msgstr "全景图"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Parallel"
+msgstr "平行"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Parallel Distance"
+msgstr "平行距离"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Parallel to Profile"
+msgstr "平行于轮廓"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Parameter Cards on canvas"
+msgstr "画面上的参数卡片"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Parasolid (binary)"
+msgstr "Parasolid（二进制）"
+
+#: crates/engine/src/cmd/file/export.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Parasolid file…"
+msgstr "Parasolid 文件…"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Paste"
+msgstr "粘贴"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Paste it under the picture and send."
+msgstr "粘贴到图片下方并发送。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Paste the view"
+msgstr "粘贴视图"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Pasted in place: 1 item"
+msgstr "已原位粘贴：1 个条目"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Pasted in place: {#} items"
+msgstr "已原位粘贴：{#} 个条目"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/mod.rs
+msgid "Pattern"
+msgstr "阵列"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Pattern - Circular"
+msgstr "阵列 - 圆形"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Pattern - Linear"
+msgstr "阵列 - 线性"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Pattern Type"
+msgstr "阵列类型"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pattern: a Birthday Cake"
+msgstr "阵列：生日蛋糕"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Pen:"
+msgstr "笔："
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pencil Cup"
+msgstr "笔筒"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pencil drag"
+msgstr "用 Pencil 拖动"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pencil hold, then drag"
+msgstr "按住 Pencil 再拖动"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pencil tap"
+msgstr "用 Pencil 轻点"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Pentagon"
+msgstr "五边形"
+
+#: crates/doc/src/lib.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Period"
+msgstr "点"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Perpendicular"
+msgstr "垂直"
+
+#: crates/ui-egui/src/cloud.rs
+msgid "Personal"
+msgstr "个人"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Perspective"
+msgstr "透视"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Phone Stand"
+msgstr "手机支架"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Pick a cylindrical face to add a thread to."
+msgstr "选择要加螺纹的圆柱面。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick a face or plane to start from, then set how far away."
+msgstr "选择起始面或平面，然后设定距离。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick a face to change, then the face it should be replaced with."
+msgstr "选择要更改的面，再选替换它的面。"
+
+#: crates/ui-egui/src/app.rs
+msgid "Pick a folder that isn't inside the Work Folder (or holding it)."
+msgstr "请选择不在工作文件夹内（也不包含它）的文件夹。"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Pick a hole or a cylinder and press Thread: it becomes a nut or a bolt in ISO metric, ANSI inch or ACME sizes, right or left hand, along the whole face or part of it. Print Fit gives 3D-printed threads the room they need to turn, and a bolt and its nut always line up."
+msgstr "选择一个孔或圆柱，按“螺纹”：它就变成 ISO 公制、ANSI 英制或 ACME 尺寸的螺母或螺栓，右旋或左旋，整面或部分。“打印配合”为 3D 打印的螺纹留出转动空间，螺栓和螺母总能对上。"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Pick a plane or a flat face to cut along"
+msgstr "选择用来切割的平面或平的面"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick a profile or a face, and an axis to spin it around into a solid."
+msgstr "选择一个轮廓或面，以及让它旋转成实体的轴。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick a profile, then the path to sweep it along."
+msgstr "选择一个轮廓，再选它要沿着走的路径。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick a sketch profile or a flat face, then pull it out to the depth you want."
+msgstr "选择草图轮廓或平的面，拉到想要的深度。"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Pick an end, the corner, then the other end"
+msgstr "选择一端、角、再选另一端"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pick and press. Hovering lights what a tap picks."
+msgstr "选择和按压。悬停会点亮轻点将选中的东西。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick at least one body to cut"
+msgstr "至少选择一个要切的实体"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick at least one edge"
+msgstr "至少选择一条棱边"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick bodies that overlap to merge them into one."
+msgstr "选择重叠的实体，把它们合为一个。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick edges or faces to cut them back at an angle."
+msgstr "选择要斜切的棱边或面。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick edges or faces to project, then the face or plane to project them onto."
+msgstr "选择要投影的棱边或面，再选投影到的面或平面。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick edges or faces to round them off."
+msgstr "选择要倒圆的棱边或面。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick edges or sketches to project, then the face to project them onto."
+msgstr "选择要投影的棱边或草图，再选投影到的面。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick faces to push them in or pull them out."
+msgstr "选择要推进或拉出的面。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Pick the app your hands already know, and orbit, pan and zoom work the way they do there. Change it any time in Preferences."
+msgstr "选择你的手已经习惯的应用，旋转、平移和缩放就和它一样。随时可在偏好设置中更改。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick the edges again: open the step's body and fillet them anew"
+msgstr "重新选择棱边：打开该步骤的实体并重新倒圆"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick the face or plane while extruding: open the step's sketch and extrude again"
+msgstr "在拉伸时选择面或平面：打开该步骤的草图并重新拉伸"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick the faces again: undo the thread and thread them anew"
+msgstr "要重新选面：撤销螺纹后再做一次"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick the faces to take away and hollow the body out; pull the arrow or type the wall thickness."
+msgstr "选择要去掉的面，把实体挖空；拉箭头或输入壁厚。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pick the profile again, then Done"
+msgstr "再次选择轮廓，然后点“完成”"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Pick three points: an end, the corner, the other end."
+msgstr "选择三个点：一端、角、另一端。"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick two or more profiles or faces, in order, to blend a solid through them."
+msgstr "按顺序选择两个或更多轮廓或面，用实体把它们连起来。"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Pick two points on the model."
+msgstr "选择模型上的两个点。"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Pick two points to measure the distance between them"
+msgstr "选择两个点，测量它们之间的距离"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick what to mirror, then a line, plane or flat face to mirror it across."
+msgstr "选择要镜像的内容，再选一条线、平面或平的面。"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pick what to move or turn, then use the gizmo."
+msgstr "选择要移动或转动的内容，然后使用手柄。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pick, draw, and drag handles."
+msgstr "选择、绘制和拖动手柄。"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Pictures"
+msgstr "图片"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Pin measurements to have them always visible."
+msgstr "固定测量，让它们始终可见。"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Pin to Always Show"
+msgstr "固定并始终显示"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Pinch"
+msgstr "捏合"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Pinned"
+msgstr "已固定"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Pitch"
+msgstr "螺距"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Pixels per inch; the size is also saved in millimetres"
+msgstr "每英寸像素数；尺寸也以毫米保存"
+
+#: crates/ui-egui/src/workspace/decals.rs
+msgid "Planar"
+msgstr "平面"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Plane"
+msgstr "平面"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane - Midplane"
+msgstr "平面 - 中间平面"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Plane - Offset"
+msgstr "平面 - 偏移"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane - On Curve at Point"
+msgstr "平面 - 曲线上的点"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane - Through Edge"
+msgstr "平面 - 过边"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Plane Parallel to Face"
+msgstr "平行于面的平面"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane Parallel to Face at Point"
+msgstr "过点平行于面的平面"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Plane Perpendicular to Edge"
+msgstr "垂直于棱边的平面"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane Perpendicular to Edge at Point"
+msgstr "过点垂直于边的平面"
+
+#: crates/engine/src/cmd/construct.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Plane Through 3 Points"
+msgstr "过三点的平面"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Plane Through Edge at Angle"
+msgstr "过边成角度的平面"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Plane on Curve at Point"
+msgstr "曲线上点处的平面"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Planes and Axes"
+msgstr "平面和轴"
+
+#: crates/doc/src/lib.rs
+msgid "Plastic"
+msgstr "塑料"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Plugins"
+msgstr "插件"
+
+#: crates/ui-egui/src/workspace/viewport/snap.rs
+msgid "Point"
+msgstr "点"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Point-to-Line Distance"
+msgstr "点到线距离"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/annotate.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Point-to-Point Distance"
+msgstr "点到点距离"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "Points"
+msgstr "点"
+
+#: crates/doc/src/lib.rs
+msgid "Polished"
+msgstr "抛光"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/sketch.rs
+msgid "Polygon"
+msgstr "多边形"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Polygon (G)"
+msgstr "多边形（G）"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Popular Presets"
+msgstr "常用预设"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Port:"
+msgstr "端口："
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Portrait"
+msgstr "纵向"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Preferences"
+msgstr "偏好设置"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Preferences ▸ Language switches the toolbar, sidebars and cards to one of eleven languages."
+msgstr "“偏好设置 ▸ 语言”可把工具栏、侧边栏和卡片切换为十一种语言之一。"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Preferences…"
+msgstr "偏好设置…"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Prefix Text"
+msgstr "前缀文字"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Press "
+msgstr "请按 "
+
+#: crates/ui-egui/src/landing.rs
+msgid "Press + or {} to start one"
+msgstr "按 + 或 {} 新建一个"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Press E or pick Extrude to pull it into a solid"
+msgstr "按 E 或选“拉伸”，把它拉成实体"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Press E to extrude"
+msgstr "按 E 拉伸"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Press F to round the selected edges"
+msgstr "按 F 把选中的棱边倒圆"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Press the button here, or tap the value to enter one"
+msgstr "按这个按钮，或轻点数值来输入"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Press the button here, or type 95 and press Return: numbers work in every tool"
+msgstr "按这个按钮，或输入 95 再按回车键：数字在每个工具里都能用"
+
+#: crates/ui-egui/src/report.rs
+msgid "Preview"
+msgstr "预览"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Print Fit"
+msgstr "打印配合"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Profile"
+msgstr "轮廓"
+
+#: crates/ui-egui/src/workspace/slicers.rs
+#: crates/update/src/apply.rs
+msgid "Programs"
+msgstr "程序"
+
+#: crates/doc/src/project.rs
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Project"
+msgstr "投影"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Project (P)"
+msgstr "投影（P）"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Project Onto"
+msgstr "投影到"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Project as Edge"
+msgstr "投影为边"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Project as Sketch"
+msgstr "投影为草图"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Project as Sketch (P)"
+msgstr "投影为草图（P）"
+
+#: crates/ui-egui/src/workspace/decals.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Projection"
+msgstr "投影图"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Projects"
+msgstr "项目"
+
+#: crates/ui-egui/src/app.rs
+msgid "Projects now save to {}."
+msgstr "项目现在保存到 {}。"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Projects save here as you work. This is your Work Folder."
+msgstr "工作时项目保存在这里。这就是你的工作文件夹。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Projects save to your Work Folder as you go. Backups keep a copy"
+msgstr "项目随做随存到工作文件夹，备份保留一份副本"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Project…"
+msgstr "项目…"
+
+#: crates/ui-egui/src/workspace/decals.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Properties"
+msgstr "属性"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pull a handle or type a factor. Drag the center to scale from somewhere else"
+msgstr "拉手柄或输入倍数。拖动中心可从别处缩放"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pull an arrow to repeat along it. Click Quantity for how many"
+msgstr "拉箭头沿该方向重复。点击“数量”设定个数"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Pull the arrow or type a distance. Return applies"
+msgstr "拉箭头或输入距离。回车键应用"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pull the arrow to round the edge"
+msgstr "拉动箭头来倒圆棱边"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pull the arrow up"
+msgstr "把箭头向上拉"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pull the drawing up and it becomes solid."
+msgstr "把图向上拉，它就变成实体。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Pull the strip up: it becomes part of the base."
+msgstr "把窄带向上拉：它会成为底座的一部分。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Push a shape in and it cuts. Make a dip for the glass."
+msgstr "往里推就是切除。给杯子做一个凹槽。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Push the arrow down, into the base"
+msgstr "把箭头向下推进底座"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Push the arrow down, into the coaster"
+msgstr "把箭头向下推进杯垫"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Put the cup where you want it."
+msgstr "把笔筒放到你想放的地方。"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Quality"
+msgstr "质量"
+
+msgid "Quantity"
+msgstr "数量"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Quick Export"
+msgstr "快速导出"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Quick Export to Favorite Formats"
+msgstr "快速导出为常用格式"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Quit"
+msgstr "退出"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Quit ShapeCraft"
+msgstr "退出 ShapeCraft"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Quit the tutorial?"
+msgstr "退出教程？"
+
+#: crates/doc/src/constraints.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Radius"
+msgstr "半径"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Radius and Diameter"
+msgstr "半径和直径"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Radius and Diameter labels circles and round holes by\ndiameter; Always Radius uses the radius everywhere."
+msgstr "“半径和直径”用直径标注圆和圆孔；\n“始终为半径”处处用半径。"
+
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+msgid "Radius ⌄"
+msgstr "半径 ⌄"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Reachable From:"
+msgstr "可访问自："
+
+#: crates/engine/src/cmd/file/import.rs
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "Reading the file…"
+msgstr "正在读取文件…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Really Delete"
+msgstr "确认删除"
+
+#: crates/ui-egui/src/workspace/working.rs
+msgid "Rebuilding the History"
+msgstr "正在重建历史记录"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Recent"
+msgstr "最近"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Recent Projects"
+msgstr "最近的项目"
+
+#: crates/ui-egui/src/report.rs
+msgid "Recent log"
+msgstr "最近的日志"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/settings.rs
+msgid "Recents"
+msgstr "最近"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Recommended"
+msgstr "推荐"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Recommended Formats"
+msgstr "推荐格式"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Recommended for real work"
+msgstr "推荐用于正式工作"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Recommended: the best path this computer has"
+msgstr "推荐：这台电脑上最好的方式"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Rectangle"
+msgstr "矩形"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Rectangle (R)"
+msgstr "矩形（R）"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/keys.rs
+msgid "Redo"
+msgstr "重做"
+
+#: crates/ui-egui/src/report.rs
+msgid "Refresh"
+msgstr "刷新"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Related to Selection"
+msgstr "与所选内容相关"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Release Notes"
+msgstr "版本说明"
+
+#: crates/ui-egui/src/plugins.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Remove"
+msgstr "移除"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Rename"
+msgstr "重命名"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Rename Project…"
+msgstr "重命名项目…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Rendering Quality:"
+msgstr "渲染质量："
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Replace Face"
+msgstr "替换面"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Replacing Face"
+msgstr "替换用的面"
+
+#: crates/ui-egui/src/report.rs
+msgid "Report a Problem"
+msgstr "报告问题"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Report a Problem…"
+msgstr "报告问题…"
+
+#: crates/ui-egui/src/report.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Report…"
+msgstr "报告…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Require holding shift"
+msgstr "需要按住 Shift"
+
+#: crates/ui-egui/src/workspace/shortcuts.rs
+msgid "Reset to Defaults"
+msgstr "恢复默认设置"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/export.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Resolution"
+msgstr "分辨率"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Restart"
+msgstr "重启"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Restart Now"
+msgstr "立即重启"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Restart ShapeCraft to apply"
+msgstr "重启 ShapeCraft 后生效"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Restart ShapeCraft to apply."
+msgstr "重启 ShapeCraft 以应用。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Restart the app to apply these settings."
+msgstr "重启应用以应用这些设置。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Restore"
+msgstr "恢复"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Restore and Open"
+msgstr "恢复并打开"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Restored to your Work Folder as {}"
+msgstr "已恢复到工作文件夹，名为 {}"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Result"
+msgstr "结果"
+
+#: crates/ui-egui/src/updates.rs
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Retry"
+msgstr "重做此步"
+
+#: crates/ui-egui/src/tutorials.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Return"
+msgstr "回车键"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Reveal Selection"
+msgstr "显示所选内容"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Reveal in Items Sidebar"
+msgstr "在条目侧边栏中显示"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Reverse scroll direction"
+msgstr "反转滚动方向"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Revolve"
+msgstr "回转"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Revolve (V)"
+msgstr "回转（V）"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Revolve: a Drawer Knob"
+msgstr "回转：抽屉拉手"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Right"
+msgstr "右"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Right Hand"
+msgstr "右旋"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Right click anywhere on your model to move the focus point."
+msgstr "在模型任意处右键点击可移动对焦点。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Right-click"
+msgstr "右键点击"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Rolling Ball"
+msgstr "滚球"
+
+#: crates/engine/src/history.rs
+#: crates/shapr/src/lib.rs
+#: crates/shapr/src/write.rs
+msgid "Rotate"
+msgstr "旋转"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Rotate Around Axis"
+msgstr "绕轴旋转"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Down by 15°"
+msgstr "向下旋转 15°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Down by 45°"
+msgstr "向下旋转 45°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Left by 15°"
+msgstr "向左旋转 15°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Left by 45°"
+msgstr "向左旋转 45°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Right by 15°"
+msgstr "向右旋转 15°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Right by 45°"
+msgstr "向右旋转 45°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Sketch Around Axis"
+msgstr "绕轴旋转草图"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Up by 15°"
+msgstr "向上旋转 15°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate Up by 45°"
+msgstr "向上旋转 45°"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Rotate View"
+msgstr "旋转视图"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Rotated"
+msgstr "已旋转"
+
+#: crates/engine/src/history.rs
+msgid "Rotation"
+msgstr "旋转"
+
+#: crates/doc/src/lib.rs
+msgid "Rough"
+msgstr "粗糙"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Round"
+msgstr "圆"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Round off a sharp edge."
+msgstr "把锐利的棱边倒圆。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Round the rim so it's soft to the touch."
+msgstr "把杯口磨圆，摸起来更柔和。"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Ruled"
+msgstr "直纹"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Run a shape along a path, then join parts with Union"
+msgstr "让形状沿路径移动，再用“合并”连接零件"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "STL Triangle Mesh"
+msgstr "STL 三角网格"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "STL and OBJ files come in as mesh bodies, the way they are: in a second, however many triangles. Move, pattern and mirror them, sketch next to them, and cut or join them with Union, Subtract and Intersect. They stay meshes, and projects with them stay small."
+msgstr "STL 和 OBJ 文件按原样作为网格实体导入：不管有多少三角形，一秒就好。可以移动、阵列、镜像，在旁边画草图，并用合并、减去和相交来切割或连接。它们仍是网格，项目也保持小巧。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "STL files carry plain numbers without a unit;"
+msgstr "STL 文件只有数字，没有单位；"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "STLs stay light"
+msgstr "STL 保持轻巧"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Same projects and Recents on every computer signed in to it."
+msgstr "登录的每台电脑上都有相同的项目和最近记录。"
+
+msgid "Satin"
+msgstr "缎面"
+
+#: crates/engine/src/cmd/file/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/plugins.rs
+msgid "Save"
+msgstr "保存"
+
+#: crates/ui-egui/src/workspace/shortcuts.rs
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Save Each 1st-Level Item Separately"
+msgstr "分别保存每个一级条目"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Save Image…"
+msgstr "保存图片…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Save the View…"
+msgstr "保存视图…"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Save the picture it makes, then Add It to History here."
+msgstr "保存生成的图片，然后在这里添加到历史记录。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Save the view"
+msgstr "保存视图"
+
+#: crates/ui-egui/src/saving.rs
+msgid "Saved"
+msgstr "已保存"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Saved Views"
+msgstr "已保存的视图"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Saved on this computer."
+msgstr "已保存在这台电脑上。"
+
+#: crates/ui-egui/src/app.rs
+msgid "Saved {}"
+msgstr "已保存 {}"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Saves the camera view with the project"
+msgstr "把相机视图与项目一起保存"
+
+#: crates/ui-egui/src/saving.rs
+msgid "Saving before closing…"
+msgstr "关闭前正在保存…"
+
+msgid "Saving before closing… {#}%"
+msgstr "Saving before closing… {#}%"
+
+#: crates/ui-egui/src/saving.rs
+msgid "Saving…"
+msgstr "正在保存…"
+
+msgid "Saving… {#}%"
+msgstr "Saving… {#}%"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Scalable Vector Graphics"
+msgstr "可缩放矢量图形"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Scale"
+msgstr "缩放"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Scale (S)"
+msgstr "缩放（S）"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Scale Mode"
+msgstr "缩放模式"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Scale Sketch"
+msgstr "缩放草图"
+
+msgid "Scene"
+msgstr "场景"
+
+#: crates/report/src/draft.rs
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/report.rs
+msgid "Screenshot"
+msgstr "截图"
+
+#: crates/ui-egui/src/workspace/mod.rs
+msgid "Screenshot copied"
+msgstr "已复制截图"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Screw threads that really screw on"
+msgstr "真的能拧上的螺纹"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/import_project.rs
+msgid "Search"
+msgstr "搜索"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/command_search.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Search Commands"
+msgstr "搜索命令"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Search Materials"
+msgstr "搜索材质"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Search fonts"
+msgstr "搜索字体"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Secondary click"
+msgstr "辅助点击"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Section"
+msgstr "剖面"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Section Lines"
+msgstr "剖切线"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Section Only"
+msgstr "仅截面"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Section View"
+msgstr "剖视图"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select"
+msgstr "选择"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Select All"
+msgstr "全选"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Circle"
+msgstr "选择“圆”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Done"
+msgstr "选择“完成”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Loft"
+msgstr "选择“放样”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Mirror"
+msgstr "选择“镜像”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Pattern - Circular"
+msgstr "选择“阵列 - 圆形”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Rectangle"
+msgstr "选择“矩形”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Revolve"
+msgstr "选择“回转”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Shell"
+msgstr "选择“抽壳”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Sketch"
+msgstr "选择“草图”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Subtract"
+msgstr "选择“减去”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Sweep"
+msgstr "选择“扫掠”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Thread"
+msgstr "选择“螺纹”"
+
+#: crates/render/src/pick.rs
+#: crates/ui-egui/src/workspace/mod.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Select Through This Point…"
+msgstr "穿过此点选择…"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Select Through..."
+msgstr "穿透选择…"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Top on the cube to look straight down"
+msgstr "在立方体上选择“上”，从正上方往下看"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Union"
+msgstr "选择“合并”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select Visualize"
+msgstr "选择“可视化显示”"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Select Whole Text"
+msgstr "选择整段文字"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a body first"
+msgstr "请先选择一个实体"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a body or face to align"
+msgstr "选择要对齐的实体或面"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select a body to split, then a face, plane or sketch line to split it with."
+msgstr "选择要分割的实体，再选用来分割的面、平面或草图线。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select a color"
+msgstr "选择一种颜色"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Select a face or a plane..."
+msgstr "选择面或平面…"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select a face or a straight edge to align, then its target"
+msgstr "选择要对齐的面或直边，再选目标"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Select a face..."
+msgstr "选择一个面…"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select a flat face or plane"
+msgstr "选择平的面或平面"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a flat face, plane or sketch region to offset from"
+msgstr "选择要偏移的平面、平的面或草图区域"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Select a project or folder to put in a new folder"
+msgstr "选择要放进新文件夹的项目或文件夹"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Select a project or folder to rename"
+msgstr "选择要重命名的项目或文件夹"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Select a project to duplicate"
+msgstr "选择要复制的项目"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a region or flat face to sweep"
+msgstr "选择要扫掠的区域或平的面"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a sketch region or a flat face to extrude"
+msgstr "选择要拉伸的草图区域或平的面"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select a sketch region or flat face to revolve"
+msgstr "选择要回转的草图区域或平的面"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select a target face or plane to align to"
+msgstr "选择要对齐到的面或平面"
+
+#: crates/ui-egui/src/workspace/sheet_views.rs
+msgid "Select a view, then turn on all necessary projections."
+msgstr "选择一个视图，再打开所需的投影。"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select an edge"
+msgstr "选择一条棱边"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Select any item to measure."
+msgstr "选择要测量的对象。"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies or sketch curves to mirror"
+msgstr "选择要镜像的实体或草图曲线"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies or sketch curves to move or rotate"
+msgstr "选择要移动或旋转的实体或草图曲线"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies or sketch curves to pattern"
+msgstr "选择要阵列的实体或草图曲线"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Select bodies or sketches to copy"
+msgstr "选择要复制的实体或草图"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Select bodies to isolate"
+msgstr "选择要隔离的实体"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select bodies to remove from, then select bodies to subtract"
+msgstr "选择要被切的实体，再选要减去的实体"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies to rotate"
+msgstr "选择要旋转的实体"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies to scale"
+msgstr "选择要缩放的实体"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select bodies to split"
+msgstr "选择要分割的实体"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select both handles"
+msgstr "选择两个把手"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select edges or a body to round"
+msgstr "选择要倒圆的棱边或实体"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select edges or faces to create an offset sketch"
+msgstr "选择棱边或面来创建偏移草图"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select faces to offset"
+msgstr "选择要偏移的面"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select intersecting bodies to keep what they share"
+msgstr "选择相交的实体，保留它们共有的部分"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select items to translate"
+msgstr "选择要平移的条目"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select one corner, then the opposite one"
+msgstr "选择一个角，再选择对角"
+
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Select plane..."
+msgstr "选择平面…"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select sketch curves to scale up or down"
+msgstr "选择要放大或缩小的草图曲线"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select sketch curves to turn"
+msgstr "选择要转动的草图曲线"
+
+#: crates/ui-egui/src/workspace/keys.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Select something to rename"
+msgstr "选择要重命名的对象"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Select something to see what it measures"
+msgstr "选择对象查看其测量值"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "Select the bodies to include"
+msgstr "选择要包含的实体"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Select the bodies to include in the drawing, then Next"
+msgstr "选择图纸中要包含的实体，再点“下一步”"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the cake's round edge"
+msgstr "选择蛋糕的圆形棱边"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the curved line"
+msgstr "选择弯曲的线"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select the face or plane the extrusion starts from"
+msgstr "选择拉伸开始的面或平面"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select the faces to open, then Shell"
+msgstr "选择要打开的面，再点“抽壳”"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select the flat face or plane to extrude to"
+msgstr "选择要拉伸到的平的面或平面"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the ground"
+msgstr "选择地面"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the hook"
+msgstr "选择挂钩"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inner circle"
+msgstr "选择内圆"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inside of the big circle"
+msgstr "选择大圆的内部"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inside of the circle"
+msgstr "选择圆的内部"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inside of the outline"
+msgstr "选择轮廓的内部"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inside of the rectangle"
+msgstr "选择矩形的内部"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the inside of the small circle"
+msgstr "选择小圆的内部"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the middle, then a point further out"
+msgstr "选择中心，再选择外侧的一点"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the outer edge on top"
+msgstr "选择顶部的外侧棱边"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select the parts of sketch curves between crossings to trim them away"
+msgstr "选择交点之间的草图曲线段，把它剪掉"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the plane down the middle of the tray"
+msgstr "选择托盘正中的平面"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the rim's outer edge"
+msgstr "选择杯口的外侧棱边"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the side of the neck"
+msgstr "选择瓶颈的侧面"
+
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Select the sketch elements to constrain first"
+msgstr "请先选择要约束的草图元素"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Select the sketch profiles to wrap, then a cylindrical or conical face"
+msgstr "选择要包裹的草图轮廓，再选圆柱面或圆锥面"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the slot"
+msgstr "选择槽"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the straight edge down the middle"
+msgstr "选择中间的直边"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Select the straight edge to align it with"
+msgstr "选择要与之对齐的直边"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the strip"
+msgstr "选择窄带"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the top face"
+msgstr "选择顶面"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the top front edge"
+msgstr "选择上方靠前的棱边"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the wedge"
+msgstr "选择楔块"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Select the widest edge"
+msgstr "选择最宽的棱边"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Selected Faces"
+msgstr "选中的面"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Selection Extension:"
+msgstr "扩展选择："
+
+#: crates/ui-egui/src/report.rs
+msgid "Send"
+msgstr "发送"
+
+#: crates/ui-egui/src/report.rs
+msgid "Send along"
+msgstr "一并发送"
+
+#: crates/ui-egui/src/report.rs
+msgid "Send from the browser instead"
+msgstr "改用浏览器发送"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sending…"
+msgstr "正在发送…"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sent as issue #{#}"
+msgstr "已发送为议题 #{#}"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Serve ShapeCraft to browsers"
+msgstr "向浏览器提供 ShapeCraft"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Set Up Connections…"
+msgstr "设置连接…"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Set as Focus Point"
+msgstr "设为对焦点"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the angle to 180°"
+msgstr "把角度设为 180°"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the depth to -65 mm"
+msgstr "把深度设为 -65 mm"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the height to 70 mm"
+msgstr "把高度设为 70 mm"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the height to 95 mm"
+msgstr "把高度设为 95 mm"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the rounding to 1 mm"
+msgstr "把圆角设为 1 mm"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the thickness to 8 mm"
+msgstr "把厚度设为 8 mm"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Set the walls to 3 mm"
+msgstr "把壁厚设为 3 mm"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Set up the Work Folder and backups on the computer that runs ShapeCraft."
+msgstr "请在运行 ShapeCraft 的电脑上设置工作文件夹和备份。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Setback"
+msgstr "退让"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Settings"
+msgstr "设置"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Settings…"
+msgstr "设置…"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Sewing"
+msgstr "缝合"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Shaded"
+msgstr "着色"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Shaders"
+msgstr "着色器"
+
+#: crates/ui-egui/src/backup.rs
+msgid "ShapeCraft Backups"
+msgstr "ShapeCraft 备份"
+
+#: crates/ui-egui/src/onboarding.rs
+#: crates/ui-egui/src/settings.rs
+msgid "ShapeCraft Default"
+msgstr "ShapeCraft 默认"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "ShapeCraft Help"
+msgstr "ShapeCraft 帮助"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "ShapeCraft Presets"
+msgstr "ShapeCraft 预设"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "ShapeCraft Website"
+msgstr "ShapeCraft 网站"
+
+#: crates/ui-egui/src/report.rs
+msgid "ShapeCraft can only open and read issues on its own repository. Nothing else of yours."
+msgstr "ShapeCraft 只能在自己的仓库中创建和读取议题，别无其他。"
+
+#: crates/ui-egui/src/graphics.rs
+msgid "ShapeCraft can't start"
+msgstr "ShapeCraft 无法启动"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/report.rs
+msgid "ShapeCraft closed unexpectedly"
+msgstr "ShapeCraft 意外关闭"
+
+#: crates/ui-egui/src/folder_access.rs
+msgid "ShapeCraft isn't allowed to use {}"
+msgstr "ShapeCraft 无权使用 {}"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "ShapeCraft on iPhone"
+msgstr "iPhone 上的 ShapeCraft"
+
+#: crates/ui-egui/src/app_log.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/settings.rs
+msgid "ShapeCraft {} is available"
+msgstr "ShapeCraft {} 可用"
+
+#: crates/ui-egui/src/app_log.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/settings.rs
+msgid "ShapeCraft {} is downloaded and ready. Installing takes a few seconds, and your work is saved first."
+msgstr "ShapeCraft {} 已下载完成。安装只需几秒，会先保存你的工作。"
+
+#: crates/ui-egui/src/app_log.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/settings.rs
+msgid "ShapeCraft {} is out (you have {})"
+msgstr "ShapeCraft {} 已发布（你的是 {}）"
+
+#: crates/ui-egui/src/app_log.rs
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/settings.rs
+msgid "ShapeCraft {} is ready"
+msgstr "ShapeCraft {} 已就绪"
+
+#: crates/ui-egui/src/updates.rs
+msgid "ShapeCraft {} is up to date"
+msgstr "ShapeCraft {} 已是最新"
+
+#: crates/ui-egui/src/cloud.rs
+msgid "Shared drives"
+msgstr "共享云端硬盘"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Sheet"
+msgstr "图纸页"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Sheet Scale:"
+msgstr "图纸比例："
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Sheet Size"
+msgstr "图纸尺寸"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Sheet Size:"
+msgstr "图纸尺寸："
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Shell"
+msgstr "抽壳"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Shell (H)"
+msgstr "抽壳（H）"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Show"
+msgstr "显示"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Show Decals"
+msgstr "显示贴花"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Show Edges"
+msgstr "显示棱边"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Show Grid"
+msgstr "显示网格"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Show Hidden Bodies"
+msgstr "显示隐藏的实体"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Show Hidden Edges"
+msgstr "显示隐藏棱边"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show History Sidebar"
+msgstr "显示历史记录侧边栏"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show Items Sidebar"
+msgstr "显示条目侧边栏"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show Log…"
+msgstr "显示日志…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Show Menu Button Labels:"
+msgstr "显示按钮标签："
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show Pinned Measurements"
+msgstr "显示固定的测量"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Show Projects Folder"
+msgstr "显示项目文件夹"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show Properties Sidebar"
+msgstr "显示属性侧边栏"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Show Sketches"
+msgstr "显示草图"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Show Versions"
+msgstr "显示版本"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Show World Axes"
+msgstr "显示坐标轴"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Show in Explorer"
+msgstr "在资源管理器中显示"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Show in Files"
+msgstr "在“文件”中显示"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Show in Finder"
+msgstr "在访达中显示"
+
+#: crates/ui-egui/src/app_log.rs
+msgid "Show in Folder"
+msgstr "在文件夹中显示"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Show it in the sheet"
+msgstr "在面板中显示"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Show on History Edit"
+msgstr "编辑历史时显示"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Show on Tool Start"
+msgstr "工具启动时显示"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Show the plane squares when starting a sketch"
+msgstr "开始草图时显示平面方块"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Show/Hide"
+msgstr "显示/隐藏"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Sides"
+msgstr "侧数"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sign In"
+msgstr "登录"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sign In and Send"
+msgstr "登录并发送"
+
+#: crates/ui-egui/src/report.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Sign Out"
+msgstr "退出登录"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sign in to see the reports you've sent."
+msgstr "登录后可查看你发送的报告。"
+
+#: crates/ui-egui/src/report.rs
+msgid "Sign in with GitHub"
+msgstr "使用 GitHub 登录"
+
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/file/drawing.rs
+msgid "Simple"
+msgstr "简单"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Simplify Geometry"
+msgstr "简化几何"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Single"
+msgstr "单个"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Single Key Action:"
+msgstr "单键动作："
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Size"
+msgstr "尺寸"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Size Type"
+msgstr "尺寸类型"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Sketch"
+msgstr "草图"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Sketch Guide Lines"
+msgstr "草图引导线"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Sketch Guide Points"
+msgstr "草图引导点"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Sketch on Face"
+msgstr "在面上画草图"
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Sketches"
+msgstr "草图"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Sketches as a vector image for laser cutters, CNC and drawing apps."
+msgstr "草图作为矢量图，用于激光切割、CNC 和绘图应用。"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Sketches can't be duplicated: copy their curves instead"
+msgstr "草图不能直接复制：请复制其中的曲线"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Sketches:"
+msgstr "草图："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Skip"
+msgstr "跳过"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Skip This Version"
+msgstr "跳过此版本"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Slicer"
+msgstr "切片软件"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/keys.rs
+msgid "Slot"
+msgstr "槽口"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Small and portable: the road to the browser"
+msgstr "小巧可移植：通往浏览器之路"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Small at the bottom, wide at the top. Loft makes everything between."
+msgstr "下面小，上面大。中间的部分由“放样”完成。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Smooth"
+msgstr "平滑"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Snap Ground Plane to Model"
+msgstr "地平面贴合模型"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Snap Ground Plane to XY"
+msgstr "地平面贴合 XY"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Snap to"
+msgstr "捕捉到"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Snap to Model"
+msgstr "捕捉到模型"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Snapping Hints"
+msgstr "捕捉提示"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Snug"
+msgstr "紧"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Soften the front so it's nice to pull."
+msgstr "把前端磨圆，拉起来更顺手。"
+
+#: crates/ui-egui/src/app.rs
+msgid "Solid Edge part"
+msgstr "Solid Edge 零件"
+
+#: crates/ui-egui/src/app.rs
+msgid "SolidWorks part"
+msgstr "SolidWorks 零件"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Something went wrong. Try editing or recreating this step."
+msgstr "出了点问题。请编辑或重新创建此步骤。"
+
+msgid "Sort"
+msgstr "排序"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Sort By"
+msgstr "排序方式"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Source and help"
+msgstr "源代码与帮助"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Space"
+msgstr "空格键"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Spacing"
+msgstr "间距"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Spacing Angle"
+msgstr "间隔角度"
+
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Spacing ⌄"
+msgstr "间距 ⌄"
+
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Speed"
+msgstr "速度"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Speed skips every repair of the file's geometry. Bodies may come in with gaps, wrong edges or other faults that stop later modeling."
+msgstr "“速度”会跳过所有几何修复。实体可能带有缝隙、错误棱边或其他妨碍后续建模的缺陷。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Spin a profile around an axis"
+msgstr "让轮廓绕轴旋转"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Spline"
+msgstr "样条曲线"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Split"
+msgstr "分割"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Split Body"
+msgstr "分割实体"
+
+#: crates/ui-egui/src/workspace/actions.rs
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Split Keep"
+msgstr "分割时保留"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Split Off Other Version"
+msgstr "拆出另一个版本"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Split With"
+msgstr "分割工具"
+
+#: crates/doc/src/lib.rs
+#: crates/dwg/src/write.rs
+#: crates/engine/src/cmd/visual.rs
+msgid "Standard"
+msgstr "标准"
+
+#: crates/ui-egui/src/settings.rs
+msgid "Standard Mouse"
+msgstr "标准鼠标"
+
+#: crates/ui-egui/src/settings.rs
+msgid "Standard Mouse, Magic Mouse, Trackpad"
+msgstr "标准鼠标、妙控鼠标、触控板"
+
+#: crates/ui-egui/src/settings.rs
+msgid "Standard Mouse, Trackpad"
+msgstr "标准鼠标、触控板"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Start"
+msgstr "起点"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Start Here"
+msgstr "从这里开始"
+
+#: crates/ui-egui/src/onboarding.rs
+#: crates/ui-egui/src/setup.rs
+msgid "Start Modeling"
+msgstr "开始建模"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Start Offset"
+msgstr "起始偏移"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Start ShapeCraft with:"
+msgstr "ShapeCraft 启动时："
+
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Start modeling to see your items here"
+msgstr "开始建模，条目会显示在这里"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Starting…"
+msgstr "正在启动…"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Stay shown until every region is used"
+msgstr "在所有区域用完之前保持显示"
+
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Step {n} out of {m}"
+msgstr "第 {n} 步，共 {m} 步"
+
+#: crates/ui-egui/src/report.rs
+msgid "Steps to reproduce (optional)"
+msgstr "重现步骤（可选）"
+
+#: crates/doc/src/lib.rs
+msgid "Stone & Ceramic"
+msgstr "石材与陶瓷"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Studio"
+msgstr "工作室"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Stylus"
+msgstr "触控笔"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Stylus button"
+msgstr "触控笔按钮"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Stylus drag"
+msgstr "用触控笔拖动"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Stylus hold, then drag"
+msgstr "按住触控笔再拖动"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Stylus may not be connected"
+msgstr "触控笔可能未连接"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Stylus tap"
+msgstr "用触控笔轻点"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Subtract"
+msgstr "减去"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Subtract (Ctrl+B)"
+msgstr "减去（Ctrl+B）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Subtract (⌘ B)"
+msgstr "减去（⌘ B）"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Subtract From"
+msgstr "从中减去"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Suffix Text"
+msgstr "后缀文字"
+
+#: crates/ui-egui/src/report.rs
+msgid "Suggest an Idea"
+msgstr "提出想法"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Suggest an Idea…"
+msgstr "提出想法…"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Sun Elevation"
+msgstr "太阳高度"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Suppress"
+msgstr "抑制"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Surface Analysis"
+msgstr "曲面分析"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Surface Area - {}"
+msgstr "表面积 - {}"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Sweep"
+msgstr "扫掠"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Sweep (W)"
+msgstr "扫掠（W）"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Sweep runs a shape along a line, like squeezing out toothpaste."
+msgstr "“扫掠”让形状沿着线移动，就像挤牙膏。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Sweep: a Coat Hook"
+msgstr "扫掠：挂衣钩"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Switch to Arris above and model the way you always do. When something is refused, comes out wrong or feels slow, send it in: every report becomes a test, and every test moves this bar."
+msgstr "在上方切换到 Arris，照常建模。如果有什么被拒绝、结果不对或感觉慢，请发给我们：每份报告都会变成测试，每个测试都会推动这根进度条。"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Symmetric"
+msgstr "对称"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Symmetrical"
+msgstr "对称"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Symmetry"
+msgstr "对称性"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Sync"
+msgstr "同步"
+
+#: crates/report/src/draft.rs
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/settings.rs
+msgid "System"
+msgstr "系统"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Tab"
+msgstr "Tab"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Tablet"
+msgstr "平板"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Tablet Access:"
+msgstr "平板访问："
+
+#: crates/doc/src/lib.rs
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Tabloid"
+msgstr "小报"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Take the sharpness off the edge."
+msgstr "把棱边磨圆。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Talk to these services"
+msgstr "与这些服务通信"
+
+#: crates/doc/src/constraints.rs
+#: crates/ui-egui/src/workspace/constraints.rs
+msgid "Tangent"
+msgstr "相切"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Tap"
+msgstr "轻点"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Tap + to start one"
+msgstr "轻点 + 新建一个"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Tap a face to start."
+msgstr "轻点一个面开始。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the cake twice to select all of it"
+msgstr "轻点两下蛋糕以选中整个蛋糕"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the candle twice to select all of it"
+msgstr "轻点两下蜡烛以选中整根蜡烛"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the coaster twice to select all of it"
+msgstr "轻点两下杯垫以选中整个杯垫"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the cup twice to select all of it"
+msgstr "轻点两下笔筒以选中整个笔筒"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the handle twice to select all of it"
+msgstr "轻点两下把手以选中整个把手"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the plate twice to select all of it"
+msgstr "轻点两下底板以选中整块底板"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the stand twice to select all of it"
+msgstr "轻点两下支架以选中整个支架"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "Tap the tray twice to select all of it"
+msgstr "轻点两下托盘以选中整个托盘"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Targets"
+msgstr "目标"
+
+#: crates/ui-egui/src/report.rs
+msgid "Tell us what you were doing, and we'll look into it."
+msgstr "告诉我们你当时在做什么，我们会查看。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Tessellation Quality:"
+msgstr "网格质量："
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Text"
+msgstr "文字"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+msgid "Text goes into a sketch: start one first"
+msgstr "文字要放进草图：请先开始一个草图"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Text…"
+msgstr "文字…"
+
+#: crates/ui-egui/src/report.rs
+msgid "Thank you. You'll get GitHub's notifications when someone answers."
+msgstr "谢谢。有人回复时 GitHub 会通知你。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "That file isn't a plugin this ShapeCraft can use: {}"
+msgstr "该文件不是此 ShapeCraft 能用的插件：{}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "That picture couldn't be added: {}"
+msgstr "无法添加该图片：{}"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "That point is on the line"
+msgstr "该点在线上"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The arcs between the arrows turn it"
+msgstr "箭头之间的弧线用来转动"
+
+#: crates/kernel/src/lib.rs
+msgid "The body couldn't be split there."
+msgstr "无法在那里分割实体。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The candles go around its middle"
+msgstr "蜡烛会围绕它的中心排列"
+
+#: crates/ui-egui/src/report.rs
+msgid "The code ran out before it was approved. Try again."
+msgstr "代码在批准前已过期。请重试。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The copy appears on its other side"
+msgstr "副本会出现在另一侧"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "The current view as a PNG picture."
+msgstr "当前视图的 PNG 图片。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "The cut goes into the body the profile rests on"
+msgstr "切除作用于轮廓所在的实体"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The description is on the clipboard."
+msgstr "描述已在剪贴板中。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "The drawing sheet's views and annotations as 2D CAD lines."
+msgstr "图纸的视图和标注，作为 2D CAD 线条。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "The drawing sheet's views and annotations as an AutoCAD drawing."
+msgstr "图纸的视图和标注，作为 AutoCAD 图纸。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "The drawing sheet, ready to print."
+msgstr "可直接打印的图纸。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "The engine under every shape you make. Both open source; restart to switch."
+msgstr "你做的每个形状背后的引擎。两者都开源；重启后切换。"
+
+#: crates/kernel/src/lib.rs
+msgid "The face can't move that far without breaking the body."
+msgstr "面移动这么远会破坏实体。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The face you select is the one that opens"
+msgstr "你选中的面会打开"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "The first launch asks which app's navigation your hands already know, so orbit, pan and zoom work the way you're used to. Change it any time under Preferences ▸ Navigation Presets."
+msgstr "首次启动会问你的手习惯哪个应用的导航方式，让旋转、平移和缩放都像以前一样。随时可在“偏好设置 ▸ 导航预设”中更改。"
+
+#: crates/ui-egui/src/app.rs
+msgid "The graphics driver reset, so ShapeCraft restarted. Your work was saved."
+msgstr "图形驱动已重置，ShapeCraft 已重启。你的工作已保存。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The hook and the plate are two parts. Union makes them one."
+msgstr "挂钩和底板是两个零件。“合并”把它们变成一个。"
+
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "The import stopped without a result"
+msgstr "导入未得到结果就停止了"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "The kernel every release is checked on"
+msgstr "每个版本都用它检查的内核"
+
+#: crates/ui-egui/src/report.rs
+msgid "The last {#} lines, your home folder shown as ~"
+msgstr "最后 {#} 行，主文件夹显示为 ~"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The model may be moved, turned and resized to suit the scene."
+msgstr "模型可能会被移动、旋转和缩放以适应场景。"
+
+#: crates/ui-egui/src/landing.rs
+msgid "The other computer's version is now “{}”"
+msgstr "另一台电脑的版本现在叫“{}”"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The picture couldn't be saved: {}"
+msgstr "无法保存图片：{}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The plugin couldn't start: {}"
+msgstr "插件无法启动：{}"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The plugin isn't added or is switched off."
+msgstr "插件未添加或已关闭。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The plugin list couldn't be loaded: {}"
+msgstr "无法加载插件列表：{}"
+
+#: crates/kernel/src/lib.rs
+msgid "The profile doesn't fit along this path. A gentler bend or a smaller profile may."
+msgstr "轮廓无法沿此路径移动。试试更缓的弯或更小的轮廓。"
+
+#: crates/ui-egui/src/app.rs
+msgid "The projects folder isn't open yet"
+msgstr "项目文件夹尚未打开"
+
+#: crates/ui-egui/src/report.rs
+msgid "The report is on the clipboard: paste it into GitHub's form."
+msgstr "报告已在剪贴板中：粘贴到 GitHub 的表单里。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "The same as Open CASCADE"
+msgstr "与 Open CASCADE 相同"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The second point sets how big the circle is"
+msgstr "第二个点决定圆的大小"
+
+#: crates/ui-egui/src/report.rs
+msgid "The sign-in was canceled on GitHub."
+msgstr "登录已在 GitHub 上取消。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "The size that fits is chosen for you"
+msgstr "合适的尺寸会自动选好"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "The sketch this step was built on is gone: recreate it or edit the step"
+msgstr "此步骤所依据的草图已不存在：请重建它或编辑此步骤"
+
+#: crates/ui-egui/src/workspace/working.rs
+msgid "The step stopped without a result"
+msgstr "该步骤未得到结果就停止了"
+
+#: crates/ui-egui/src/app.rs
+msgid "The tutorial starts as soon as you unfold your iPhone."
+msgstr "展开 iPhone 后教程就会开始。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The view is on the clipboard."
+msgstr "视图已在剪贴板中。"
+
+#: crates/kernel/src/lib.rs
+msgid "The walls don't fit at this thickness."
+msgstr "这个厚度放不下壁。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "The whole picture restyled, your model included."
+msgstr "整张图片换一种风格，包括模型。"
+
+msgid "Theme"
+msgstr "主题"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Theme:"
+msgstr "主题："
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Then attach it in {} (the + or paperclip by the message box)."
+msgstr "然后在 {} 中添加附件（消息框旁的 + 或回形针）。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Then press {} again, under the picture, and send."
+msgstr "然后在图片下方再按一次 {} 并发送。"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "There's no sketch to draw: add one, or pick flat faces"
+msgstr "没有可绘制的草图：添加一个，或选择平的面"
+
+#: crates/kernel/src/lib.rs
+msgid "These bodies couldn't be combined. Moving one by a hair often helps."
+msgstr "无法合并这些实体。把其中一个稍微移动一点往往就行。"
+
+#: crates/kernel/src/lib.rs
+msgid "These profiles couldn't be joined. Check that they don't cross each other."
+msgstr "无法连接这些轮廓。请检查它们是否相交。"
+
+#: crates/engine/src/history.rs
+msgid "Thickness"
+msgstr "厚度"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Third Angle"
+msgstr "第三角"
+
+#: crates/ui-egui/src/backup.rs
+msgid "This Computer"
+msgstr "这台电脑"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "This Computer Only"
+msgstr "仅这台电脑"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "This Network"
+msgstr "此网络"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "This computer backs up into ShapeCraft Backups/{}."
+msgstr "这台电脑备份到 ShapeCraft Backups/{}。"
+
+#: crates/kernel/src/lib.rs
+msgid "This distance doesn't fit on those edges."
+msgstr "这个距离在这些棱边上放不下。"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "This drawing was deleted"
+msgstr "该图纸已删除"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "This one comes from a file, not ShapeCraft's reviewed list. Only add it if you trust where it came from."
+msgstr "这个来自文件，不在 ShapeCraft 的审核列表中。只有信任其来源时才添加。"
+
+#: crates/kernel/src/lib.rs
+msgid "This profile couldn't be pulled into a body."
+msgstr "这个轮廓无法拉成实体。"
+
+#: crates/kernel/src/lib.rs
+msgid "This profile couldn't be turned into a body. Check that it doesn't cross the axis."
+msgstr "这个轮廓无法变成实体。请检查它是否穿过轴。"
+
+#: crates/ui-egui/src/app.rs
+msgid "This project's saved bodies couldn't be read, so its {#} bodies were rebuilt from the History."
+msgstr "无法读取此项目保存的实体，已从历史记录重建 {#} 个实体。"
+
+#: crates/ui-egui/src/app.rs
+msgid "This project's saved bodies couldn't be read. They were rebuilt from the History, but {#} steps failed: check them."
+msgstr "无法读取此项目保存的实体。已从历史记录重建，但有 {#} 个步骤失败：请检查。"
+
+#: crates/kernel/src/lib.rs
+msgid "This radius doesn't fit on those edges."
+msgstr "这个半径在这些棱边上放不下。"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "This step rounds a whole body: pick its edges again by filleting anew"
+msgstr "此步骤对整个实体倒圆：要选棱边请重新倒圆"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "This step's profile is a face: pick it again by extruding the face"
+msgstr "此步骤的轮廓是一个面：请重新拉伸该面来选择它"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Those edges are parallel"
+msgstr "这些棱边是平行的"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Those points don't make a circle"
+msgstr "这些点构不成圆"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Those touch"
+msgstr "它们相接触"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Thread"
+msgstr "螺纹"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Thread Clearance"
+msgstr "螺纹间隙"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Thread Standard"
+msgstr "螺纹标准"
+
+#: crates/engine/src/cmd/model/thread.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Thread works on cylindrical faces"
+msgstr "螺纹用于圆柱面"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/tutorials.rs
+msgid "Thread: a Bottle Neck"
+msgstr "螺纹：瓶口"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Threads"
+msgstr "螺纹"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Threads per Inch"
+msgstr "每英寸牙数"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Three-finger swipe"
+msgstr "三指轻扫"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Through All"
+msgstr "贯穿"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Tip"
+msgstr "提示"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Tip: 0° gives an orthographic view"
+msgstr "提示：0° 为正交视图"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Tip: Adjust grid size by zooming"
+msgstr "提示：缩放可调整网格大小"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Tip: double-click the view cube to reset quickly"
+msgstr "提示：双击视图立方体可快速重置"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Tip: double-tap the view cube to reset quickly"
+msgstr "提示：轻点两下视图立方体可快速重置"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Tip: the grid size follows the zoom level"
+msgstr "提示：网格大小随缩放变化"
+
+#: crates/ui-egui/src/report.rs
+msgid "Title"
+msgstr "标题"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Title Block"
+msgstr "标题栏"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "To Object"
+msgstr "到对象"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "To Split"
+msgstr "要分割的"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "To model, open this project in ShapeCraft on your computer or on an iPhone Duo opened up."
+msgstr "要建模，请在电脑或展开的 iPhone Duo 上用 ShapeCraft 打开此项目。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Today {}"
+msgstr "今天 {}"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Tolerance (mm)"
+msgstr "公差（mm）"
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Tolerances"
+msgstr "公差"
+
+#: crates/ui-egui/src/app.rs
+#: crates/ui-egui/src/settings.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Toolbar"
+msgstr "工具栏"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Tools"
+msgstr "工具"
+
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Top"
+msgstr "上"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/mod.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Total"
+msgstr "总计"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Total Angle"
+msgstr "总角度"
+
+#: crates/ui-egui/src/workspace/viewport/annotations.rs
+#: crates/ui-egui/src/workspace/viewport/clicks.rs
+msgid "Total ⌄"
+msgstr "总计 ⌄"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Trackpad"
+msgstr "触控板"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Trackpad and Keyboard"
+msgstr "触控板和键盘"
+
+#: crates/shapr/src/lib.rs
+#: crates/shapr/src/write.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Transform"
+msgstr "变换"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Translate"
+msgstr "平移"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Translate (N)"
+msgstr "平移（N）"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Transparency"
+msgstr "透明度"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Transparent"
+msgstr "透明"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Triangle"
+msgstr "三角形"
+
+#: crates/engine/src/cmd/sketch.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Trim"
+msgstr "修剪"
+
+#: crates/ui-egui/src/workspace/start_tool.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Trim (T)"
+msgstr "修剪（T）"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Try Again"
+msgstr "重试"
+
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+msgid "Turn Off Ground Plane"
+msgstr "关闭地平面"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Turn ShapeCraft on in System Settings ▸ Privacy & Security ▸ Files & Folders, then reopen it."
+msgstr "在“系统设置 ▸ 隐私与安全性 ▸ 文件与文件夹”中打开 ShapeCraft，然后重新打开它。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Turn and zoom the view (next: how it feels)."
+msgstr "转动和缩放视图（接下来：手感）。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Turn it on, then open the address it shows in Safari on your iPad,"
+msgstr "打开它，然后在 iPad 的 Safari 中打开显示的地址，"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Turn on iCloud Drive in System Settings ▸ Apple Account ▸ iCloud."
+msgstr "在“系统设置 ▸ Apple 账户 ▸ iCloud”中打开 iCloud 云盘。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Turn tablet access on or off on the computer that runs it."
+msgstr "请在运行它的电脑上开关平板访问。"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Turn the model with one finger, move it with two, and double-tap a face to look straight at it. Display Modes and Screenshot are on the right."
+msgstr "一根手指转动模型，两根手指移动，轻点两下某个面可正对它。显示模式和截图在右侧。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Turn the view, even while drawing (fingers only move the view)."
+msgstr "转动视图，绘制时也可以（手指只移动视图）。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Turn the view."
+msgstr "转动视图。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Turned off. Turn it on to change its settings."
+msgstr "已关闭。打开后才能更改它的设置。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Tutorial Mode:"
+msgstr "演示模式："
+
+#: crates/ui-egui/src/app.rs
+msgid "Tutorial complete. Nicely done!"
+msgstr "教程完成，做得好！"
+
+#: crates/ui-egui/src/landing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Tutorials"
+msgstr "教程"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Tutorials for everyone"
+msgstr "人人都能学的教程"
+
+#: crates/engine/src/history.rs
+msgid "Twist"
+msgstr "扭曲"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Two fingers"
+msgstr "两根手指"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Two pictures to pick from."
+msgstr "两张图片供选择。"
+
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Two-Distance"
+msgstr "两个距离"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Two-finger scroll"
+msgstr "双指滚动"
+
+#: crates/engine/src/formats/fbx.rs
+#: crates/engine/src/formats/threemf.rs
+#: crates/ui-egui/src/workspace/badges.rs
+msgid "Type"
+msgstr "类型"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Type an angle (Tab, then a height for a helix), or click a line or edge to spin around it. Return applies"
+msgstr "输入角度（按 Tab 再输高度可做螺旋），或点击作为轴的线或棱边。回车键应用"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Type an angle, then Tab for the quantity (or − / +). Return applies"
+msgstr "输入角度，按 Tab 输入数量（或 − / +）。回车键应用"
+
+#: crates/ui-egui/src/workspace/viewport/in_place.rs
+msgid "Type here…"
+msgstr "在此输入…"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Type the spacing, then Tab (or click Quantity) for how many. Done applies"
+msgstr "输入间距，按 Tab（或点“数量”）输入个数。“完成”应用"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/keys.rs
+msgid "Undo"
+msgstr "撤销"
+
+#: crates/ui-egui/src/app.rs
+msgid "Unfold your iPhone to keep modeling: your project is right where you left it."
+msgstr "展开 iPhone 继续建模：项目还在你离开的地方。"
+
+#: crates/ui-egui/src/workspace/badges.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Uniform"
+msgstr "均匀"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Uniform Orientation"
+msgstr "统一方向"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Union"
+msgstr "合并"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Union (Ctrl+U)"
+msgstr "合并（Ctrl+U）"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Union (⌘ U)"
+msgstr "合并（⌘ U）"
+
+#: crates/engine/src/cmd/edit.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Units"
+msgstr "单位"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Universal Scene Description"
+msgstr "Universal Scene Description"
+
+#: crates/engine/src/history.rs
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "Unlinked Copy"
+msgstr "非关联副本"
+
+#: crates/ui-egui/src/workspace/panels/right_column.rs
+msgid "Unlock"
+msgstr "解锁"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Unlock Grid Size"
+msgstr "解锁网格大小"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Unsuppress"
+msgstr "取消抑制"
+
+#: crates/doc/src/project.rs
+#: crates/mcp/src/lib.rs
+#: crates/ui-egui/src/app.rs
+msgid "Untitled Project"
+msgstr "未命名项目"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Up"
+msgstr "向上"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Up to date"
+msgstr "最新"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Up to date · backed up {}"
+msgstr "已是最新 · {} 备份"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Update"
+msgstr "更新"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Update ShapeCraft before closing?"
+msgstr "关闭前更新 ShapeCraft 吗？"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Update and Close"
+msgstr "更新并关闭"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Update and Reopen"
+msgstr "更新并重新打开"
+
+#: crates/ui-egui/src/updates.rs
+msgid "Updates:"
+msgstr "更新："
+
+#: crates/ui-egui/src/workspace/annotate.rs
+msgid "Upper Limit"
+msgstr "上限"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Use Prompt"
+msgstr "使用提示词"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Use ShapeCraft on an iPad, iPhone or another computer, in its browser."
+msgstr "在 iPad、iPhone 或另一台电脑的浏览器中使用 ShapeCraft。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Use This"
+msgstr "用这个"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "Use a Mouse"
+msgstr "用鼠标"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Use either any time: a stylus and a mouse are told apart by themselves, and fingers always move the view."
+msgstr "随时用哪个都行：触控笔和鼠标会自动区分，手指始终移动视图。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Use either any time: the Pencil, a mouse and a trackpad are told apart by themselves; fingers always move the view."
+msgstr "随时用哪个都行：Pencil、鼠标和触控板会自动区分；手指始终移动视图。"
+
+#: crates/ui-egui/src/workspace/panels/command_search.rs
+msgid "Use the File menu for files"
+msgstr "文件请用“文件”菜单"
+
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "Used Materials"
+msgstr "用到的材质"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Value"
+msgstr "值"
+
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Variable"
+msgstr "可变"
+
+#: crates/ui-egui/src/workspace/panels/variables.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Variables"
+msgstr "变量"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Variable…"
+msgstr "变量…"
+
+#: crates/ui-egui/src/report.rs
+msgid "Version and system"
+msgstr "版本与系统"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Version {}"
+msgstr "版本 {}"
+
+#: crates/doc/src/constraints.rs
+#: crates/doc/src/lib.rs
+#: crates/engine/src/drawing.rs
+msgid "Vertical"
+msgstr "垂直"
+
+#: crates/engine/src/cmd/file/drawing.rs
+#: crates/engine/src/drawing.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "View"
+msgstr "视图"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 1"
+msgstr "视图 1"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 2"
+msgstr "视图 2"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 3"
+msgstr "视图 3"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 4"
+msgstr "视图 4"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 5"
+msgstr "视图 5"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 6"
+msgstr "视图 6"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 7"
+msgstr "视图 7"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "View 8"
+msgstr "视图 8"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "View Navigation:"
+msgstr "视图导航："
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "View Scale"
+msgstr "视图比例"
+
+#: crates/ui-egui/src/workspace/panels/titlebar.rs
+msgid "View and share here."
+msgstr "在这里查看和分享。"
+
+#: crates/ui-egui/src/report.rs
+msgid "View on GitHub"
+msgstr "在 GitHub 上查看"
+
+#: crates/ui-egui/src/tablet/mod.rs
+msgid "View only on this iPhone. Model on your computer or an iPhone Duo."
+msgstr "这台 iPhone 上只能查看。请在电脑或 iPhone Duo 上建模。"
+
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+msgid "Views"
+msgstr "视图"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+msgid "Visible Outlines"
+msgstr "可见轮廓"
+
+#: crates/ui-egui/src/workspace/drawings.rs
+#: crates/ui-egui/src/workspace/panels/left_toolbar.rs
+msgid "Visualization"
+msgstr "可视化"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/toolbar.rs
+#: crates/ui-egui/src/workspace/tutorial.rs
+msgid "Visualize"
+msgstr "可视化显示"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/mod.rs
+msgid "Visualized"
+msgstr "可视化"
+
+#: crates/ui-egui/src/workspace/measure.rs
+msgid "Volume - {}"
+msgstr "体积 - {}"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "WORK FOLDER"
+msgstr "工作文件夹"
+
+#: crates/ui-egui/src/workspace/importing.rs
+msgid "Wait for the import that's running to finish"
+msgstr "请等待当前导入完成"
+
+#: crates/ui-egui/src/report.rs
+msgid "Waiting for you to approve it…"
+msgstr "等待你批准…"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Warning: Some Geometry May Not Import Cleanly"
+msgstr "注意：部分几何可能无法完好导入"
+
+#: crates/ui-egui/src/report.rs
+msgid "What ShapeCraft was doing when it closed"
+msgstr "ShapeCraft 关闭时正在做什么"
+
+#: crates/ui-egui/src/report.rs
+msgid "What did you expect? (optional)"
+msgstr "你期望的结果是？（可选）"
+
+#: crates/ui-egui/src/report.rs
+msgid "What failed"
+msgstr "失败的操作"
+
+#: crates/ui-egui/src/report.rs
+msgid "What happened?"
+msgstr "发生了什么？"
+
+#: crates/ui-egui/src/workspace/actions.rs
+msgid "What was copied is gone"
+msgstr "复制的内容已不存在"
+
+#: crates/ui-egui/src/report.rs
+msgid "What would you like ShapeCraft to do, and what would it help you make?"
+msgstr "你希望 ShapeCraft 做什么？它能帮你做出什么？"
+
+#: crates/ui-egui/src/report.rs
+msgid "What you saw, and what you were trying to do"
+msgstr "你看到了什么，当时想做什么"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "What's New?"
+msgstr "有什么新内容？"
+
+#: crates/ui-egui/src/landing.rs
+msgid "What's new"
+msgstr "新内容"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "When Closing:"
+msgstr "关闭时："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "When I Save, Close or Quit"
+msgstr "保存、关闭或退出时"
+
+#: crates/ui-egui/src/setup.rs
+msgid "When I press {}, close a project or quit"
+msgstr "当我按 {}、关闭项目或退出时"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Where should your projects live?"
+msgstr "你的项目放在哪里？"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Which device do you want to use for modeling?"
+msgstr "你想用什么设备建模？"
+
+#: crates/ui-egui/src/plugins.rs
+#: plugins/official/generative-render/src/lib.rs
+msgid "Whole Picture"
+msgstr "整张图片"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Why a choice? No single point of failure: if one kernel stalls, breaks or changes course, ShapeCraft carries on with the other. And no one library decides what ShapeCraft can become."
+msgstr "为什么可以选？没有单点故障：如果一个内核停滞或改变方向，ShapeCraft 会用另一个继续。也没有哪个库能独自决定 ShapeCraft 的未来。"
+
+#: crates/report/src/draft.rs
+#: crates/ui-egui/src/menubar.rs
+msgid "Window"
+msgstr "窗口"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Wireframe"
+msgstr "线框"
+
+#: crates/doc/src/lib.rs
+msgid "Wood"
+msgstr "木材"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Work Folder"
+msgstr "工作文件夹"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Work Here"
+msgstr "在这里工作"
+
+#: crates/ui-egui/src/workspace/import_prefs.rs
+msgid "Work each edge out again from the faces it joins, so they meet exactly."
+msgstr "根据相邻的面重新计算每条棱边，使其精确吻合。"
+
+#: crates/ui-egui/src/cloud.rs
+msgid "Work or School"
+msgstr "工作或学校"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Working ({})…"
+msgstr "正在处理（{}）…"
+
+#: crates/ui-egui/src/workspace/working.rs
+msgid "Working for {#} min {#} s"
+msgstr "已运行 {#} 分 {#} 秒"
+
+#: crates/ui-egui/src/workspace/working.rs
+msgid "Working for {#} s"
+msgstr "已运行 {#} 秒"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Works too (USB-C or Bluetooth): click picks and draws, right-click for more options."
+msgstr "也可以（USB-C 或蓝牙）：点击选择和绘制，右键有更多选项。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Works, with limits: {}"
+msgstr "可用，有限制：{}"
+
+#: crates/ui-egui/src/workspace/history.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Workspace is empty"
+msgstr "工作区为空"
+
+#: crates/engine/src/cmd/model/mod.rs
+#: crates/engine/src/history.rs
+#: crates/kernel/src/lib.rs
+msgid "Wrap & Emboss"
+msgstr "包裹与压印"
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "Writes a material file next to the mesh"
+msgstr "在网格旁写入材质文件"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "X-Ray"
+msgstr "X光"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+#: crates/ui-egui/src/workspace/visual.rs
+msgid "XY Plane"
+msgstr "XY 平面"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Y-Shaped Blend"
+msgstr "Y形过渡"
+
+#: crates/ui-egui/src/workspace/step_card.rs
+msgid "Y-shaped blends aren't built yet"
+msgstr "Y 形过渡尚未实现"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "YZ Plane"
+msgstr "YZ 平面"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "You can change it any time in Preferences."
+msgstr "随时可在偏好设置中更改。"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "You can draw right on a part."
+msgstr "可以直接在零件上画图。"
+
+#: crates/ui-egui/src/updates.rs
+msgid "You have {}. What's new:"
+msgstr "你的版本是 {}。新内容："
+
+#: crates/ui-egui/src/landing.rs
+msgid "You're up to date ({})"
+msgstr "已是最新版本（{}）"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "You're using ShapeCraft from a browser."
+msgstr "你正在浏览器中使用 ShapeCraft。"
+
+#: crates/ui-egui/src/whats_new.rs
+msgid "Your .shapr projects open here"
+msgstr "你的 .shapr 项目可以在这里打开"
+
+#: crates/ui-egui/src/setup.rs
+msgid "Your Projects"
+msgstr "你的项目"
+
+#: crates/ui-egui/src/report.rs
+msgid "Your Reports"
+msgstr "你的报告"
+
+#: crates/ui-egui/src/menubar.rs
+msgid "Your Reports…"
+msgstr "你的报告…"
+
+#: crates/ui-egui/src/report.rs
+msgid "Your idea"
+msgstr "你的想法"
+
+#: crates/ui-egui/src/report.rs
+msgid "Your idea in a few words"
+msgstr "用几句话说说你的想法"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Your model stays exact"
+msgstr "模型保持精确"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Your model's own pixels go back on top: same shape, place and size."
+msgstr "模型自身的像素会放回最上层：形状、位置和大小都不变。"
+
+#: crates/ui-egui/src/app.rs
+msgid "Your new project opens as soon as you unfold your iPhone."
+msgstr "展开 iPhone 后会打开你的新项目。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Your own AI"
+msgstr "你自己的 AI"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Your projects are kept in {}"
+msgstr "你的项目保存在 {}"
+
+#: crates/ui-egui/src/landing.rs
+msgid "Your projects are kept on the computer, in {}"
+msgstr "你的项目保存在电脑上的 {}"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Your steps show up here as you model"
+msgstr "建模时步骤会显示在这里"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "Your view"
+msgstr "你的视图"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "ZX Plane"
+msgstr "ZX 平面"
+
+#: crates/render/src/scene.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Zebra"
+msgstr "斑马纹"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+#: crates/ui-egui/src/workspace/panels/right_popover.rs
+msgid "Zebra Analysis"
+msgstr "斑马纹分析"
+
+#: crates/ui-egui/src/workspace/keys.rs
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Zoom"
+msgstr "缩放"
+
+#: crates/ui-egui/src/workspace/history.rs
+msgid "Zoom To"
+msgstr "缩放到"
+
+#: crates/ui-egui/src/menubar.rs
+#: crates/ui-egui/src/workspace/panels/context_menu.rs
+#: crates/ui-egui/src/workspace/panels/items.rs
+msgid "Zoom to"
+msgstr "缩放到"
+
+#: crates/ui-egui/src/workspace/camera.rs
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "Zoom to Selection"
+msgstr "缩放到所选内容"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Zoom to the face."
+msgstr "缩放到该面。"
+
+#: crates/ui-egui/src/onboarding.rs
+msgid "Zoom."
+msgstr "缩放。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "Zoom:"
+msgstr "缩放："
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "a variable carries its own unit"
+msgstr "变量自带单位"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "arrow keys"
+msgstr "方向键"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "crossing"
+msgstr "交叉"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "fully included"
+msgstr "完全包含"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "in your cloud storage, a NAS or another drive, kept up to date."
+msgstr "在你的云存储、NAS 或其他磁盘上，始终保持最新。"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "it full screen, like an app. Your projects stay on this computer."
+msgstr "像应用一样全屏使用。项目仍保存在这台电脑上。"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "it's turned off"
+msgstr "已关闭"
+
+#: crates/ui-egui/src/backup.rs
+msgid "just now"
+msgstr "刚刚"
+
+#: crates/ui-egui/src/app.rs
+msgid "less than a minute ago"
+msgstr "不到一分钟前"
+
+#: crates/ui-egui/src/app.rs
+msgid "no project open"
+msgstr "没有打开的项目"
+
+#: crates/ui-egui/src/report.rs
+msgid "no replies yet"
+msgstr "还没有回复"
+
+#: crates/ui-egui/src/graphics.rs
+msgid "no usable graphics adapter"
+msgstr "没有可用的显卡"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "not yet"
+msgstr "尚未支持"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "nothing left: the original stays"
+msgstr "什么都不剩：保留原件"
+
+#: crates/ui-egui/src/report.rs
+msgid "or go to {} on any phone or computer"
+msgstr "或在任意手机或电脑上打开 {}"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "or scan the code with its camera. Add it to the Home Screen to use"
+msgstr "或用相机扫描此码。添加到主屏幕后可"
+
+#: crates/ui-egui/src/workspace/panels/popups.rs
+msgid "press "
+msgstr "请按 "
+
+#: crates/ui-egui/src/workspace/export.rs
+msgid "set the same unit in your slicer."
+msgstr "在切片软件中设置相同的单位。"
+
+#: crates/ui-egui/src/control.rs
+msgid "the app closed"
+msgstr "应用已关闭"
+
+#: crates/ui-egui/src/workspace/tools/mod.rs
+msgid "the quantity must be a whole number"
+msgstr "数量必须是整数"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "the service"
+msgstr "该服务"
+
+#: crates/ui-egui/src/workspace/viewport/gpu.rs
+msgid "the view couldn't be rendered"
+msgstr "无法渲染视图"
+
+#: crates/ui-egui/src/tutorials.rs
+msgid "type "
+msgstr "输入 "
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "with an update downloaded"
+msgstr "已下载更新时"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "with limits"
+msgstr "有限制"
+
+msgid "{#} Formats Selected"
+msgstr "已选 {#} 种格式"
+
+msgid "{#} axes"
+msgstr "{#} 条轴"
+
+msgid "{#} bodies"
+msgstr "{#} 个实体"
+
+msgid "{#} curves"
+msgstr "{#} 条曲线"
+
+msgid "{#} days ago"
+msgstr "{#} 天前"
+
+msgid "{#} edges"
+msgstr "{#} 条棱边"
+
+msgid "{#} faces"
+msgstr "{#} 个面"
+
+msgid "{#} h ago"
+msgstr "{#} 小时前"
+
+msgid "{#} images"
+msgstr "{#} 张图片"
+
+msgid "{#} items"
+msgstr "{#} 个条目"
+
+msgid "{#} min ago"
+msgstr "{#} 分钟前"
+
+msgid "{#} more waiting after this one."
+msgstr "之后还有 {#} 个在等待。"
+
+msgid "{#} of {#} modeling checks pass"
+msgstr "{#} / {#} 项建模检查通过"
+
+msgid "{#} pictures, kept on this computer"
+msgstr "{#} 张图片，保存在这台电脑上"
+
+msgid "{#} planes"
+msgstr "{#} 个平面"
+
+msgid "{#} points"
+msgstr "{#} 个点"
+
+msgid "{#} replies"
+msgstr "{#} 条回复"
+
+msgid "{#} sketches"
+msgstr "{#} 个草图"
+
+#: crates/ui-egui/src/landing.rs
+msgid "{n} min"
+msgstr "{n} 分钟"
+
+#: crates/ui-egui/src/landing.rs
+msgid "{} Backup"
+msgstr "{} 备份"
+
+#: crates/ui-egui/src/landing.rs
+msgid "{} Versions"
+msgstr "{} 的版本"
+
+msgid "{} can't take a custom key yet"
+msgstr "{} 暂时不能自定义按键"
+
+#: crates/ui-egui/src/workspace/working.rs
+msgid "{} canceled"
+msgstr "{} 已取消"
+
+msgid "{} couldn't be added"
+msgstr "无法添加 {}"
+
+msgid "{} is added."
+msgstr "已添加 {}。"
+
+msgid "{} is coming soon"
+msgstr "{} 即将推出"
+
+msgid "{} is opening in your browser. Sign in there if it asks."
+msgstr "正在浏览器中打开 {}。如有需要请登录。"
+
+msgid "{} is ready"
+msgstr "{} 已就绪"
+
+#: crates/ui-egui/src/updates.rs
+msgid "{} is ready: it installs when you close ShapeCraft"
+msgstr "{} 已就绪：关闭 ShapeCraft 时安装"
+
+#: crates/ui-egui/src/plugins.rs
+msgid "{} is removed, with its settings, keys and pictures."
+msgstr "已移除 {}，连同其设置、密钥和图片。"
+
+#: crates/engine/src/lib.rs
+msgid "{} isn't available right now"
+msgstr "{} 当前不可用"
+
+#: crates/ui-egui/src/workspace/prefs.rs
+msgid "{} syncs this folder too. Projects open fastest when it keeps them downloaded on this computer."
+msgstr "{} 也在同步此文件夹。让它把项目保留在这台电脑上，打开最快。"
+
+msgid "{} was working on it {}."
+msgstr "{} 在{}还在编辑它。"
+
+msgid "{} · Curve {#}"
+msgstr "{} · 曲线 {#}"
+
+msgid "{} · Curve {#} · Point {#}"
+msgstr "{} · 曲线 {#} · 点 {#}"
+
+msgid "{} · Edge {#}"
+msgstr "{} · 棱边 {#}"
+
+msgid "{} · Face {#}"
+msgstr "{} · 面 {#}"
+
+msgid "{} · Free chat"
+msgstr "{} · 免费聊天"
+
+msgid "{} · Region {#}"
+msgstr "{} · 区域 {#}"
+
+msgid "“{}” is open on {}"
+msgstr "“{}”已在 {} 上打开"
+
+msgid "“{}” opens as soon as you unfold your iPhone."
+msgstr "展开 iPhone 后会打开“{}”。"
+
+#: crates/ui-egui/src/workspace/area.rs
+msgid "⇥ (Tab)"
+msgstr "⇥（Tab）"
+
+#: crates/ui-egui/src/landing.rs
+msgid "✓ Date Modified"
+msgstr "✓ 修改日期"
+
+#: crates/ui-egui/src/landing.rs
+msgid "✓ Name"
+msgstr "✓ 名称"
