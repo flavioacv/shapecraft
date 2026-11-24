@@ -156,6 +156,20 @@ impl Workspace {
         best.map(|(_, i)| i)
     }
 
+    /// A point of a mirror tile on screen (0 YZ, 1 XZ, 2 XY), off the middle where the three cross.
+    pub(in crate::workspace) fn mirror_tile_spot(&self, i: usize) -> Option<Pos2> {
+        let tiles = self.mirror_tiles();
+        let (_, tile) = tiles.get(i)?;
+        let c = tile.corners;
+        // Its middle, or on the way to a corner where another one covers that.
+        let mid = (c[0] + c[1] + c[2] + c[3]) / 4.0;
+        [0.0, 0.35, 0.62]
+            .iter()
+            .flat_map(|f| c.iter().map(move |k| mid + (*k - mid) * *f))
+            .filter_map(|q| self.to_screen(q))
+            .find(|s| self.mirror_tile_under(*s) == Some(i))
+    }
+
     pub(super) fn plane_tiles(&self) -> Vec<(SketchPlane, PlaneTile)> {
         if matches!(self.tool, Tool::Mirror(_)) {
             return self.mirror_tiles();

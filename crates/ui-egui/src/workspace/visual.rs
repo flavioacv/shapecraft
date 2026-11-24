@@ -334,6 +334,9 @@ fn apply(ws: &mut Workspace, look: &Appearance) {
 }
 
 pub(super) fn sidebar(ws: &mut Workspace, ui: &mut Ui, r: Rect) {
+    if let Some(t) = ws.tutorial.as_deref_mut() {
+        t.spots.remove("color");
+    }
     super::panels::panel(ui, r, ws.glass());
     super::decals::drag_frame(ws, ui);
     ws.paint_decal_handle(ui);
@@ -1058,6 +1061,10 @@ fn properties(ws: &mut Workspace, ui: &mut Ui, r: Rect) {
     for (i, sw) in swatches.iter().enumerate() {
         let rr = Rect::from_center_size(pos2(x + 9.0, sy), vec2(16.0, 16.0));
         let resp = ui.interact(rr, ui.scope_id().with(("swatch", i)), Sense::click());
+        // What a tutorial points at: the orange one.
+        if i == 4 {
+            ws.tutorial_spot("color", rr);
+        }
         p.rect_filled(rr, radius(3), theme::c(*sw));
         if resp.hovered() {
             p.rect_stroke(rr.expand(2.0), radius(4), Stroke::new(1.5, Tokens::accent()), StrokeKind::Inside);

@@ -820,14 +820,24 @@ impl Landing {
             return action;
         }
         if learn {
-            let top = if phone { y - 94.0 } else { content.top() };
-            let (a, end) = self.learn_page(ui, top, left, if phone { grid_right } else { f32::INFINITY });
+            // On a computer the page scrolls with the wheel where its cards don't all fit.
+            if !phone {
+                let (wheel, over, dt) =
+                    ui.input(|i| (i.smooth_scroll_delta().y, i.pointer.hover_pos().is_some_and(|q| content.contains(q)), i.stable_dt));
+                if over && wheel != 0.0 {
+                    self.page.nudge(-wheel, self.page_max);
+                }
+                if self.page.step(dt, self.page_max) {
+                    ui.ctx().request_repaint();
+                }
+                ui.set_clip_rect(content.intersect(ui.clip_rect()));
+            }
+            let top = if phone { y - 94.0 } else { content.top() - self.page.offset };
+            let (a, end) = self.learn_page(ui, top, left, if phone { grid_right } else { content.right() }, phone);
             if a.is_some() {
                 action = a;
             }
-            if phone {
-                self.clamp_scroll(end, full.bottom());
-            }
+            self.clamp_scroll(end, full.bottom());
             if let Some(c) = &chrome
                 && let Some(a) = self.phone_chrome(ui, c, screen, now)
             {
@@ -1186,22 +1196,18 @@ impl Landing {
 
     /// Get Started and Tutorials, laid out like the reference's (s30-013/014): a bold heading, then 170 × 219 cards
     /// every 190 px; blue cards on Get Started, dark ones on Tutorials.
-    /// On a phone (`right` finite) the cards wrap in rows that fill the width instead of running off the side;
-    /// returns where the page ends.
-    fn learn_page(&mut self, ui: &mut Ui, top: f32, left: f32, right: f32) -> (Option<LandingAction>, f32) {
+    /// The cards wrap in rows, on a phone filling the width; returns where the page ends.
+    fn learn_page(&mut self, ui: &mut Ui, top: f32, left: f32, right: f32, phone: bool) -> (Option<LandingAction>, f32) {
         let p = ui.painter().clone();
         let mut action = None;
         let tutorials_page = self.section == Section::Tutorials;
         let mut y = top + 94.0;
         // Columns and card width: 170 every 190 on a computer; on a phone as many as fit, widened
         // to fill the room.
-        let (cols, card_w) = if right.is_finite() {
-            let room = right - 20.0 - left;
-            let cols = ((room + 20.0) / 190.0).floor().max(1.0);
-            (cols as usize, (room - (cols - 1.0) * 20.0) / cols)
-        } else {
-            (usize::MAX, 170.0)
-        };
+        let room = right - 20.0 - left;
+        let cols = ((room + 20.0) / 190.0).floor().max(1.0);
+        let card_w = if phone { (room - (cols - 1.0) * 20.0) / cols } else { 170.0 };
+        let cols = cols as usize;
         let place = |i: usize, y: f32| -> Rect {
             let (row, col) = (i / cols, i % cols);
             Rect::from_min_size(pos2(left + col as f32 * (card_w + 20.0), y + 34.0 + row as f32 * 239.0), vec2(card_w, 219.0))
@@ -1210,50 +1216,26 @@ impl Landing {
         let heading = |y: f32, text: &str| {
             p.text(pos2(left, y), Align2::LEFT_CENTER, crate::i18n::tr_s(text), theme::strong(16.0), Tokens::text_strong());
         };
-        heading(y, if tutorials_page { "In-App Tutorials" } else { "New to CAD" });
-        let fill = if tutorials_page { hex(0x333333) } else { hex(0x1d4fff) };
-        for (i, lesson) in crate::tutorials::LESSONS.iter().enumerate() {
-            let r = place(i, y);
-            let hit = ui.interact(r, ui.scope_id().with(("lesson", i)), Sense::click());
-            p.rect_filled(r, radius(5), fill);
-            if let Some(tex) = self.art(ui.ctx(), &format!("tut-{}", lesson.id)) {
-                let pic = Rect::from_min_size(pos2(r.left() + 18.0, r.top() + 44.0), vec2(152.0, 196.0));
-                p.with_clip_rect(r).image(tex, pic, Rect::from_min_max(pos2(0.0, 0.0), pos2(1.0, 1.0)), Color32::WHITE);
+        use crate::tutorials::{Course, LESSONS};
+        // The beginner courses in order, then (on Tutorials) one for each tool.
+        let parts: &[(Course, &str, u32)] = if tutorials_page {
+            &[(Course::Beginner, "Start Here", 0x1d4fff), (Course::Tool, "Learn a Tool", 0x333333)]
+        } else {
+            &[(Course::Beginner, "New to CAD", 0x1d4fff)]
+        };
+        for (k, &(course, title, fill)) in parts.iter().enumerate() {
+            if k > 0 {
+                y += 53.0;
             }
-            p.galley(
-                pos2(r.left() + 16.0, r.top() + 15.0),
-                p.layout(crate::i18n::tr_s(lesson.title), theme::strong(14.0), Color32::WHITE, 140.0),
-                Color32::WHITE,
-            );
-            p.text(
-                pos2(r.left() + 16.0, r.bottom() - 21.0),
-                Align2::LEFT_CENTER,
-                format!("{} min", lesson.minutes),
-                theme::strong(10.5),
-                Color32::WHITE,
-            );
-            // ▶ in a ring, bottom right; a tick instead once it's been done.
-            let c = pos2(r.right() - 25.0, r.bottom() - 21.0);
-            p.circle_stroke(c, 7.5, Stroke::new(1.4, Color32::WHITE));
-            if self.tutorials_done.iter().any(|d| d == lesson.id) {
-                p.line_segment([c + vec2(-3.4, 0.2), c + vec2(-0.9, 2.8)], Stroke::new(1.6, Color32::WHITE));
-                p.line_segment([c + vec2(-0.9, 2.8), c + vec2(3.6, -2.6)], Stroke::new(1.6, Color32::WHITE));
-            } else {
-                p.add(egui::Shape::convex_polygon(
-                    vec![c + vec2(-2.2, -3.6), c + vec2(3.8, 0.0), c + vec2(-2.2, 3.6)],
-                    Color32::WHITE,
-                    Stroke::NONE,
-                ));
+            heading(y, title);
+            let lessons: Vec<_> = LESSONS.iter().filter(|l| l.course == course).collect();
+            for (i, lesson) in lessons.iter().enumerate() {
+                if self.lesson_card(ui, place(i, y), lesson, hex(fill), (course == Course::Beginner).then_some(i + 1)) {
+                    action = Some(LandingAction::Tutorial(lesson.id));
+                }
             }
-            if hit.hovered() {
-                p.rect_stroke(r, radius(5), Stroke::new(2.0, Color32::from_white_alpha(70)), StrokeKind::Inside);
-                ui.ctx().set_cursor_icon(egui::CursorIcon::PointingHand);
-            }
-            if hit.clicked() {
-                action = Some(LandingAction::Tutorial(lesson.id));
-            }
+            y += 34.0 + rows(lessons.len()) * 239.0 - 20.0;
         }
-        y += 34.0 + rows(crate::tutorials::LESSONS.len()) * 239.0 - 20.0;
         if tutorials_page {
             return (action, y + 16.0);
         }
@@ -1320,6 +1302,64 @@ impl Landing {
         (action, y + 34.0 + rows(2) * 239.0 - 20.0 + 16.0)
     }
 
+    /// A tutorial's card: its title and what it teaches over a picture of what it makes. Returns whether it was pressed.
+    fn lesson_card(&mut self, ui: &mut Ui, r: Rect, lesson: &crate::tutorials::Lesson, fill: Color32, number: Option<usize>) -> bool {
+        let p = ui.painter().clone();
+        let hit = ui.interact(r.intersect(ui.clip_rect()), ui.scope_id().with(("lesson", lesson.id)), Sense::click());
+        p.rect_filled(r, radius(8), fill);
+        let w = r.width() - 32.0;
+        let title = match number {
+            Some(n) => format!("{n}. {}", crate::i18n::tr(lesson.title)),
+            None => crate::i18n::tr_s(lesson.title),
+        };
+        let title = p.layout(title, theme::strong(14.0), Color32::WHITE, w);
+        let about = p.layout(crate::i18n::tr_s(lesson.about), theme::body(11.0), Color32::from_white_alpha(210), w);
+        let words = title.size().y + 4.0 + about.size().y;
+        if let Some(tex) = self.art(ui.ctx(), &format!("tut-{}", lesson.id)) {
+            // Under the words, as big as fits, off the bottom edge a little.
+            let room = Rect::from_min_max(pos2(r.left() + 12.0, r.top() + 15.0 + words + 4.0), pos2(r.right() - 12.0, r.bottom() - 4.0));
+            let k = (room.width() / 340.0).min(room.height() / 300.0);
+            let pic = Rect::from_center_size(room.center() + vec2(0.0, -4.0), vec2(340.0, 438.0) * k);
+            p.with_clip_rect(r.intersect(ui.clip_rect())).image(
+                tex,
+                pic,
+                Rect::from_min_max(pos2(0.0, 0.0), pos2(1.0, 1.0)),
+                Color32::WHITE,
+            );
+        }
+        let title_h = title.size().y;
+        p.galley(pos2(r.left() + 16.0, r.top() + 14.0), title, Color32::WHITE);
+        p.galley(pos2(r.left() + 16.0, r.top() + 18.0 + title_h), about, Color32::WHITE);
+        p.text(
+            pos2(r.left() + 16.0, r.bottom() - 18.0),
+            Align2::LEFT_CENTER,
+            crate::i18n::tr("{n} min").replace("{n}", &lesson.minutes.to_string()),
+            theme::strong(10.5),
+            Color32::WHITE,
+        );
+        // ▶ in a ring, bottom right; a tick instead once it's been done.
+        let c = pos2(r.right() - 22.0, r.bottom() - 18.0);
+        let done = self.tutorials_done.iter().any(|d| d == lesson.id);
+        if done {
+            p.circle_filled(c, 9.0, hex(0x34c759));
+            p.line_segment([c + vec2(-3.4, 0.2), c + vec2(-0.9, 2.8)], Stroke::new(1.6, Color32::WHITE));
+            p.line_segment([c + vec2(-0.9, 2.8), c + vec2(3.6, -2.6)], Stroke::new(1.6, Color32::WHITE));
+        } else {
+            p.circle_filled(c, 9.0, Color32::from_black_alpha(70));
+            p.circle_stroke(c, 8.0, Stroke::new(1.4, Color32::WHITE));
+            p.add(egui::Shape::convex_polygon(
+                vec![c + vec2(-2.2, -3.6), c + vec2(3.8, 0.0), c + vec2(-2.2, 3.6)],
+                Color32::WHITE,
+                Stroke::NONE,
+            ));
+        }
+        if hit.hovered() {
+            p.rect_stroke(r, radius(8), Stroke::new(2.0, Color32::from_white_alpha(70)), StrokeKind::Inside);
+            ui.ctx().set_cursor_icon(egui::CursorIcon::PointingHand);
+        }
+        hit.clicked()
+    }
+
     /// How far a phone's page scrolls: until `end` (where its content stops now) comes up to `bottom`.
     fn clamp_scroll(&mut self, end: f32, bottom: f32) {
         self.page_max = (self.page.offset + end - bottom).max(0.0);
@@ -1365,9 +1405,15 @@ impl Landing {
 
 /// The home screen's pictures (our own renders, `assets/home/`, made with `shapecraft-cli run … --png --clear`).
 const ART: &[(&str, &[u8])] = &[
-    ("tut-phone-stand", include_bytes!("../../../assets/home/tut-phone-stand.png")),
+    ("tut-coaster", include_bytes!("../../../assets/home/tut-coaster.png")),
     ("tut-pencil-cup", include_bytes!("../../../assets/home/tut-pencil-cup.png")),
-    ("tut-key-tag", include_bytes!("../../../assets/home/tut-key-tag.png")),
+    ("tut-phone-stand", include_bytes!("../../../assets/home/tut-phone-stand.png")),
+    ("tut-drawer-knob", include_bytes!("../../../assets/home/tut-drawer-knob.png")),
+    ("tut-flower-pot", include_bytes!("../../../assets/home/tut-flower-pot.png")),
+    ("tut-coat-hook", include_bytes!("../../../assets/home/tut-coat-hook.png")),
+    ("tut-birthday-cake", include_bytes!("../../../assets/home/tut-birthday-cake.png")),
+    ("tut-serving-tray", include_bytes!("../../../assets/home/tut-serving-tray.png")),
+    ("tut-bottle-neck", include_bytes!("../../../assets/home/tut-bottle-neck.png")),
     ("new-navigation", include_bytes!("../../../assets/home/new-navigation.png")),
     ("new-tutorials", include_bytes!("../../../assets/home/new-tutorials.png")),
     ("new-view-cube", include_bytes!("../../../assets/home/new-view-cube.png")),

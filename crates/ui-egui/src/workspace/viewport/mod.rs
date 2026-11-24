@@ -68,6 +68,9 @@ impl Workspace {
         self.session.keep_sketches = self.settings.keep_sketches;
         self.confirm_seen = self.confirm.take();
         self.seen_bottom.clear();
+        if let Some(t) = self.tutorial.as_deref_mut() {
+            t.spots.remove("Done");
+        }
         if self.confirm_seen.is_none() {
             self.confirm_click = None;
         }
@@ -265,6 +268,12 @@ impl Workspace {
             Tool::RotateAxis(t) => t.angle.abs() > 1e-9,
             Tool::BodyEdgeOffset(t) => t.distance.abs() > 1e-9,
             Tool::OffsetFace(t) => t.whole,
+            // Ready to make: without Done only Return would (no way on for a mouse or a finger).
+            Tool::Revolve(t) => t.params(t.angle).is_some(),
+            Tool::Loft(t) => t.request().is_some(),
+            Tool::Sweep(t) => t.request().is_some(),
+            Tool::Shell(t) => t.thickness.abs() > 1e-9,
+            Tool::OffsetPlane(t) => t.distance.abs() > 1e-9,
             _ => false,
         };
         if (live || self.picked_modify_tool()) && self.sketch_transform().is_none() && !self.offsetting_region() {

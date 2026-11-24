@@ -18,6 +18,7 @@ mod command_search;
 mod context_menu;
 mod items;
 mod left_toolbar;
+pub(super) use left_toolbar::is_active as tool_is_active;
 mod popups;
 mod right_column;
 mod right_popover;

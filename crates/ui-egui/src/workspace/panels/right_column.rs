@@ -341,6 +341,7 @@ impl Workspace {
     pub(in crate::workspace) fn tutorial_cube(&mut self, ui: &mut Ui) {
         let vp = self.viewport_rect;
         let cube = Rect::from_center_size(pos2(vp.right() - 62.0, self.right_top + 49.0), vec2(72.0, 72.0));
+        self.tutorial_spot("cube", cube);
         self.view_cube(ui, cube);
     }
 

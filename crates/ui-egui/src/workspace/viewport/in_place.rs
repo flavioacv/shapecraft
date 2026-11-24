@@ -324,7 +324,8 @@ impl Workspace {
         self.confirm = Some(done || self.confirm == Some(true));
         // A click on the toolbar's ✓ / ✕ (Preferences ▸ Done / Cancel Buttons) lands here, for the same handling.
         let cell = self.confirm_click.take().filter(|c| *c == "Cancel" || done);
-        if self.settings.confirm_buttons == "Toolbar" {
+        // (A tutorial has no toolbar cells to stand in for them.)
+        if self.settings.confirm_buttons == "Toolbar" && self.tutorial.is_none() {
             return cell;
         }
         let p = ui.painter().clone();
@@ -375,6 +376,9 @@ impl Workspace {
             } else {
                 p.rect_filled(cap, radius(3), theme::c(0x48474a));
                 p.text(cap.center(), Align2::CENTER_CENTER, key, theme::body(9.0), Tokens::text_dim());
+            }
+            if label == "Done" {
+                self.tutorial_spot("Done", r);
             }
             if ui.interact(r, ui.scope_id().with(("bottom-action", label)), Sense::click()).clicked() {
                 hit = Some(label);

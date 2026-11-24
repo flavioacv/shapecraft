@@ -1139,6 +1139,7 @@ impl Workspace {
                 // Outside a sketch, a shown sketch's key point opens that sketch with the point picked.
                 if matches!(self.tool, Tool::Idle | Tool::Extrude(_) | Tool::OffsetFace(_) | Tool::Fillet(_) | Tool::Move(_))
                     && (matches!(self.tool, Tool::Idle) || self.predicted)
+                    && self.tutorial.as_deref().is_none_or(|t| t.sketches())
                     && let Some(pt @ Pick::SketchPoint { sketch, .. }) = self.shown_sketch_point_at(c)
                 {
                     self.tool = Tool::Idle;
@@ -1156,6 +1157,7 @@ impl Workspace {
                     && !shift
                     && self.session.active_sketch.is_none()
                     && (matches!(self.tool, Tool::Idle) || self.predicted)
+                    && self.tutorial.as_deref().is_none_or(|t| t.sketches())
                 {
                     self.tool = Tool::Idle;
                     self.predicted = false;

@@ -4,7 +4,8 @@
 //! `shapecraft-snap SCENARIO.jsonl OUT_DIR`, one step per line:
 //! `{"size": [1840, 1324]}` (first line: start size, `"scale": 2` for Retina pixels; later: resize), `{"control": "engine.execute", "params": {...}}`,
 //! `{"hover": [x, y]}`, `{"click": [x, y]}`, `{"right_click": [x, y]}`, `{"double_click": [x, y]}`, `{"right_drag": [[x0, y0], [x1, y1]]}`, `{"drag": [[..], [..]]}`,
-//! `{"key": "R", "mods": "cmd+shift"}`, `{"text": "10"}`, `{"touch_screen": true}` and `{"small_screen": true}` (as on an Android tablet or phone), `{"safe": [top, right, bottom, left]}` (safe-area insets in points), `{"corner": [x, y, w, h]}` (a reserved status corner), `{"side_bar": [x, y, w, h]}` (the iPhone Duo's vertical bar), `{"folded": true}` (a folded phone), `{"view_only": true}` (an ordinary iPhone: view only), `{"wait": 0.5}`, `{"sleep": 0.5}` (real time, for background threads), `{"shot": "name"}`.
+//! `{"key": "R", "mods": "cmd+shift"}`, `{"text": "10"}`, `{"touch_screen": true}` and `{"small_screen": true}` (as on an Android tablet or phone), `{"safe": [top, right, bottom, left]}` (safe-area insets in points), `{"corner": [x, y, w, h]}` (a reserved status corner), `{"side_bar": [x, y, w, h]}` (the iPhone Duo's vertical bar), `{"folded": true}` (a folded phone), `{"view_only": true}` (an ordinary iPhone: view only), `{"wait": 0.5}`, `{"sleep": 0.5}` (real time, for background threads), `{"shot": "name"}`,
+//! `{"play_tutorial": "coaster"}` (every instruction followed with its own gesture).
 //! A point with three numbers is a model point (mm), placed on screen through the current camera.
 //! `"@face:BODY:x,y,z"` and `"@edge:BODY:x,y,z"` anywhere in a step become the face or edge at that model point.
 //! `{"expect": {...}}` checks the model (see [`expect`]); `{"task": {...}}` names a benchmark task.
@@ -252,6 +253,8 @@ fn steps(h: &mut App<'_>, lines: &[Value], out: Option<&Path>, outcome: &mut Out
         } else if let Some(t) = step.get("text").and_then(Value::as_str) {
             h.event(Event::Text(t.to_string()));
             h.run_steps(2);
+        } else if let Some(id) = step.get("play_tutorial").and_then(Value::as_str) {
+            play_tutorial(h, id, out, outcome)?;
         } else if let Some(on) = step.get("touch_screen").and_then(Value::as_bool) {
             // As the Android app starts: a touch screen of its own (touch layout, first-run question).
             shapecraft_ui::tablet::set_touch_screen(on);
@@ -318,6 +321,103 @@ fn steps(h: &mut App<'_>, lines: &[Value], out: Option<&Path>, outcome: &mut Out
         }
     }
     Ok(())
+}
+
+/// Goes through a tutorial the way its pointer shows: the gesture of each instruction, with real events, until the
+/// last step's Continue. An instruction its own gesture doesn't meet is a step a person would be stuck on.
+fn play_tutorial(h: &mut App<'_>, id: &str, out: Option<&Path>, outcome: &mut Outcome) -> Result<()> {
+    let call = |h: &mut App<'_>, m: &str, p: &Value| h.state_mut().control_call(m, p).map_err(|e| anyhow::anyhow!(e));
+    call(h, "ui.tutorial", &json!({ "lesson": id }))?;
+    let state = |h: &mut App<'_>| call(h, "ui.tutorial_state", &Value::Null);
+    let steps = state(h)?["steps"].as_u64().unwrap_or(0);
+    for step in 0..steps {
+        // Past the opening picture.
+        h.run_steps(220);
+        let (mut tries, mut all) = (0, 0);
+        loop {
+            let s = state(h)?;
+            if s["done"] == json!(true) {
+                break;
+            }
+            let (number, text) = (s["number"].as_u64().unwrap_or(0), s["hint"].as_str().unwrap_or("").to_string());
+            all += 1;
+            if tries >= 3 || all > 20 {
+                outcome
+                    .checks
+                    .push((false, format!("{id} step {} instruction {}: \"{text}\" isn't met by its gesture", step + 1, number + 1)));
+                if let Some(out) = out {
+                    h.render().map_err(|e| anyhow::anyhow!(e))?.save(out.join(format!("{id}-{}-{}-stuck.png", step + 1, number + 1)))?;
+                }
+                return Ok(());
+            }
+            if let (Some(out), 0) = (out, tries) {
+                h.run_steps(55);
+                h.render().map_err(|e| anyhow::anyhow!(e))?.save(out.join(format!("{id}-{}-{}.png", step + 1, number + 1)))?;
+            }
+            for g in state(h)?["gestures"].as_array().cloned().unwrap_or_default() {
+                gesture(h, &g);
+            }
+            // A step on another thread (a shell, a fillet, a thread) lands when it's ready.
+            for _ in 0..40 {
+                h.run_steps(2);
+                let now = state(h)?;
+                if now["done"] == json!(true) || now["number"] != json!(number) {
+                    break;
+                }
+                std::thread::sleep(std::time::Duration::from_millis(25));
+            }
+            tries = if state(h)?["number"] == json!(number) { tries + 1 } else { 0 };
+        }
+        h.run_steps(40);
+        if let Some(out) = out {
+            h.render().map_err(|e| anyhow::anyhow!(e))?.save(out.join(format!("{id}-{}-done.png", step + 1)))?;
+        }
+        outcome.checks.push((true, format!("{id} step {}", step + 1)));
+        // Continue, by its button on the card.
+        if step + 1 < steps {
+            for g in state(h)?["gestures"].as_array().cloned().unwrap_or_default() {
+                gesture(h, &g);
+            }
+            h.run_steps(3);
+            if state(h)?["step"] != json!(step + 1) {
+                outcome.checks.push((false, format!("{id} step {}: Continue didn't go on", step + 1)));
+                return Ok(());
+            }
+        }
+    }
+    Ok(())
+}
+
+/// One of a tutorial's gestures (`{"click": [x, y]}`, `{"double_click": …}`, `{"drag": [[x, y], [x, y]]}`).
+fn gesture(h: &mut App<'_>, g: &Value) {
+    let point = |v: &Value| Some(pos2(v.get(0)?.as_f64()? as f32, v.get(1)?.as_f64()? as f32));
+    let click = |h: &mut App<'_>, p: Pos2, n: usize| {
+        h.hover_at(p);
+        h.run_steps(2);
+        for _ in 0..n {
+            press(h, p, PointerButton::Primary, true);
+            h.run_steps(1);
+            press(h, p, PointerButton::Primary, false);
+            h.run_steps(1);
+        }
+        h.run_steps(30);
+    };
+    if let Some(p) = g.get("click").and_then(point) {
+        click(h, p, 1);
+    } else if let Some(p) = g.get("double_click").and_then(point) {
+        click(h, p, 2);
+    } else if let (Some(a), Some(b)) = (g["drag"].get(0).and_then(point), g["drag"].get(1).and_then(point)) {
+        h.hover_at(a);
+        h.run_steps(2);
+        press(h, a, PointerButton::Primary, true);
+        h.run_steps(1);
+        for i in 1..=12 {
+            h.hover_at(a + (b - a) * (i as f32 / 12.0));
+            h.run_steps(1);
+        }
+        press(h, b, PointerButton::Primary, false);
+        h.run_steps(5);
+    }
 }
 
 /// Puts face and edge numbers in for `"@face:BODY:x,y,z"` / `"@edge:BODY:x,y,z"`: the flat face whose plane holds the

@@ -13,7 +13,7 @@ pub(super) const SECTION_FLIP: f32 = 112.0;
 
 impl Workspace {
     /// Screen position and direction (unit, in points) of a tool's arrow handle, and points per mm.
-    pub(super) fn handle_frame(&self, base: DVec3, dir: DVec3) -> Option<(Pos2, egui::Vec2, f64)> {
+    pub(in crate::workspace) fn handle_frame(&self, base: DVec3, dir: DVec3) -> Option<(Pos2, egui::Vec2, f64)> {
         let s0 = self.to_screen(base)?;
         let k = self.camera.world_per_pixel(self.size().y) * 60.0;
         let s1 = self.to_screen(base + dir * k)?;
@@ -513,7 +513,7 @@ impl Workspace {
     }
 
     /// The running tool's arrow: where it sits, which way it points, its value, and how much one mm of drag adds.
-    pub(super) fn arrow_handle(&self) -> Option<(DVec3, DVec3, f64, f64)> {
+    pub(in crate::workspace) fn arrow_handle(&self) -> Option<(DVec3, DVec3, f64, f64)> {
         Some(match &self.tool {
             Tool::Extrude(t) => (t.origin + t.normal * t.distance, t.normal, t.distance, 1.0),
             // Two-Distance: the first arrow lies on its face.

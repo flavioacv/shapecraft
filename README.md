@@ -54,7 +54,7 @@ Then move it, copy it, pattern it, and send it to your printer.
   apps are in the list), so orbit, pan and zoom just work.
 - ⏪ **Change your mind.** Every step stays in History. Change a number later and the model rebuilds.
 - 📂 **Opens what you already have.** `.shapr`, STEP, Parasolid, SolidWorks, NX and Solid Edge parts, JT, IGES, STL, OBJ, 3MF, and DXF or SVG as sketches.
-- 🎓 **Learn it over coffee.** Three built-in tutorials, about seven minutes each, in eleven languages.
+- 🎓 **Learn it over coffee.** Nine built-in courses, two to seven minutes each, on things from around the house: three for a first day, then one for each tool worth learning. An animated pointer shows every move, in twelve languages.
 - 🛟 **Hard to lose work.** Autosave, safe saves, and a project that reopens even after a crash.
 - 🔄 **Keeps itself fresh.** New versions download in the background and install when you close the app.
 - 📱 **In your pocket too.** The whole modeler on an iPhone Duo and on Android, and a viewer on other iPhones.

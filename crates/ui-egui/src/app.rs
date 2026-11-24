@@ -12,6 +12,7 @@ use shapecraft_render::{SceneColors, SceneInput, StandardView};
 use crate::control::{Request, Server};
 use crate::landing::{Landing, LandingAction};
 use crate::menubar::{AppAction, MenuAction, MenuState, Menus, WindowMenu};
+use crate::saving::After;
 use crate::theme;
 use crate::workspace::export::{ExportDialog, Format};
 use crate::workspace::{Tool, Workspace};
@@ -125,6 +126,14 @@ pub struct ShapeCraftApp {
     saved_generation: u64,
     /// An autosave being written on another thread (a project of thousands of bodies takes seconds to write).
     saving: Option<Saving>,
+    /// The bar that shows it.
+    save_bar: crate::saving::SaveBar,
+    /// Leaving the project once it's saved.
+    after_save: Option<After>,
+    /// The revision a save on the way out failed at: asked again, the project closes as it is.
+    unsaved_at: Option<u64>,
+    /// ⌘S: back up as soon as the save is done.
+    backup_after_save: bool,
     /// The window had the keyboard as of the last look.
     was_focused: bool,
     /// A screenshot was asked for and isn't back yet: who to answer, and since when.
@@ -292,6 +301,10 @@ impl ShapeCraftApp {
             last_change: None,
             saved_generation: 0,
             saving: None,
+            save_bar: Default::default(),
+            after_save: None,
+            unsaved_at: None,
+            backup_after_save: false,
             was_focused: true,
             capture: None,
             styled: false,
@@ -457,6 +470,7 @@ impl ShapeCraftApp {
         let dir = ws.session.path.clone().unwrap_or_else(|| project::unique_dir(&root, &ws.session.doc.name));
         if let Err(e) = project::save(&ws.session.doc, ws.session.kernel.as_ref(), &dir) {
             ws.toast(format!("Couldn't save: {e}"));
+            self.unsaved_at = Some(ws.session.revision);
             return;
         }
         ws.session.path = Some(dir.clone());
@@ -486,6 +500,7 @@ impl ShapeCraftApp {
         let dir = ws.session.path.clone().unwrap_or_else(|| project::unique_dir(&root, &ws.session.doc.name));
         let (doc, kernel, to) = (ws.session.doc.clone(), ws.session.kernel.clone(), dir.clone());
         let (tx, rx) = std::sync::mpsc::channel();
+        let started = std::time::Instant::now();
         let spawned = std::thread::Builder::new().name("autosave".into()).spawn(move || {
             let _ = tx.send(project::save(&doc, kernel.as_ref(), &to).map_err(|e| e.to_string()));
         });
@@ -493,7 +508,15 @@ impl ShapeCraftApp {
             return self.save();
         }
         let early = rx.recv_timeout(std::time::Duration::from_millis(30)).ok();
-        self.saving = Some(Saving { rx, early, dir, from: ws.session.path.clone(), revision: ws.session.revision });
+        self.saving = Some(Saving {
+            rx,
+            early,
+            expected: self.save_bar.expected(&ws.session.doc, &dir),
+            dir,
+            from: ws.session.path.clone(),
+            revision: ws.session.revision,
+            started,
+        });
         self.finish_saving(false);
     }
 
@@ -511,10 +534,14 @@ impl ShapeCraftApp {
             },
         };
         let Some(saving) = self.saving.take() else { return false };
+        if result.is_ok() {
+            self.save_bar.done(&saving.dir, saving.started.elapsed());
+        }
         // Only the project the save was started for takes its result (another may be open by now).
         let Some(ws) = self.ws.as_deref_mut().filter(|ws| ws.session.path == saving.from) else { return false };
         if let Err(e) = result {
             ws.toast(format!("Couldn't save: {e}"));
+            self.unsaved_at = Some(saving.revision);
             return false;
         }
         ws.session.path = Some(saving.dir.clone());
@@ -526,7 +553,81 @@ impl ShapeCraftApp {
         self.saved_generation = saving.revision;
         self.landing.rescan();
         crate::backup::backups().changed();
+        if std::mem::take(&mut self.backup_after_save) {
+            crate::backup::backups().now();
+        }
         current
+    }
+
+    /// ⌘S and File ▸ Save: saving happens by itself, this one now, and a backup after it. Off the window's thread, like
+    /// an autosave (a save already being written carries on; what changed since follows by itself).
+    fn save_asked(&mut self) {
+        self.backup_after_save = true;
+        self.save_in_background();
+        if self.saving.is_none() && std::mem::take(&mut self.backup_after_save) {
+            crate::backup::backups().now();
+        }
+    }
+
+    /// Whether the open project has changes its folder doesn't.
+    fn unsaved(&self) -> bool {
+        self.saving.is_some()
+            || self
+                .ws
+                .as_deref()
+                .is_some_and(|ws| ws.session.dirty && ws.tutorial.is_none() && !(ws.session.doc.is_empty() && ws.session.path.is_none()))
+    }
+
+    /// Leaves the project for `then`, saving it first. A big one takes seconds to write: the window shows how far it is
+    /// and goes on once it's done, instead of standing still. A save that failed keeps the project open (the message
+    /// says why); asked again, it's left all the same.
+    fn leave(&mut self, then: After) {
+        let revision = self.ws.as_deref().map(|ws| ws.session.revision);
+        if self.unsaved_at.take().is_some_and(|at| Some(at) == revision) {
+            return self.left(then);
+        }
+        self.after_save = Some(then);
+        self.step_leaving();
+    }
+
+    /// The rest of [`Self::leave`], every frame until the save is in.
+    fn step_leaving(&mut self) {
+        if self.after_save.is_none() {
+            return;
+        }
+        self.finish_saving(false);
+        if self.saving.is_none() && self.unsaved() && self.unsaved_at.is_none() {
+            self.save_in_background();
+        }
+        if self.saving.is_some() {
+            self.egui.request_repaint_after(std::time::Duration::from_millis(50));
+        } else if self.unsaved_at.is_some() {
+            self.after_save = None;
+        } else if let Some(then) = self.after_save.take() {
+            self.left(then);
+        }
+    }
+
+    fn left(&mut self, then: After) {
+        match then {
+            After::Close => self.close_project(),
+            After::Section(section) => {
+                self.close_project();
+                self.landing.section = section;
+            }
+            After::New(parent) => {
+                self.new_project();
+                self.new_parent = parent;
+            }
+            After::Open(dir) => self.open(dir),
+            After::Quit => {
+                self.egui.send_viewport_cmd(egui::ViewportCommand::Close);
+            }
+            After::InstallUpdate { restart } => {
+                let ctx = self.egui.clone();
+                self.install_update(&ctx, restart);
+            }
+        }
     }
 
     /// Opens a project, asking first when another computer sharing the folder has it open (both saving it makes two
@@ -1265,15 +1366,14 @@ impl ShapeCraftApp {
             )
         });
         if n {
-            self.new_project();
+            self.leave(After::New(None));
         }
         if w {
-            self.close_project();
+            self.leave(After::Close);
         }
         if s {
             // Saving happens by itself; ⌘S (muscle memory from other apps) also backs up now.
-            self.save();
-            crate::backup::backups().now();
+            self.save_asked();
         }
         if e {
             self.export_dialog(None);
@@ -1380,14 +1480,34 @@ impl ShapeCraftApp {
                 self.start_tutorial(id, step);
                 Ok(json!({ "steps": lesson.steps.len() }))
             }
+            "ui.tutorial_art" => {
+                // The finished part, see-through around it, for its card (assets/home/tut-*.png): {lesson, path}.
+                let id = params.get("lesson").and_then(Value::as_str).ok_or("'lesson' is required")?;
+                let path = params.get("path").and_then(Value::as_str).ok_or("'path' is required")?;
+                let lesson = crate::tutorials::lesson(id).ok_or_else(|| format!("no tutorial '{id}'"))?;
+                let mut s = Session::new(self.kernel.clone(), lesson.title);
+                crate::tutorials::run(&mut s, lesson.finished, &mut std::collections::HashMap::new())?;
+                s.doc.sketches.iter_mut().for_each(|k| k.visible = false);
+                s.selection.clear();
+                let bounds = s.doc.bounds().ok_or("nothing to show")?;
+                if self.ws.is_none() {
+                    self.new_project();
+                }
+                let ws = self.ws.as_deref_mut().ok_or("no view")?;
+                let (w, h, px) = picture(ws, &s.doc, bounds, (340, 438)).ok_or("couldn't draw it")?;
+                write_rgba(Path::new(path), w, h, &px)?;
+                Ok(json!({ "path": path }))
+            }
             "ui.tutorial_state" => Ok(self.ws.as_deref().and_then(Workspace::tutorial_state).unwrap_or(Value::Null)),
             "ui.tutorial_action" => {
                 use crate::workspace::tutorial::Request;
                 let req = match params.get("action").and_then(Value::as_str) {
                     Some("retry") => Request::Retry,
                     Some("continue") => Request::Next,
+                    Some("solve") => Request::Solve,
+                    Some("keep") => Request::Keep,
                     Some("quit") => Request::Quit,
-                    _ => return Err("'action' is retry, continue or quit".into()),
+                    _ => return Err("'action' is retry, solve, continue, keep or quit".into()),
                 };
                 let ctx = self.egui.clone();
                 self.tutorial_request(req, &ctx);
@@ -1907,8 +2027,14 @@ impl ShapeCraftApp {
         match self.ws.as_deref_mut() {
             Some(ws) => {
                 // The first-run windows sit over the workspace: its keys wait until they're answered.
-                ws.keys_blocked = first_run_open || self.show_log || self.report.takes_keys() || crate::plugins::takes_keys();
+                ws.keys_blocked = first_run_open
+                    || self.show_log
+                    || self.report.takes_keys()
+                    || crate::plugins::takes_keys()
+                    || self.after_save.is_some();
                 ws.ui(ui, render_state);
+                self.tutorial_clip();
+                let Some(ws) = self.ws.as_deref_mut() else { return };
                 report_failure = ws.report_request.take();
                 report_problem = std::mem::take(&mut ws.report_problem);
                 // Tutorials run on the default tool types and leave the remembered ones alone.
@@ -1927,8 +2053,8 @@ impl ShapeCraftApp {
                         ws.toast(format!("Couldn't save preferences: {e}"));
                     }
                 }
-                if ws.go_home {
-                    self.close_project();
+                if std::mem::take(&mut ws.go_home) {
+                    self.leave(After::Close);
                 } else if let Some(req) = ws.tutorial.as_deref_mut().and_then(|t| t.request.take()) {
                     self.tutorial_request(req, ui.ctx());
                 }
@@ -2004,7 +2130,7 @@ impl ShapeCraftApp {
         }
         // Folded with a project open: the front screen is too small to model on.
         if crate::tablet::waits_to_unfold() && self.ws.is_some() && unfold_prompt(ui, None, None) {
-            self.close_project();
+            self.leave(After::Close);
         }
         // On top of the bar the screen just drew; the workspace and the home screen both fill the window.
         let menus_at = self.ws.as_deref().map_or(crate::landing::MENUS_AT, |ws| ws.menus_at);
@@ -2016,6 +2142,11 @@ impl ShapeCraftApp {
             bar.show(ui, menus_at);
         }
         crate::window_chrome::show(ui);
+        {
+            let running = self.saving.as_ref().map(|s| (s.started, s.expected));
+            let lift = if self.updating && crate::updates::showing(&self.updates) { 40.0 } else { 0.0 };
+            self.save_bar.show(ui, ctx.content_rect(), running, self.after_save.is_some(), lift);
+        }
         if self.updating {
             let full = ctx.content_rect();
             for action in crate::updates::show(ui, full, &mut self.updates) {
@@ -2208,29 +2339,23 @@ impl ShapeCraftApp {
     fn app_action(&mut self, a: AppAction, ctx: &egui::Context) {
         match a {
             AppAction::NewProject if crate::tablet::view_only() => self.toast(crate::tablet::VIEW_ONLY_NOTE.into()),
-            AppAction::NewProject => self.new_project(),
-            AppAction::CloseProject | AppAction::GoHome => self.close_project(),
-            AppAction::Save => {
-                self.save();
-                crate::backup::backups().now();
-            }
+            AppAction::NewProject => self.leave(After::New(None)),
+            AppAction::CloseProject | AppAction::GoHome => self.leave(After::Close),
+            AppAction::Save => self.save_asked(),
             AppAction::Import => self.import_dialog(),
             AppAction::ImportProject => self.import_project_sheet(),
             AppAction::Export => self.export_dialog(None),
             AppAction::ExportAs(crate::workspace::export::Format::Svg) => self.export_svg_now(),
             AppAction::ExportAs(f) => self.export_dialog(Some(f)),
             AppAction::QuickExport => self.quick_export(),
-            AppAction::Quit => {
-                if self.ws.as_ref().is_some_and(|w| w.session.dirty) {
-                    self.save();
-                }
-                ctx.send_viewport_cmd(egui::ViewportCommand::Close);
-            }
+            AppAction::Quit => self.leave(After::Quit),
             AppAction::CheckUpdates => shapecraft_update::Updater::global().check_now(),
             AppAction::GetStarted | AppAction::Tutorials => {
-                self.close_project();
-                self.landing.section =
-                    if a == AppAction::Tutorials { crate::landing::Section::Tutorials } else { crate::landing::Section::GetStarted };
+                self.leave(After::Section(if a == AppAction::Tutorials {
+                    crate::landing::Section::Tutorials
+                } else {
+                    crate::landing::Section::GetStarted
+                }));
             }
             AppAction::ShowLog => self.show_log = true,
             AppAction::ReportProblem => self.open_report(ctx, crate::report::Seed::Problem),
@@ -2362,21 +2487,51 @@ impl ShapeCraftApp {
         }
     }
 
-    /// Opens a tutorial at a step: a fresh scratch workspace built from the step's scene, so nothing done in an
-    /// earlier step (or a slip) carries on, as in the reference.
+    /// Opens a tutorial at a step: a fresh scratch workspace built from the step's scene, so nothing done in an earlier
+    /// step (or tried in this one) carries over.
     pub(crate) fn start_tutorial(&mut self, id: &str, step: usize) {
+        self.build_tutorial(id, step, false);
+    }
+
+    fn build_tutorial(&mut self, id: &str, step: usize, solved: bool) {
         use crate::tutorials;
+        use crate::workspace::tutorial::{CLIP_FRAMES, Clip, TutorialRun};
         let Some(lesson) = tutorials::lesson(id) else { return };
         let Some(def) = lesson.steps.get(step) else { return };
         if self.ws.as_ref().is_some_and(|w| w.tutorial.is_none()) {
             self.close_project();
         }
-        let mut session = Session::new(self.kernel.clone(), lesson.title);
+        // Going on to the next step, the camera glides over instead of jumping.
+        let from = self.ws.as_deref().filter(|w| w.tutorial.as_deref().is_some_and(|t| t.lesson.id == id)).map(|w| w.camera);
+        let mut session = Session::new(self.kernel.clone(), crate::i18n::tr(lesson.title));
         let mut vars = std::collections::HashMap::new();
         let setup = tutorials::run(&mut session, def.setup, &mut vars);
         // Each scene starts with nothing picked (an extrude would leave its face selected).
         session.selection.clear();
         let base = tutorials::snapshot(&session);
+        // The step being done, played in the corner.
+        let wanted = match (def.solution.is_empty(), tutorials::plays(def.solution)) {
+            (true, _) => vec![1.0],
+            (false, true) => (0..CLIP_FRAMES)
+                .map(|i| {
+                    let u = i as f64 / (CLIP_FRAMES - 1) as f64;
+                    u * u * (3.0 - 2.0 * u)
+                })
+                .collect(),
+            (false, false) => vec![0.0, 1.0],
+        };
+        let mut goal = session.fork();
+        let mut goal_vars = vars.clone();
+        let solution = tutorials::run(&mut goal, def.solution, &mut goal_vars);
+        goal.selection.clear();
+        let bounds = match (session.doc.bounds(), goal.doc.bounds()) {
+            (Some((a, b)), Some((c, d))) => Some((a.min(c), b.max(d))),
+            (a, b) => a.or(b),
+        };
+        let clip = Clip { scene: session.fork(), vars, frames: Vec::new(), wanted, next: 0, bounds };
+        if solved && solution.is_ok() {
+            session = goal;
+        }
         let mut ws = Workspace::new(session, self.settings.clone());
         ws.variants.clear();
         ws.show_items = false;
@@ -2386,12 +2541,20 @@ impl ShapeCraftApp {
         }
         match def.view {
             tutorials::View::Default => {
-                // An empty first step frames the size of part the lesson makes (about 10 cm).
-                let (min, max) =
-                    ws.session.doc.bounds().unwrap_or((glam::DVec3::new(-60.0, -45.0, 0.0), glam::DVec3::new(60.0, 45.0, 20.0)));
+                // Framed with room for what the step makes (a tall pull stays in the window); an empty first step
+                // frames the size of part the lesson makes (about 10 cm).
+                let (min, max) = bounds.unwrap_or((glam::DVec3::new(-60.0, -45.0, 0.0), glam::DVec3::new(60.0, 45.0, 20.0)));
                 let mut c = shapecraft_render::Camera::default();
                 c.fit(min, max);
-                ws.camera = shapecraft_render::Camera::standard(StandardView::Default, c.target, c.distance);
+                let to = shapecraft_render::Camera::standard(StandardView::Default, c.target, c.distance * 1.12);
+                match from {
+                    Some(f) => {
+                        ws.camera = f;
+                        ws.now = self.egui.input(|i| i.time);
+                        ws.animate_to(to);
+                    }
+                    None => ws.camera = to,
+                }
             }
             tutorials::View::Sketch => {
                 if let Some(plane) = ws.session.active_sketch().map(|s| s.plane) {
@@ -2399,20 +2562,35 @@ impl ShapeCraftApp {
                 }
             }
         }
-        let mut run = crate::workspace::tutorial::TutorialRun::new(lesson, step, base);
-        // Where the step is headed: its scene with the solution done, rendered for the corner card.
-        let mut goal = Session::new(self.kernel.clone(), lesson.title);
-        let mut gvars = std::collections::HashMap::new();
-        if tutorials::run(&mut goal, def.setup, &mut gvars).and_then(|_| tutorials::run(&mut goal, def.solution, &mut gvars)).is_ok() {
-            goal.selection.clear();
-            run.picture = picture(&mut ws, &goal.doc, (480, 330)).map(|(w, h, px)| {
-                let image = egui::ColorImage::from_rgba_unmultiplied([w as usize, h as usize], &px);
-                self.egui.load_texture(format!("tutorial-{id}-{step}"), image, egui::TextureOptions::LINEAR)
-            });
-        }
+        let mut run = TutorialRun::new(lesson, step, base);
+        run.clip = Some(clip);
         ws.tutorial = Some(Box::new(run));
         self.ws = Some(Box::new(ws));
         self.saved_generation = 0;
+    }
+
+    /// One more picture of the step being done (a frame at a time, so a step opens at once).
+    fn tutorial_clip(&mut self) {
+        let Some(ws) = self.ws.as_deref_mut() else { return };
+        let Some(t) = ws.tutorial.as_deref_mut() else { return };
+        let (id, step, solution) = (t.lesson.id, t.step, t.step_def().solution);
+        let Some(clip) = t.clip.as_mut() else { return };
+        let Some(&at) = clip.wanted.get(clip.next) else { return };
+        clip.next += 1;
+        let mut scene = clip.scene.fork();
+        let mut vars = clip.vars.clone();
+        let bounds = clip.bounds;
+        let _ = crate::tutorials::run_values(&mut scene, &crate::tutorials::part_way(solution, at), &mut vars);
+        scene.selection.clear();
+        let shot = bounds.and_then(|b| picture(ws, &scene.doc, b, (480, 330)));
+        if let Some((w, h, px)) = shot {
+            let image = egui::ColorImage::from_rgba_unmultiplied([w as usize, h as usize], &px);
+            let tex = self.egui.load_texture(format!("tutorial-{id}-{step}-{at}"), image, egui::TextureOptions::LINEAR);
+            if let Some(clip) = ws.tutorial.as_deref_mut().and_then(|t| t.clip.as_mut()) {
+                clip.frames.push(tex);
+            }
+        }
+        self.egui.request_repaint();
     }
 
     fn tutorial_request(&mut self, req: crate::workspace::tutorial::Request, _ctx: &egui::Context) {
@@ -2422,18 +2600,40 @@ impl ShapeCraftApp {
         else {
             return;
         };
+        let finished = step + 1 >= steps && matches!(req, Request::Next | Request::NextLesson | Request::Keep);
+        if finished && !self.settings_now().tutorials_done.iter().any(|d| d == id) {
+            self.settings_now().tutorials_done.push(id.to_string());
+            self.settings = self.settings_now().clone();
+            self.save_settings();
+        }
         match req {
             Request::Retry => self.start_tutorial(id, step),
+            Request::Solve => self.build_tutorial(id, step, true),
             Request::Next if step + 1 < steps => self.start_tutorial(id, step + 1),
-            Request::Next | Request::Quit => {
-                if req == Request::Next && !self.settings.tutorials_done.iter().any(|d| d == id) {
-                    self.settings.tutorials_done.push(id.to_string());
-                    self.save_settings();
+            Request::NextLesson if let Some(next) = crate::tutorials::next_lesson(id) => self.start_tutorial(next.id, 0),
+            Request::Keep => {
+                // The scene is a project like any other from here on (it saves itself a moment later).
+                if let Some(ws) = self.ws.as_deref_mut() {
+                    ws.tutorial = None;
+                    // "Thread: a Bottle Neck" makes a bottle neck.
+                    let name = ws.session.doc.name.rsplit([':', '：']).next().unwrap_or_default().trim();
+                    let name = name.strip_prefix("a ").unwrap_or(name).to_string();
+                    ws.session.doc.name = name;
+                    ws.visualizing = false;
+                    ws.end_model_tool();
+                    ws.session.selection.clear();
+                    ws.session.dirty = true;
+                    ws.show_items = !crate::tablet::small_screen();
+                    ws.show_history = !crate::tablet::small_screen();
+                    ws.toast(crate::i18n::tr("It's a project of yours now. Go on working on it."));
                 }
+                self.new_parent = None;
+            }
+            Request::Next | Request::NextLesson | Request::Quit => {
                 self.ws = None;
                 self.landing.show_tutorials();
-                if req == Request::Next {
-                    self.landing.toast = Some(("Tutorial complete. Nicely done!".into(), f64::MAX));
+                if req != Request::Quit {
+                    self.landing.toast = Some((crate::i18n::tr_s("Tutorial complete. Nicely done!"), f64::MAX));
                 }
             }
         }
@@ -2483,9 +2683,7 @@ impl ShapeCraftApp {
     fn update_action(&mut self, ctx: &egui::Context, action: crate::updates::Action) {
         use crate::updates::Action;
         match action {
-            Action::Install { restart } => {
-                self.install_update(ctx, restart);
-            }
+            Action::Install { restart } => self.leave(After::InstallUpdate { restart }),
             Action::CloseAnyway => {
                 self.updates.closing = true;
                 ctx.send_viewport_cmd(egui::ViewportCommand::Close);
@@ -2518,6 +2716,22 @@ impl ShapeCraftApp {
         if self.pending.is_open() {
             ctx.request_repaint_after(std::time::Duration::from_millis(150));
         }
+        // The window's close button, with a project that takes a while to save: the window stays, says so, and closes
+        // once it's written.
+        let failed = self.unsaved_at.is_some() && self.unsaved_at == self.ws.as_deref().map(|ws| ws.session.revision);
+        if ctx.input(|i| i.viewport().close_requested()) && self.unsaved() && !failed {
+            self.finish_saving(false);
+            if self.after_save.is_none() && self.saving.is_none() && self.unsaved() {
+                self.save_in_background();
+            }
+            if self.saving.is_some() {
+                ctx.send_viewport_cmd(egui::ViewportCommand::CancelClose);
+                self.after_save = Some(After::Quit);
+                ctx.request_repaint();
+                return;
+            }
+        }
+        self.step_leaving();
         if !self.updating {
             return;
         }
@@ -2552,9 +2766,13 @@ impl ShapeCraftApp {
 }
 
 /// A document rendered on its own, see-through around the model (unmixed from black and white backgrounds), at the
-/// default view fitted to it: project thumbnails and the tutorial's pictures.
-fn picture(ws: &mut Workspace, doc: &shapecraft_doc::Document, px: (u32, u32)) -> Option<(u32, u32, Vec<u8>)> {
-    let (min, max) = doc.bounds()?;
+/// default view fitted to `min`..`max`: the tutorial's pictures.
+fn picture(
+    ws: &mut Workspace,
+    doc: &shapecraft_doc::Document,
+    (min, max): (glam::DVec3, glam::DVec3),
+    px: (u32, u32),
+) -> Option<(u32, u32, Vec<u8>)> {
     let mut c = shapecraft_render::Camera::default();
     c.fit(min, max);
     let camera = shapecraft_render::Camera::standard(StandardView::Default, c.target, c.distance * 0.92);
@@ -2599,6 +2817,9 @@ struct Saving {
     dir: PathBuf,
     from: Option<PathBuf>,
     revision: u64,
+    started: std::time::Instant,
+    /// How long it should take, in seconds (the bar's measure).
+    expected: f32,
 }
 
 /// The project card's picture: see-through around the model (rendered over black and over white, then unmixed),

@@ -77,6 +77,12 @@ fn button(ui: &mut Ui, r: Rect, label: &str, primary: bool, id: &str) -> bool {
     resp.clicked()
 }
 
+/// Whether the pill is up (what else shows in that corner goes above it).
+pub fn showing(state: &UpdateUi) -> bool {
+    let snap = Updater::global().snapshot();
+    pill_line(&snap).is_some() && (!state.hidden || snap.manual)
+}
+
 /// The pill, its card and the closing question. `full` is the window.
 pub fn show(ui: &mut Ui, full: Rect, state: &mut UpdateUi) -> Vec<Action> {
     let snap = Updater::global().snapshot();

@@ -19,6 +19,14 @@ pub struct Entry {
 
 pub const ENTRIES: &[Entry] = &[
     Entry {
+        version: "0.12.9",
+        title: "Tutorials for everyone",
+        text: "Nine short courses on things from around the house. Start with a coaster, a pencil cup and a phone stand, \
+               then learn one tool at a time: Revolve, Loft, Sweep, Pattern, Mirror and Thread. An animated pointer shows \
+               every move, everything can be done by clicking, and you can keep what you make as a project.",
+        art: "new-tutorials",
+    },
+    Entry {
         version: "0.10.0",
         title: "Threads",
         text: "Pick a hole or a cylinder and press Thread: it becomes a nut or a bolt in ISO metric, ANSI inch or ACME \
@@ -49,14 +57,6 @@ pub const ENTRIES: &[Entry] = &[
         text: "The first launch asks which app's navigation your hands already know, so orbit, pan and zoom work the \
                way you're used to. Change it any time under Preferences ▸ Navigation Presets.",
         art: "new-navigation",
-    },
-    Entry {
-        version: "0.3.0",
-        title: "Learn in 7 minutes",
-        text: "Three short in-app tutorials (a phone stand, a pencil cup and a key tag) walk you through sketching, \
-               pulling, cutting, rounding and finishing. Each step starts fresh, so there's nothing to undo. Find them \
-               under Get Started and Tutorials.",
-        art: "new-tutorials",
     },
     Entry {
         version: "0.3.0",

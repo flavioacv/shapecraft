@@ -873,69 +873,18 @@ fn cli_run(cli: &Path, scratch: &Path, name: &str, cmds: &[(&str, Value)], png: 
     Ok(String::from_utf8_lossy(&out.stdout).into_owned())
 }
 
-/// The home screen's pictures (assets/home/*.png) from our own models: `tut` (the tutorials' cards), `new` (What's
-/// new), or both. SHAPECRAFT_CLI picks the CLI (default: this build's release one); SHAPR_SAMPLE renders a .shapr we
+/// The home screen's pictures (assets/home/*.png) from our own models, for What's new (the tutorials' cards are their
+/// own parts, drawn by the app: control `ui.tutorial_art`). SHAPECRAFT_CLI picks the CLI (default: this build's release one); SHAPR_SAMPLE renders a .shapr we
 /// made ourselves as new-shapr.png. new-cards.png is a crop of our own Fillet card rendered by shapecraft-snap.
 pub fn home_art(args: &[String]) -> Result<()> {
-    let Some(scratch) = args.first() else { bail!("usage: cargo xtask home-art SCRATCH_DIR [tut] [new]") };
+    let Some(scratch) = args.first() else { bail!("usage: cargo xtask home-art SCRATCH_DIR [new]") };
     let scratch = PathBuf::from(scratch);
     std::fs::create_dir_all(&scratch)?;
     let cli = std::env::var("SHAPECRAFT_CLI").map_or_else(|_| target().join("release/shapecraft-cli"), PathBuf::from);
     let which: Vec<&str> = if args.len() > 1 { args[1..].iter().map(String::as_str).collect() } else { vec!["all"] };
     let want = |n: &str| which.contains(&"all") || which.contains(&n);
     let body2 = || json!({ "picks": [{ "kind": "body", "body": 2 }] });
-    let stand: Vec<(&str, Value)> = vec![
-        ("sketch", json!({ "plane": "xy" })),
-        ("rectangle", json!({ "center": [0, 0], "size": [90, 70] })),
-        ("exit_sketching", json!({})),
-        ("extrude", json!({ "sketch": 1, "region": 0, "distance": 8 })),
-        ("sketch", json!({ "origin": [0, 0, 8], "normal": [0, 0, 1] })),
-        ("rectangle", json!({ "center": [-28, 0], "size": [14, 90] })),
-        ("exit_sketching", json!({})),
-        ("extrude", json!({ "sketch": 3, "region": 0, "distance": 70, "result": "union" })),
-        ("sketch", json!({ "origin": [0, 0, 8], "normal": [0, 0, 1] })),
-        ("rectangle", json!({ "center": [12, 0], "size": [6, 90] })),
-        ("exit_sketching", json!({})),
-        ("extrude", json!({ "sketch": 4, "region": 0, "distance": -4, "result": "subtract" })),
-        ("select", body2()),
-        ("fillet", json!({ "radius": 1.5 })),
-        ("deselect_all", json!({})),
-    ];
-    if want("tut") {
-        let cup: Vec<(&str, Value)> = vec![
-            ("sketch", json!({ "plane": "xy" })),
-            ("circle", json!({ "center": [0, 0], "radius": 35 })),
-            ("exit_sketching", json!({})),
-            ("extrude", json!({ "sketch": 1, "region": 0, "distance": 95 })),
-            ("shell", json!({ "body": 2, "faces": [2], "thickness": 3 })),
-            ("select", body2()),
-            ("fillet", json!({ "radius": 1 })),
-            ("deselect_all", json!({})),
-        ];
-        let tag: Vec<(&str, Value)> = vec![
-            ("sketch", json!({ "plane": "xy" })),
-            ("rectangle", json!({ "center": [0, 0], "size": [60, 30] })),
-            ("exit_sketching", json!({})),
-            ("extrude", json!({ "sketch": 1, "region": 0, "distance": 4 })),
-            ("sketch", json!({ "origin": [0, 0, 4], "normal": [0, 0, 1] })),
-            ("circle", json!({ "center": [0, -22], "radius": 4 })),
-            ("exit_sketching", json!({})),
-            ("extrude", json!({ "sketch": 3, "region": 0, "distance": -5, "result": "subtract" })),
-            ("select", body2()),
-            ("fillet", json!({ "radius": 1 })),
-            ("deselect_all", json!({})),
-        ];
-        cli_run(&cli, &scratch, "tut-phone-stand", &stand, true)?;
-        cli_run(&cli, &scratch, "tut-pencil-cup", &cup, true)?;
-        cli_run(&cli, &scratch, "tut-key-tag", &tag, true)?;
-    }
     if want("new") {
-        let mut tutorials = stand.clone();
-        tutorials.push((
-            "set_appearance",
-            json!({ "items": [2], "appearance": { "name": "Teal", "color": [0.16, 0.55, 0.62], "metal": 0, "gloss": 0.5 } }),
-        ));
-        cli_run(&cli, &scratch, "new-tutorials", &tutorials, true)?;
         let cube: Vec<(&str, Value)> = vec![
             ("sketch", json!({ "plane": "xy" })),
             ("rectangle", json!({ "center": [0, 0], "size": [40, 40] })),

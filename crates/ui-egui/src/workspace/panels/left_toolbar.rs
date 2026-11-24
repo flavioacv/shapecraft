@@ -240,7 +240,7 @@ pub(super) fn tool_mode(ws: &Workspace) -> Option<Vec<ToolDef>> {
     Some(v)
 }
 
-pub(super) fn is_active(ws: &Workspace, def: &ToolDef) -> bool {
+pub(in crate::workspace) fn is_active(ws: &Workspace, def: &ToolDef) -> bool {
     use crate::workspace::toolbar::ToolKind as K;
     if let (Action::Tool(k), Tool::Await { kind, .. }) = (def.action, &ws.tool)
         && k == *kind

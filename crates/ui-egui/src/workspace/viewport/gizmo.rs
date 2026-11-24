@@ -13,7 +13,7 @@ impl Workspace {
     /// Screen polylines of the gizmo's handles, for drawing and hit testing. Proportions follow the
     /// reference: short arrows out from the middle, little rotation arcs between them, and a square tab per
     /// plane near the middle (a closed polyline).
-    pub(super) fn gizmo_shapes(&self, pivot: DVec3, frame: GizmoFrame) -> Vec<(Handle, Vec<Pos2>)> {
+    pub(in crate::workspace) fn gizmo_shapes(&self, pivot: DVec3, frame: GizmoFrame) -> Vec<(Handle, Vec<Pos2>)> {
         let wpp = self.camera.world_per_pixel(self.size().y);
         let axes = frame.axes.map(|ax| ax * self.toward_viewer(ax));
         let mut out = Vec::new();
