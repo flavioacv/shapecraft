@@ -2,6 +2,29 @@
 
 How versions are numbered: [`docs/versioning.md`](docs/versioning.md). Newest first.
 
+## 0.12.9-alpha
+**Nine new tutorials you can click through, the whole app in twelve languages, and a bar that shows your project saving.**
+### New
+- **Tutorials, rebuilt.** Three beginner courses (a coaster, a pencil cup, a phone stand), then one for each tool worth
+  learning: Revolve (a drawer knob), Loft (a flower pot), Sweep and Union (a coat hook), Pattern and Subtract (a birthday
+  cake), Mirror (a serving tray) and Thread (a bottle neck). An animated pointer shows every move on the very thing to press,
+  the step plays in the corner, sizes can be set with a button, and Do It for Me helps when you're stuck. Keep the result
+  as a project of your own when you're done.
+- **Saving shows how far along it is**, in a bar at the bottom right, whenever it takes a moment.
+- **The whole interface in German, French, Italian, Portuguese, Russian, Japanese, Korean and Chinese**, the new texts in
+  Spanish and Slovak too. Messages with a name or a number in them follow your language as well, and so do plugins, reports
+  and the failure notes. Corrections are very welcome.
+### Changed
+- **Save, Close and Quit no longer freeze the window on a big project.** Saving runs in the background; closing waits for it
+  with the bar showing. A save that fails keeps the project open and says why.
+- The Tutorials page scrolls and wraps to the window.
+### Fixed
+- **Revolve, Loft, Sweep, Shell and Plane - Offset can be finished with a click.** They showed only Cancel: without a
+  keyboard's Return there was no way to apply them.
+- A tutorial could leave you stuck: a click on a sketch's outline opened it with nothing to do there, the sample part next to
+  yours could be picked instead, and some steps needed the Space bar or Return.
+- Short messages at the bottom were measured in your language but shown in English.
+
 ## 0.12.8-alpha
 **A hovering stylus lights what it's over on Android, and Spanish is complete.**
 ### New

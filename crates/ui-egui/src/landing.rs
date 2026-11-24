@@ -1318,7 +1318,7 @@ impl Landing {
         if let Some(tex) = self.art(ui.ctx(), &format!("tut-{}", lesson.id)) {
             // Under the words, as big as fits, off the bottom edge a little.
             let room = Rect::from_min_max(pos2(r.left() + 12.0, r.top() + 15.0 + words + 4.0), pos2(r.right() - 12.0, r.bottom() - 4.0));
-            let k = (room.width() / 340.0).min(room.height() / 300.0);
+            let k = (room.width() / 340.0).min(room.height() / 360.0);
             let pic = Rect::from_center_size(room.center() + vec2(0.0, -4.0), vec2(340.0, 438.0) * k);
             p.with_clip_rect(r.intersect(ui.clip_rect())).image(
                 tex,
